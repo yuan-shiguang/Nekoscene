@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.omarea.common.ui.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.yuanshiguang.common.ui.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:text="场景模式需要辅助服务提供支持。放心，Scene不会窃取界面上的内容，只会分析界面层次和显示大小并用于判断前台应用状态。" />
+                android:text="场景模式需要辅助服务提供支持。放心，Nekoscene不会窃取界面上的内容，只会分析界面层次和显示大小并用于判断前台应用状态。" />
         </LinearLayout>
 
         <GridLayout
@@ -59,39 +59,39 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:columnCount="2">
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_app_scene"
                 style="@style/nav_item_wrap"
                 app:drawable="@drawable/ic_menu_profile"
                 app:text="@string/menu_app_scene" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_cpu_modes"
                 style="@style/nav_item_wrap_right"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_digital"
                 app:text="@string/menu_cpu_modes" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_freeze"
                 style="@style/nav_item_wrap"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_freeze"
                 app:text="@string/menu_freeze" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_battery_stats"
                 style="@style/nav_item_wrap_right"
                 app:drawable="@drawable/ic_bat_stats"
                 app:text="@string/menu_battery_stats" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_auto_click"
                 style="@style/nav_item_wrap"
                 app:drawable="@drawable/ic_menu_click"
                 app:text="@string/menu_auto_click" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_system_scene"
                 style="@style/nav_item_wrap_right"
                 android:tag="root"
@@ -113,28 +113,28 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:columnCount="2">
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_core_control"
                 style="@style/nav_item_wrap"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_cpu"
                 app:text="@string/menu_core_control" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_swap"
                 style="@style/nav_item_wrap_right"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_swap"
                 app:text="@string/menu_swap" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_processes"
                 style="@style/nav_item_wrap"
                 android:tag="root"
                 app:drawable="@drawable/ic_processes"
                 app:text="@string/menu_processes" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_fps_chart"
                 style="@style/nav_item_wrap_right"
                 android:tag="root"
@@ -155,14 +155,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:columnCount="2">
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_battery"
                 style="@style/nav_item_wrap"
                 android:tag="root"
                 app:drawable="@drawable/battery"
                 app:text="@string/menu_battery" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_charge"
                 style="@style/nav_item_wrap_right"
                 app:drawable="@drawable/battery"
@@ -183,42 +183,42 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:columnCount="2">
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_applictions"
                 style="@style/nav_item_wrap"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_modules"
                 app:text="@string/menu_applictions" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_img"
                 style="@style/nav_item_wrap_right"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_img"
                 app:text="@string/menu_img" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_additional"
                 style="@style/nav_item_wrap"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_vboot"
                 app:text="@string/menu_sundry" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_additional_all"
                 style="@style/nav_item_wrap_right"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_shell"
                 app:text="@string/menu_additional" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_app_magisk"
                 style="@style/nav_item_wrap"
                 android:tag="root"
                 app:drawable="@drawable/ic_menu_magisk"
                 app:text="@string/menu_app_magisk" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_miui_thermal"
                 style="@style/nav_item_wrap_right"
                 app:drawable="@drawable/ic_menu_hot"
@@ -239,13 +239,13 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:columnCount="2">
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_xposed_app"
                 style="@style/nav_item_wrap"
                 app:drawable="@drawable/ic_menu_addon"
                 app:text="@string/menu_xposed_app" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_xposed_global"
                 style="@style/nav_item_wrap_right"
                 app:drawable="@drawable/ic_menu_addon"
@@ -266,13 +266,13 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:columnCount="2">
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_gesture"
                 style="@style/nav_item_wrap"
                 app:drawable="@drawable/ic_menu_addon"
                 app:text="@string/menu_gesture" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_filter"
                 style="@style/nav_item_wrap_right"
                 app:drawable="@drawable/app_filter"
@@ -293,17 +293,17 @@
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:columnCount="2">
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_qq"
                 style="@style/nav_item_wrap"
                 app:drawable="@drawable/ic_menu_qq"
                 app:text="@string/menu_qq" />
 
-            <com.omarea.ui.NavItem
+            <com.yuanshiguang.ui.NavItem
                 android:id="@+id/nav_share"
                 style="@style/nav_item_wrap_right"
                 app:drawable="@drawable/ic_menu_share"
                 app:text="@string/menu_share" />
         </GridLayout>
     </LinearLayout>
-</com.omarea.common.ui.OverScrollView>
+</com.yuanshiguang.common.ui.OverScrollView>

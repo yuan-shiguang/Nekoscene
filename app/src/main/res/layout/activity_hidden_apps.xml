@@ -15,7 +15,7 @@
         android:text="如果应用无法恢复，可尝试在Recovery(TWRP)模式备份并删除 /data/system/users/0/package-restrictions.xml"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-    <com.omarea.common.ui.OverScrollListView
+    <com.yuanshiguang.common.ui.OverScrollListView
         android:layout_below="@id/tip"
         android:id="@+id/hidden_app"
         android:layout_width="match_parent"

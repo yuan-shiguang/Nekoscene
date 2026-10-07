@@ -47,8 +47,8 @@ jobs:
       run: |
         cd ${{ github.workspace }}/app/build/outputs/apk/release/
         git init
-        git config user.name "helloklf"
-        git config user.email "helloklf@outlook.com"
+        git config user.name "yuan-shiguang"
+        git config user.email "385325061@qq.com"
         git add .
         git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
         git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master

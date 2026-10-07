@@ -68,7 +68,7 @@
                 android:src="@drawable/dialog_close" />
         </LinearLayout>
 
-        <com.omarea.common.ui.OverScrollListView
+        <com.yuanshiguang.common.ui.OverScrollListView
             android:id="@+id/process_list"
             android:layout_width="155dp"
             android:layout_height="170dp"

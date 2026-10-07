@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.omarea.common.ui.OverScrollListView
+    <com.yuanshiguang.common.ui.OverScrollListView
         android:id="@+id/addin_system_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

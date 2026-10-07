@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="8dp">
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
@@ -48,7 +48,7 @@
                             android:text="RAM"
                             android:textSize="11dp" />
 
-                        <com.omarea.ui.RamChartView
+                        <com.yuanshiguang.ui.RamChartView
                             android:id="@+id/home_raminfo"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
@@ -131,7 +131,7 @@
                             android:text="SWAP"
                             android:textSize="10dp" />
 
-                        <com.omarea.ui.RamChartView
+                        <com.yuanshiguang.ui.RamChartView
                             android:id="@+id/home_swapstate_chat"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
@@ -208,7 +208,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp">
 
-                        <com.omarea.ui.CpuChartView
+                        <com.yuanshiguang.ui.CpuChartView
                             android:id="@+id/home_gpu_chat"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
@@ -289,7 +289,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp">
 
-                        <com.omarea.ui.CpuChartView
+                        <com.yuanshiguang.ui.CpuChartView
                             android:id="@+id/home_cpu_chat"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
@@ -306,7 +306,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <com.omarea.common.ui.OverScrollGridView
+            <com.yuanshiguang.common.ui.OverScrollGridView
                 android:id="@+id/cpu_core_list"
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
@@ -523,7 +523,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_weight="1"
-                            android:text="访问Scene官网"
+                            android:text="访问Nekoscene官网"
                             android:textColor="#ff888888" />
                     </LinearLayout>
                 </LinearLayout>
@@ -544,7 +544,7 @@
                 android:visibility="gone" />
 
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 
     <LinearLayout
         android:id="@+id/powermode_toggles"

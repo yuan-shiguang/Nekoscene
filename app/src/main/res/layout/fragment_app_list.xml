@@ -15,7 +15,7 @@
         android:layout_marginEnd="35dp"
         android:src="@drawable/check" />
 
-    <com.omarea.common.ui.OverScrollListView
+    <com.yuanshiguang.common.ui.OverScrollListView
         android:id="@+id/app_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

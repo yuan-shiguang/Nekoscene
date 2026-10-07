@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.omarea.vtools"
+    package="com.yuanshiguang.nekoscene"
     android:installLocation="internalOnly">
 
     <!-- <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/> -->
@@ -40,7 +40,7 @@
     -->
 
     <application
-        android:name="com.omarea.Scene"
+        android:name="com.yuanshiguang.Scene"
         android:allowBackup="false"
         android:hardwareAccelerated="true"
         android:icon="@drawable/linux"
@@ -55,7 +55,7 @@
             android:name=".SceneFreezeProvider"
             android:enabled="true"
             android:exported="true"
-            android:authorities="com.omarea.vtools.SceneFreezeProvider" />
+            android:authorities="com.yuanshiguang.nekoscene.SceneFreezeProvider" />
 
         <activity
             android:name=".activities.ActivityPowerModeTile"
@@ -79,31 +79,31 @@
         </activity>
 
         <service
-            android:name="com.omarea.scene_mode.TriggerExecutorService"
+            android:name="com.yuanshiguang.scene_mode.TriggerExecutorService"
             android:exported="false" />
         <service
-            android:name="com.omarea.scene_mode.SceneTaskIntentService"
+            android:name="com.yuanshiguang.scene_mode.SceneTaskIntentService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.omarea.scene_mode.TimingTaskReceiver" />
+                <action android:name="com.yuanshiguang.scene_mode.TimingTaskReceiver" />
             </intent-filter>
         </service>
 
         <receiver
-            android:name="com.omarea.scene_mode.ReceiverSceneMode"
+            android:name="com.yuanshiguang.scene_mode.ReceiverSceneMode"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.omarea.scene_mode.ReceiverSceneMode" />
+                <action android:name="com.yuanshiguang.scene_mode.ReceiverSceneMode" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.omarea.vtools.ReceiverCompileState"
+            android:name="com.yuanshiguang.nekoscene.ReceiverCompileState"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="com.omarea.vtools.ReceiverCompileState" />
+                <action android:name="com.yuanshiguang.nekoscene.ReceiverCompileState" />
             </intent-filter>
         </receiver>
 
@@ -155,7 +155,7 @@
             android:name=".activities.ActivityOtherSettings"
             android:configChanges="keyboardHidden|orientation|uiMode"
             android:excludeFromRecents="true"
-            android:label="Scene 杂项设置"
+            android:label="Nekoscene 杂项设置"
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <activity
@@ -314,7 +314,7 @@
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.omarea.scene_mode.ReceiverShortcut"
+            android:name="com.yuanshiguang.scene_mode.ReceiverShortcut"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -326,7 +326,7 @@
 
         <service
             android:name=".AccessibilityScenceMode"
-            android:label="Scene - 场景模式"
+            android:label="Nekoscene - 场景模式"
             android:configChanges="orientation|screenLayout|fontScale|smallestScreenSize|density|screenSize"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
@@ -341,7 +341,7 @@
                 android:resource="@xml/phone_accessibility" />
         </service>
         <service
-            android:name="com.omarea.scene_mode.NotificationListenerService"
+            android:name="com.yuanshiguang.scene_mode.NotificationListenerService"
             android:label="通知过滤服务"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
             <intent-filter>
@@ -357,7 +357,7 @@
             android:enabled="true"
             android:permission="" />
         <service
-            android:name="com.omarea.scene_mode.SceneTileService"
+            android:name="com.yuanshiguang.scene_mode.SceneTileService"
             android:icon="@drawable/p4"
             android:label="@string/app_name"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">

@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/layout_app_bar">
@@ -36,7 +36,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1">
 
-                    <com.omarea.ui.BatteryView
+                    <com.yuanshiguang.ui.BatteryView
                         android:id="@+id/battery_capacity_chart"
                         android:layout_width="140dp"
                         android:layout_height="140dp"
@@ -109,7 +109,7 @@
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
-                <com.omarea.ui.HelpIcon
+                <com.yuanshiguang.ui.HelpIcon
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:text="@string/battery_step_charge_desc" />
@@ -132,7 +132,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="@string/battery_pd_allowed_desc" />
@@ -175,7 +175,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="@string/battery_qc_charger_desc" />
@@ -236,7 +236,7 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
-                        <com.omarea.ui.HelpIcon
+                        <com.yuanshiguang.ui.HelpIcon
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:text="@string/battery_exec_desc" />
@@ -262,7 +262,7 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal">
 
-                        <com.omarea.ui.HelpIcon
+                        <com.yuanshiguang.ui.HelpIcon
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:text="@string/battery_night_mode_desc" />
@@ -329,7 +329,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="@string/battery_bp_desc" />
@@ -458,7 +458,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="伪装数据并不会获得相应的续航能力，自欺欺人而已" />
@@ -543,5 +543,5 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 </RelativeLayout>

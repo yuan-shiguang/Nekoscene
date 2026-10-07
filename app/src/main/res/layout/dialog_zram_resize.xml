@@ -132,7 +132,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="手机重新启动后，自动应用当前设置\n(需要允许Scene自启动)" />
+                        android:text="手机重新启动后，自动应用当前设置\n(需要允许Nekoscene自启动)" />
                 </LinearLayout>
 
                 <Switch

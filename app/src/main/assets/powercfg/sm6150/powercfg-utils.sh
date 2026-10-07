@@ -399,7 +399,7 @@ watch_app() {
     return
   fi
 
-  procs=$(pgrep -f com.omarea.*powercfg.sh)
+  procs=$(pgrep -f com.yuanshiguang.*powercfg.sh)
   last_proc=$(echo "$procs" | tail -n 1)
   if [[ "$last_proc" != "" ]]; then
     echo "$procs" | grep -v "$last_proc" | while read pid; do

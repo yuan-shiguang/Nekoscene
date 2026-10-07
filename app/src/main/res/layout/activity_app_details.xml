@@ -10,7 +10,7 @@
     android:keepScreenOn="false"
     tools:openDrawer="start">
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="?android:actionBarSize">
@@ -286,7 +286,7 @@
                         style="@style/textSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="屏蔽通知时Scene会自动清除新通知，可能错失消息。按键屏蔽状态下，将使用长按替代短按操作" />
+                        android:text="屏蔽通知时Nekoscene会自动清除新通知，可能错失消息。按键屏蔽状态下，将使用长按替代短按操作" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -295,7 +295,7 @@
                         style="@style/scene_config_title"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Scene功能" />
+                        android:text="Nekoscene功能" />
 
                     <Switch
                         android:id="@+id/app_monitor"
@@ -308,7 +308,7 @@
                         style="@style/textSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="显示Scene的迷你性能监视器(OLED设备小心烧屏哦~)" />
+                        android:text="显示Nekoscene的迷你性能监视器(OLED设备小心烧屏哦~)" />
 
                 </LinearLayout>
 
@@ -336,7 +336,7 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 
     <include
         layout="@layout/layout_app_bar"

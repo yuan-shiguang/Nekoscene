@@ -77,7 +77,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <com.omarea.common.ui.OverScrollListView
+                    <com.yuanshiguang.common.ui.OverScrollListView
                         android:id="@+id/magisk_files"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />

@@ -6,7 +6,7 @@
     android:fitsSystemWindows="true"
     android:keepScreenOn="false">
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="?android:actionBarSize">
@@ -262,7 +262,7 @@
                     android:visibility="gone" />
             </LinearLayout>
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 
     <include
         layout="@layout/layout_app_bar"

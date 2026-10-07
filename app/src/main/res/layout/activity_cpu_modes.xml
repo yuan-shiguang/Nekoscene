@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/layout_app_bar">
@@ -34,7 +34,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="正在使用外部配置(/data/powercfg.sh)\n如需换回Scene自带配置，或通过Scene导入配置，请点右侧删除按钮"
+                    android:text="正在使用外部配置(/data/powercfg.sh)\n如需换回Nekoscene自带配置，或通过Nekoscene导入配置，请点右侧删除按钮"
                     android:textSize="13dp" />
 
                 <ImageButton
@@ -292,7 +292,7 @@
                     style="@style/textSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="在应用(Scene)首页显示四个模式的切换按钮" />
+                    android:text="在应用(Nekoscene)首页显示四个模式的切换按钮" />
             </LinearLayout>
 
             <LinearLayout
@@ -349,7 +349,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <com.omarea.ui.HelpIcon
+                        <com.yuanshiguang.ui.HelpIcon
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:text="没有单独设置模式的应用，将默认使用此模式。\n\n如需为某个应用单独设置模式，请返回上一级页面进入“应用场景”。" />
@@ -377,7 +377,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
-                        <com.omarea.ui.HelpIcon
+                        <com.yuanshiguang.ui.HelpIcon
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:text="手机进入待机状态后，将切换至选定的模式" />
@@ -407,10 +407,10 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:paddingEnd="8dp">
-                        <com.omarea.ui.HelpIcon
+                        <com.yuanshiguang.ui.HelpIcon
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:text="一般模式下，Scene只会在需要变换档位时执行调度配置文件，例如：在多个设为[省电模式]的应用之间切换，调度配置文件只会被执行一次。\n\n严格模式下，Scene会在每次前台应用发生变化时都执行调度配置文件，并告知被切换到前台运行的应用(包名)。调度配置作者可利用此特性，为不同的应用单独设计调度参数，而不再受限于只有四个档位的限制。\n\n骁龙855、865、888机型使用[经典配置][偏重性能]配置源时，可开启严格模式，在以下应用中体验专属优化:\n原神(官服、B服、小米服)\n闲鱼、淘宝、京东、天猫、百度贴吧、朴朴、美团、ES、RE\n双生视界、王者荣耀\n哔哩哔哩、抖音\n\n其它处理器机型，除非正在使用外部配置源头(且配置作者已注明支持此特性)，否则无需开启此选项！" />
+                            app:text="一般模式下，Nekoscene只会在需要变换档位时执行调度配置文件，例如：在多个设为[省电模式]的应用之间切换，调度配置文件只会被执行一次。\n\n严格模式下，Nekoscene会在每次前台应用发生变化时都执行调度配置文件，并告知被切换到前台运行的应用(包名)。调度配置作者可利用此特性，为不同的应用单独设计调度参数，而不再受限于只有四个档位的限制。\n\n骁龙855、865、888机型使用[经典配置][偏重性能]配置源时，可开启严格模式，在以下应用中体验专属优化:\n原神(官服、B服、小米服)\n闲鱼、淘宝、京东、天猫、百度贴吧、朴朴、美团、ES、RE\n双生视界、王者荣耀\n哔哩哔哩、抖音\n\n其它处理器机型，除非正在使用外部配置源头(且配置作者已注明支持此特性)，否则无需开启此选项！" />
 
                         <Switch
                             android:id="@+id/strict_mode"
@@ -430,7 +430,7 @@
                         android:gravity="center_vertical"
                         android:orientation="horizontal"
                         android:paddingEnd="8dp">
-                        <com.omarea.ui.HelpIcon
+                        <com.yuanshiguang.ui.HelpIcon
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             app:text="前台应用发生变化后，延迟5s再执行调度模式切换" />
@@ -448,5 +448,5 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 </RelativeLayout>

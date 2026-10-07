@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.omarea.common.ui.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.yuanshiguang.common.ui.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -162,7 +162,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="让应用从桌面和系统的应用管理列表消失，但你仍然可以在Scene找回它~" />
+                            android:text="让应用从桌面和系统的应用管理列表消失，但你仍然可以在Nekoscene找回它~" />
                     </LinearLayout>
                     <Switch
                         android:id="@+id/disable_hide"
@@ -195,4 +195,4 @@
         </LinearLayout>
 
     </LinearLayout>
-</com.omarea.common.ui.OverScrollView>
+</com.yuanshiguang.common.ui.OverScrollView>

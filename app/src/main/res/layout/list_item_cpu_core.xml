@@ -16,7 +16,7 @@
             android:layout_height="55dp"
             android:layout_gravity="center">
 
-            <com.omarea.ui.CpuChartBarView
+            <com.yuanshiguang.ui.CpuChartBarView
                 android:id="@+id/core_cpu_loading_chart"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

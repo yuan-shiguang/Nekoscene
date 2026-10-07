@@ -18,7 +18,7 @@ android {
     buildToolsVersion '29.0.2'
     defaultConfig {
         resConfigs "zh"
-        applicationId "com.omarea.vtools"
+        applicationId "com.yuanshiguang.nekoscene"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 202111131

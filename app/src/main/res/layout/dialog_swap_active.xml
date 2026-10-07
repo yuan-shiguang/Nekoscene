@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.omarea.common.ui.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.yuanshiguang.common.ui.OverScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -270,7 +270,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="手机重新启动后，自动应用当前设置\n(需要允许Scene自启动)" />
+                            android:text="手机重新启动后，自动应用当前设置\n(需要允许Nekoscene自启动)" />
                     </LinearLayout>
 
                     <Switch
@@ -304,4 +304,4 @@
         </LinearLayout>
 
     </LinearLayout>
-</com.omarea.common.ui.OverScrollView>
+</com.yuanshiguang.common.ui.OverScrollView>

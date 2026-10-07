@@ -9,8 +9,8 @@
         android:shortcutShortLabel="@string/shortcut_xposed_long">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.omarea.vaddin.MainActivity"
-            android:targetPackage="com.omarea.vaddin" />
+            android:targetClass="com.yuanshiguang.vaddin.MainActivity"
+            android:targetPackage="com.yuanshiguang.vaddin" />
     </shortcut>-->
     <shortcut
         android:enabled="true"
@@ -21,8 +21,8 @@
         android:shortcutShortLabel="@string/title_activity_freeze">
         <intent
             android:action="a"
-            android:targetClass="com.omarea.vtools.activities.ActivityFreezeApps2"
-            android:targetPackage="com.omarea.vtools" />
+            android:targetClass="com.yuanshiguang.nekoscene.activities.ActivityFreezeApps2"
+            android:targetPackage="com.yuanshiguang.nekoscene" />
     </shortcut>
     <shortcut
         android:enabled="true"
@@ -33,8 +33,8 @@
         android:shortcutShortLabel="@string/menu_applictions">
         <intent
             android:action="b"
-            android:targetClass="com.omarea.vtools.activities.ActivityApplistions"
-            android:targetPackage="com.omarea.vtools" />
+            android:targetClass="com.yuanshiguang.nekoscene.activities.ActivityApplistions"
+            android:targetPackage="com.yuanshiguang.nekoscene" />
     </shortcut>
     <shortcut
         android:enabled="true"
@@ -45,7 +45,7 @@
         android:shortcutShortLabel="@string/menu_processes">
         <intent
             android:action="c"
-            android:targetClass="com.omarea.vtools.activities.ActivityProcess"
-            android:targetPackage="com.omarea.vtools" />
+            android:targetClass="com.yuanshiguang.nekoscene.activities.ActivityProcess"
+            android:targetPackage="com.yuanshiguang.nekoscene" />
     </shortcut>
 </shortcuts>
