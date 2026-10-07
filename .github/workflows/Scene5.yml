@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-        ref: scene5
+        ref: master
 
     - name: Setup NDK r23b
       uses: nttld/setup-ndk@v1
