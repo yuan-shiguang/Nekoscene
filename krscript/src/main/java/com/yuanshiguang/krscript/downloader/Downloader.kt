@@ -1,4 +1,4 @@
-package com.omarea.krscript.downloader
+package com.yuanshiguang.krscript.downloader
 
 import android.app.Activity
 import android.app.DownloadManager
@@ -9,9 +9,9 @@ import android.net.Uri
 import android.os.Environment
 import android.webkit.URLUtil
 import android.widget.Toast
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.ui.DialogHelper
-import com.omarea.krscript.R
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.krscript.R
 import org.json.JSONObject
 import java.io.File
 import java.nio.charset.Charset

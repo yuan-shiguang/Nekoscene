@@ -1,4 +1,4 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.content.Context
 import android.os.BatteryManager
@@ -9,11 +9,11 @@ import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
-import com.omarea.common.ui.DialogHelper
-import com.omarea.data.GlobalStatus
-import com.omarea.store.ChargeSpeedStore
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.store.ChargeSpeedStore
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
 import java.util.*
 
 class DialogElectricityUnit {

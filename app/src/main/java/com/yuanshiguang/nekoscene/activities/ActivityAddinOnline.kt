@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -16,16 +16,16 @@ import android.view.View
 import android.view.WindowManager
 import android.webkit.*
 import android.widget.Toast
-import com.omarea.common.shared.FilePathResolver
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.krscript.WebViewInjector
-import com.omarea.krscript.ui.ParamsFileChooserRender
-import com.omarea.library.calculator.Flags
-import com.omarea.scene_mode.CpuConfigInstaller
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FilePathResolver
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.krscript.WebViewInjector
+import com.yuanshiguang.krscript.ui.ParamsFileChooserRender
+import com.yuanshiguang.library.calculator.Flags
+import com.yuanshiguang.scene_mode.CpuConfigInstaller
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_addin_online.*
 import java.io.File
 import java.io.FileInputStream

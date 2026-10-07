@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Context
 import android.os.Bundle
@@ -9,10 +9,10 @@ import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.omarea.krscript.downloader.Downloader
-import com.omarea.library.basic.MagiskModulesRepo
-import com.omarea.ui.AdapterModules
-import com.omarea.vtools.R
+import com.yuanshiguang.krscript.downloader.Downloader
+import com.yuanshiguang.library.basic.MagiskModulesRepo
+import com.yuanshiguang.ui.AdapterModules
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activty_modules.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

@@ -1,4 +1,4 @@
-package com.omarea.ui.power
+package com.yuanshiguang.ui.power
 
 import android.content.Context
 import android.graphics.Color
@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.omarea.data.customer.PowerUtilizationCurve.Companion.SAMPLING_INTERVAL
-import com.omarea.library.basic.AppInfoLoader
-import com.omarea.model.BatteryAvgStatus
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.vtools.R
+import com.yuanshiguang.data.customer.PowerUtilizationCurve.Companion.SAMPLING_INTERVAL
+import com.yuanshiguang.library.basic.AppInfoLoader
+import com.yuanshiguang.model.BatteryAvgStatus
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.nekoscene.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

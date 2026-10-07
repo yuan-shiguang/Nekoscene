@@ -1,7 +1,7 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.Context
-import com.omarea.library.shell.CGroupMemoryUtlis
+import com.yuanshiguang.library.shell.CGroupMemoryUtlis
 import java.util.*
 import kotlin.collections.ArrayList
 

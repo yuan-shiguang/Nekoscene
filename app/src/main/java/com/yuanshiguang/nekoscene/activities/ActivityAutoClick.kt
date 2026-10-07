@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.CompoundButton
-import com.omarea.common.ui.AdapterAppChooser
-import com.omarea.common.ui.DialogAppChooser
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.store.SpfConfig
-import com.omarea.utils.AppListHelper
-import com.omarea.utils.AutoSkipCloudData
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.AdapterAppChooser
+import com.yuanshiguang.common.ui.DialogAppChooser
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.AppListHelper
+import com.yuanshiguang.utils.AutoSkipCloudData
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_auto_click.*
 
 

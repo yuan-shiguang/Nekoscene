@@ -1,4 +1,4 @@
-package com.omarea.xposed;
+package com.yuanshiguang.xposed;
 
 import android.os.IBinder;
 import android.view.Window;
@@ -6,7 +6,7 @@ import android.view.WindowManager;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.omarea.library.calculator.Flags;
+import com.yuanshiguang.library.calculator.Flags;
 
 import de.robv.android.xposed.XC_MethodHook;
 import de.robv.android.xposed.XposedBridge;

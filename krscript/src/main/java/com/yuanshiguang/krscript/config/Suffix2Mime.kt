@@ -1,4 +1,4 @@
-package com.omarea.krscript.config
+package com.yuanshiguang.krscript.config
 
 class Suffix2Mime {
     fun toMime(suffix: String?): String {

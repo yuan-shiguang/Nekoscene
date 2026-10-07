@@ -1,15 +1,15 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.os.Bundle
 import android.widget.Toast
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shared.MagiskExtend
-import com.omarea.common.shared.RootFileInfo
-import com.omarea.common.shell.RootFile
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.ui.AdapterRootFileSelector
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shared.MagiskExtend
+import com.yuanshiguang.common.shared.RootFileInfo
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.ui.AdapterRootFileSelector
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_magisk.*
 import java.io.File
 

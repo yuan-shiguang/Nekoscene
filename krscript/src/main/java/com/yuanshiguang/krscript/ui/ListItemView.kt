@@ -1,12 +1,12 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
-import com.omarea.krscript.R
-import com.omarea.krscript.executor.ScriptEnvironmen
-import com.omarea.krscript.model.NodeInfoBase
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen
+import com.yuanshiguang.krscript.model.NodeInfoBase
 
 open class ListItemView(private val context: Context,
                         private val layoutId: Int,

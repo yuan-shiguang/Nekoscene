@@ -1,4 +1,4 @@
-package com.omarea.krscript.model;
+package com.yuanshiguang.krscript.model;
 
 import android.graphics.Color;
 import android.os.Handler;

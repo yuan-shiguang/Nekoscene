@@ -1,4 +1,4 @@
-package com.omarea.krscript
+package com.yuanshiguang.krscript
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -13,10 +13,10 @@ import android.os.Bundle
 import android.text.SpannableString
 import android.view.View
 import android.widget.RemoteViews
-import com.omarea.common.ui.DialogHelper
-import com.omarea.krscript.executor.ShellExecutor
-import com.omarea.krscript.model.RunnableNode
-import com.omarea.krscript.model.ShellHandlerBase
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.krscript.executor.ShellExecutor
+import com.yuanshiguang.krscript.model.RunnableNode
+import com.yuanshiguang.krscript.model.ShellHandlerBase
 
 class BgTaskThread(private var process: Process) : Thread() {
     override fun run() {

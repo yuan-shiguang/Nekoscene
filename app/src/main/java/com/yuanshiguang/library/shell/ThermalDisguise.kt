@@ -1,8 +1,8 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.os.Build
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile
 import java.util.*
 
 class ThermalDisguise {

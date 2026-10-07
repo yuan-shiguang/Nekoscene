@@ -1,8 +1,8 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.content.Context
 import android.content.Intent
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 
 // 飞行模式

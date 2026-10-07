@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Intent
 import android.os.BatteryManager
@@ -9,12 +9,12 @@ import android.text.SpannableString
 import android.text.Spanned
 import android.text.style.AbsoluteSizeSpan
 import android.view.View
-import com.omarea.data.GlobalStatus
-import com.omarea.library.device.BatteryCapacity
-import com.omarea.library.shell.BatteryUtils
-import com.omarea.store.ChargeSpeedStore
-import com.omarea.vtools.R
-import com.omarea.vtools.dialogs.DialogElectricityUnit
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.library.device.BatteryCapacity
+import com.yuanshiguang.library.shell.BatteryUtils
+import com.yuanshiguang.store.ChargeSpeedStore
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.dialogs.DialogElectricityUnit
 import kotlinx.android.synthetic.main.activity_charge.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

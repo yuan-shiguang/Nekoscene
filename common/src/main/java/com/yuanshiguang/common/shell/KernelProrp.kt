@@ -1,4 +1,4 @@
-package com.omarea.common.shell
+package com.yuanshiguang.common.shell
 
 /**
  * 操作内核参数节点

@@ -1,4 +1,4 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.app.Dialog
 import android.content.ClipData
@@ -16,11 +16,11 @@ import android.widget.ProgressBar
 import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
-import com.omarea.common.ui.DialogHelper
-import com.omarea.krscript.R
-import com.omarea.krscript.executor.ShellExecutor
-import com.omarea.krscript.model.RunnableNode
-import com.omarea.krscript.model.ShellHandlerBase
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.executor.ShellExecutor
+import com.yuanshiguang.krscript.model.RunnableNode
+import com.yuanshiguang.krscript.model.ShellHandlerBase
 import kotlinx.android.synthetic.main.kr_dialog_log.*
 
 

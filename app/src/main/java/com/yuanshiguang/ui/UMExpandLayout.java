@@ -1,4 +1,4 @@
-package com.omarea.ui;
+package com.yuanshiguang.ui;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

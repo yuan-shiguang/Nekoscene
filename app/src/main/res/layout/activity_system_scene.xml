@@ -27,7 +27,7 @@
                 android:layout_height="0dp"
                 android:layout_weight="1">
 
-                <com.omarea.common.ui.OverScrollView
+                <com.yuanshiguang.common.ui.OverScrollView
                     android:id="@+id/blacklist_tab3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -187,9 +187,9 @@
                                 android:src="@drawable/add" />
                         </LinearLayout>
                     </LinearLayout>
-                </com.omarea.common.ui.OverScrollView>
+                </com.yuanshiguang.common.ui.OverScrollView>
 
-                <com.omarea.common.ui.OverScrollView
+                <com.yuanshiguang.common.ui.OverScrollView
                     android:id="@+id/configlist_tab5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -280,7 +280,7 @@
                             android:text="更多功能，敬请期待"
                             android:textAlignment="center" />
                     </LinearLayout>
-                </com.omarea.common.ui.OverScrollView>
+                </com.yuanshiguang.common.ui.OverScrollView>
             </FrameLayout>
 
             <TabWidget

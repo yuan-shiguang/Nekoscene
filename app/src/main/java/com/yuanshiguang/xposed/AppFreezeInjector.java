@@ -1,4 +1,4 @@
-package com.omarea.xposed;
+package com.yuanshiguang.xposed;
 
 import android.app.Activity;
 import android.content.ComponentName;
@@ -35,7 +35,7 @@ public class AppFreezeInjector {
     private boolean unfreeze(Context context, String packageName) {
         // 在手机刚开机未解锁的情况下，访问SceneContentProvider 会出现Unknown URL
         try {
-            Uri uri = Uri.parse("content://com.omarea.vtools.SceneFreezeProvider");
+            Uri uri = Uri.parse("content://com.yuanshiguang.nekoscene.SceneFreezeProvider");
             ContentResolver contentProvider = context.getContentResolver();
             ContentValues contentValues = new ContentValues();
             contentValues.put("packageName", packageName);
@@ -61,7 +61,7 @@ public class AppFreezeInjector {
                 }
 
                 // 方式1： 由Scene通过ROOT启动
-                // intent.setClassName("com.omarea.vtools", "com.omarea.vtools.activities.ActivityQuickStart");
+                // intent.setClassName("com.yuanshiguang.nekoscene", "com.yuanshiguang.nekoscene.activities.ActivityQuickStart");
                 // intent.putExtra("packageName", packageName);
                 // intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_NO_HISTORY | Intent.FLAG_ACTIVITY_TASK_ON_HOME | Intent.FLAG_ACTIVITY_SINGLE_TOP);
 

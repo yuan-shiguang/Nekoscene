@@ -1,11 +1,11 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.ui.DialogHelper
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_custom_command.*
 import java.io.File
 import java.net.URLEncoder

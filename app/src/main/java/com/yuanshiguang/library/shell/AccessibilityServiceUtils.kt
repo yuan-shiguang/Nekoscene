@@ -1,6 +1,6 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 /**
  * Created by Hello on 2018/06/03.
@@ -12,7 +12,7 @@ class AccessibilityServiceUtils {
 
     settings put secure accessibility_enabled 0
     services=`settings get secure enabled_accessibility_services`
-    service='com.omarea.vtools/com.omarea.vtools.AccessibilityScenceMode'
+    service='com.yuanshiguang.nekoscene/com.yuanshiguang.nekoscene.AccessibilityScenceMode'
     include=`echo "$services" | grep "$service"`
     if [ ! -n "$services" ]; then
       settings put secure enabled_accessibility_services "$service"

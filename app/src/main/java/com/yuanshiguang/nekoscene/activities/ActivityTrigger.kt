@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.app.TimePickerDialog
 import android.os.Build
@@ -9,17 +9,17 @@ import android.view.View
 import android.widget.Checkable
 import android.widget.CompoundButton
 import android.widget.Toast
-import com.omarea.common.model.SelectItem
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.ui.DialogItemChooser2
-import com.omarea.data.EventType
-import com.omarea.krscript.executor.ExtractAssets
-import com.omarea.model.CustomTaskAction
-import com.omarea.model.TaskAction
-import com.omarea.model.TriggerInfo
-import com.omarea.scene_mode.TriggerManager
-import com.omarea.store.TriggerStorage
-import com.omarea.vtools.R
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.ui.DialogItemChooser2
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.krscript.executor.ExtractAssets
+import com.yuanshiguang.model.CustomTaskAction
+import com.yuanshiguang.model.TaskAction
+import com.yuanshiguang.model.TriggerInfo
+import com.yuanshiguang.scene_mode.TriggerManager
+import com.yuanshiguang.store.TriggerStorage
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_trigger.*
 import java.io.File
 import java.io.FilenameFilter

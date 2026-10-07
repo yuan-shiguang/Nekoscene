@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.app.Activity
 import android.content.Intent
@@ -9,12 +9,12 @@ import android.os.StatFs
 import android.widget.AdapterView
 import android.widget.SimpleAdapter
 import android.widget.Toast
-import com.omarea.Scene
-import com.omarea.common.shared.FilePathResolver
-import com.omarea.common.ui.DialogHelper
-import com.omarea.shell_utils.BackupRestoreUtils
-import com.omarea.utils.CommonCmds
-import com.omarea.vtools.R
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.shared.FilePathResolver
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.shell_utils.BackupRestoreUtils
+import com.yuanshiguang.utils.CommonCmds
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_img.*
 import java.io.File
 import java.util.*

@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -10,14 +10,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.*
-import com.omarea.Scene
-import com.omarea.common.ui.DialogHelper
-import com.omarea.library.shell.ProcessUtils
-import com.omarea.model.ProcessInfo
-import com.omarea.ui.AdapterProcess
-import com.omarea.utils.AppListHelper
-import com.omarea.vtools.R
-import com.omarea.vtools.dialogs.DialogSingleAppOptions
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.library.shell.ProcessUtils
+import com.yuanshiguang.model.ProcessInfo
+import com.yuanshiguang.ui.AdapterProcess
+import com.yuanshiguang.utils.AppListHelper
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.dialogs.DialogSingleAppOptions
 import kotlinx.android.synthetic.main.activty_process.*
 import java.util.*
 

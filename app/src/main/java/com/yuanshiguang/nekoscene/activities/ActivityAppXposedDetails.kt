@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.content.*
@@ -15,13 +15,13 @@ import android.widget.EditText
 import android.widget.Switch
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import com.omarea.common.ui.DialogHelper
-import com.omarea.store.SpfConfig
-import com.omarea.store.XposedExtension
-import com.omarea.ui.IntInputFilter
-import com.omarea.vaddin.IAppConfigAidlInterface
-import com.omarea.vtools.R
-import com.omarea.xposed.XposedCheck
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.store.XposedExtension
+import com.yuanshiguang.ui.IntInputFilter
+import com.yuanshiguang.vaddin.IAppConfigAidlInterface
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.xposed.XposedCheck
 import kotlinx.android.synthetic.main.activity_app_xposed_details.*
 import org.json.JSONObject
 
@@ -39,7 +39,7 @@ class ActivityAppXposedDetails : ActivityBase() {
         var code = 0
         try {
             val manager = getPackageManager()
-            val info = manager.getPackageInfo("com.omarea.vaddin", 0)
+            val info = manager.getPackageInfo("com.yuanshiguang.vaddin", 0)
             code = info.versionCode
         } catch (e: PackageManager.NameNotFoundException) {
             e.printStackTrace()
@@ -127,9 +127,9 @@ class ActivityAppXposedDetails : ActivityBase() {
         try {
             val intent = Intent();
             //绑定服务端的service
-            intent.setAction("com.omarea.vaddin.ConfigUpdateService");
+            intent.setAction("com.yuanshiguang.vaddin.ConfigUpdateService");
             //新版本（5.0后）必须显式intent启动 绑定服务
-            intent.setComponent(ComponentName("com.omarea.vaddin", "com.omarea.vaddin.ConfigUpdateService"));
+            intent.setComponent(ComponentName("com.yuanshiguang.vaddin", "com.yuanshiguang.vaddin.ConfigUpdateService"));
             //绑定的时候服务端自动创建
             if (bindService(intent, conn, Context.BIND_AUTO_CREATE)) {
             } else {
@@ -158,7 +158,7 @@ class ActivityAppXposedDetails : ActivityBase() {
         var allowXposedConfig = XposedCheck.xposedIsRunning()
         app_details_vaddins_notactive.visibility = if (allowXposedConfig) View.GONE else View.VISIBLE
         try {
-            vAddinsInstalled = packageManager.getPackageInfo("com.omarea.vaddin", 0) != null
+            vAddinsInstalled = packageManager.getPackageInfo("com.yuanshiguang.vaddin", 0) != null
             allowXposedConfig = allowXposedConfig && vAddinsInstalled
         } catch (ex: Exception) {
             vAddinsInstalled = false

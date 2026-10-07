@@ -1,13 +1,13 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.content.Context
 import android.os.Build
-import com.omarea.Scene
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.KernelProrp
-import com.omarea.common.shell.RootFile
-import com.omarea.model.BatteryStatus
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KernelProrp
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.model.BatteryStatus
 
 /**
  * Created by Hello on 2017/11/01.

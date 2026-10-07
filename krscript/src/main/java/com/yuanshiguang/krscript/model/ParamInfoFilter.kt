@@ -1,4 +1,4 @@
-package com.omarea.krscript.model
+package com.yuanshiguang.krscript.model
 
 import android.text.InputFilter
 import android.text.Spanned

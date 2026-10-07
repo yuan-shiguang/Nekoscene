@@ -1,11 +1,11 @@
-package com.omarea.ui.charge
+package com.yuanshiguang.ui.charge
 
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import com.omarea.store.ChargeSpeedStore
-import com.omarea.vtools.R
+import com.yuanshiguang.store.ChargeSpeedStore
+import com.yuanshiguang.nekoscene.R
 
 class ChargeTempView : View {
     private lateinit var storage: ChargeSpeedStore

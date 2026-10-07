@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.content.pm.ApplicationInfo
@@ -12,14 +12,14 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.AdapterView
 import android.widget.CheckBox
-import com.omarea.common.shell.KeepShell
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.krscript.FileOwner
-import com.omarea.library.basic.UninstalledApp
-import com.omarea.model.AppInfo
-import com.omarea.ui.AdapterAppList
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShell
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.krscript.FileOwner
+import com.yuanshiguang.library.basic.UninstalledApp
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.ui.AdapterAppList
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_app_retrieve.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

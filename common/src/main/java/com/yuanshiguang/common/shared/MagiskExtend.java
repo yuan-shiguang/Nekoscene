@@ -1,9 +1,9 @@
-package com.omarea.common.shared;
+package com.yuanshiguang.common.shared;
 
 import android.content.Context;
 
-import com.omarea.common.shell.KeepShellPublic;
-import com.omarea.common.shell.RootFile;
+import com.yuanshiguang.common.shell.KeepShellPublic;
+import com.yuanshiguang.common.shell.RootFile;
 
 import java.io.File;
 

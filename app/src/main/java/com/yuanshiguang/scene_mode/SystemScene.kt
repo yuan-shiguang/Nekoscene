@@ -1,4 +1,4 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.ComponentName
 import android.content.Context
@@ -7,10 +7,10 @@ import android.content.SharedPreferences
 import android.net.wifi.WifiManager
 import android.os.Build
 import android.provider.Settings
-import com.omarea.common.shell.KeepShellAsync
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.library.shell.LocationHelper
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.common.shell.KeepShellAsync
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.library.shell.LocationHelper
+import com.yuanshiguang.store.SpfConfig
 
 
 /**
@@ -142,7 +142,7 @@ class SystemScene(private var context: Context) {
             return
         }
         if (lowPowerModeShell!!.isEmpty()) {
-            lowPowerModeShell = com.omarea.common.shared.FileWrite.writePrivateShellFile("addin/power_save_set.sh", "addin/power_save_set.sh", context)
+            lowPowerModeShell = com.yuanshiguang.common.shared.FileWrite.writePrivateShellFile("addin/power_save_set.sh", "addin/power_save_set.sh", context)
         }
         if (lowPowerModeShell.isNullOrEmpty()) {
             return

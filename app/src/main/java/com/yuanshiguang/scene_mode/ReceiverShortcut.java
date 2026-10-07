@@ -1,4 +1,4 @@
-package com.omarea.scene_mode;
+package com.yuanshiguang.scene_mode;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 
-import com.omarea.store.SpfConfig;
+import com.yuanshiguang.store.SpfConfig;
 
 // 应用偏见（添加完快捷方式后冻结应用）
 public class ReceiverShortcut extends BroadcastReceiver {

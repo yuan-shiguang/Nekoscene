@@ -1,9 +1,9 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
-import com.omarea.common.shell.KeepShell
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.KernelProrp
-import com.omarea.common.shell.RootFile
+import com.yuanshiguang.common.shell.KeepShell
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KernelProrp
+import com.yuanshiguang.common.shell.RootFile
 
 /**
  * Created by Hello on 2018/08/05.

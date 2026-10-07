@@ -1,4 +1,4 @@
-package com.omarea.krscript.config
+package com.yuanshiguang.krscript.config
 
 import android.content.Context
 import android.graphics.Color
@@ -9,11 +9,11 @@ import android.text.Layout
 import android.util.Log
 import android.util.Xml
 import android.widget.Toast
-import com.omarea.common.model.SelectItem
-import com.omarea.common.shared.ResourceStringResolver
-import com.omarea.krscript.executor.ExtractAssets
-import com.omarea.krscript.executor.ScriptEnvironmen
-import com.omarea.krscript.model.*
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.common.shared.ResourceStringResolver
+import com.yuanshiguang.krscript.executor.ExtractAssets
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen
+import com.yuanshiguang.krscript.model.*
 import org.xmlpull.v1.XmlPullParser
 import java.io.InputStream
 import java.util.*

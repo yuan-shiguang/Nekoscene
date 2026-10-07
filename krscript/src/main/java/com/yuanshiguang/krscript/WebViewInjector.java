@@ -1,4 +1,4 @@
-package com.omarea.krscript;
+package com.yuanshiguang.krscript;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -15,15 +15,15 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.Toast;
 
-import com.omarea.common.shell.KeepShellPublic;
-import com.omarea.common.shell.ShellExecutor;
-import com.omarea.common.ui.DialogHelper;
-import com.omarea.krscript.downloader.Downloader;
-import com.omarea.krscript.executor.ExtractAssets;
-import com.omarea.krscript.executor.ScriptEnvironmen;
-import com.omarea.krscript.model.NodeInfoBase;
-import com.omarea.krscript.model.ShellHandlerBase;
-import com.omarea.krscript.ui.ParamsFileChooserRender;
+import com.yuanshiguang.common.shell.KeepShellPublic;
+import com.yuanshiguang.common.shell.ShellExecutor;
+import com.yuanshiguang.common.ui.DialogHelper;
+import com.yuanshiguang.krscript.downloader.Downloader;
+import com.yuanshiguang.krscript.executor.ExtractAssets;
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen;
+import com.yuanshiguang.krscript.model.NodeInfoBase;
+import com.yuanshiguang.krscript.model.ShellHandlerBase;
+import com.yuanshiguang.krscript.ui.ParamsFileChooserRender;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

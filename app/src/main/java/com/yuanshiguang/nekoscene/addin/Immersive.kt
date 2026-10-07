@@ -1,8 +1,8 @@
-package com.omarea.vtools.addin
+package com.yuanshiguang.nekoscene.addin
 
-import com.omarea.common.model.SelectItem
-import com.omarea.common.ui.DialogItemChooser
-import com.omarea.vtools.activities.ActivityBase
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.common.ui.DialogItemChooser
+import com.yuanshiguang.nekoscene.activities.ActivityBase
 
 /**
  * Created by Hello on 2017/11/01.

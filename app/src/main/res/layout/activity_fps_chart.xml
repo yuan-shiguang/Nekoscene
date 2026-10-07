@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/layout_app_bar">
@@ -349,7 +349,7 @@
                         app:tint="#87d3ff" />
                 </LinearLayout>
 
-                <com.omarea.ui.fps.FpsDataView
+                <com.yuanshiguang.ui.fps.FpsDataView
                     android:layout_marginTop="4dp"
                     android:layout_below="@id/chart_dimension"
                     android:id="@+id/chart_session"
@@ -358,6 +358,6 @@
 
             </RelativeLayout>
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 
 </RelativeLayout>

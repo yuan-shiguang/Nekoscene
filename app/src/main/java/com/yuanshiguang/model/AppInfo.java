@@ -1,8 +1,8 @@
-package com.omarea.model;
+package com.yuanshiguang.model;
 
 import android.graphics.drawable.Drawable;
 
-import com.omarea.common.ui.AdapterAppChooser;
+import com.yuanshiguang.common.ui.AdapterAppChooser;
 
 /**
  * 应用信息

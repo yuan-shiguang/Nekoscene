@@ -1,4 +1,4 @@
-package com.omarea.ui.fps
+package com.yuanshiguang.ui.fps
 
 import android.content.Context
 import android.graphics.Canvas
@@ -7,8 +7,8 @@ import android.graphics.DashPathEffect
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import com.omarea.store.FpsWatchStore
-import com.omarea.vtools.R
+import com.yuanshiguang.store.FpsWatchStore
+import com.yuanshiguang.nekoscene.R
 
 class FpsDataView : View {
     private lateinit var storage: FpsWatchStore

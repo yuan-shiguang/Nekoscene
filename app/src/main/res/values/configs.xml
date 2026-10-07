@@ -4,7 +4,7 @@
         <item>android</item>
         <item>com.android.systemui</item>
         <item>com.miui.freeform</item>
-        <item>com.omarea.vtools</item>
+        <item>com.yuanshiguang.nekoscene</item>
         <item>com.miui.touchassistant</item>
         <item>com.miui.contentextension</item>
         <item>com.miui.systemAdSolution</item>
@@ -12,7 +12,7 @@
         <item>com.android.permissioncontroller</item>
         <item>com.lbe.security.miui</item>
         <item>com.miui.aod</item>
-        <item>com.omarea.gesture</item>
+        <item>com.yuanshiguang.gesture</item>
     </string-array>
     <string-array name="powercfg_igoned">
         <item>com.miui.home</item>
@@ -173,14 +173,14 @@
 
     <!--待机模式强制排除名单-->
     <string-array name="scene_standby_white_list">
-        <item>com.omarea.vtools</item>
-        <item>com.omarea.gesture</item>
-        <item>com.omarea.filter</item>
+        <item>com.yuanshiguang.nekoscene</item>
+        <item>com.yuanshiguang.gesture</item>
+        <item>com.yuanshiguang.filter</item>
         <item>com.topjohnwu.magisk</item>
         <item>org.meowcat.edxposed.manager</item>
         <item>com.mi.android.globallauncher </item>
         <item>com.pittvandewitt.viperfx</item>
-        <item>com.omarea.vaddin</item>
+        <item>com.yuanshiguang.vaddin</item>
     </string-array>
 
     <string name="toolkit_install_path">toolkit</string>

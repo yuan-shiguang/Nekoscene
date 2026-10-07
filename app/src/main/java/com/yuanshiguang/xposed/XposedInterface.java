@@ -1,4 +1,4 @@
-package com.omarea.xposed;
+package com.yuanshiguang.xposed;
 
 import android.app.Activity;
 import android.app.Notification;
@@ -11,8 +11,8 @@ import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Display;
 
-import com.omarea.store.XposedExtension;
-import com.omarea.xposed.wx.WeChatScanHook;
+import com.yuanshiguang.store.XposedExtension;
+import com.yuanshiguang.xposed.wx.WeChatScanHook;
 
 import org.json.JSONObject;
 
@@ -73,7 +73,7 @@ public class XposedInterface implements IXposedHookLoadPackage, IXposedHookZygot
 
     @Override
     public void initZygote(IXposedHookZygoteInit.StartupParam startupParam) throws Throwable {
-        prefs = new XSharedPreferences("com.omarea.vaddin", "xposed");
+        prefs = new XSharedPreferences("com.yuanshiguang.vaddin", "xposed");
 
         //强制绕开权限限制读取配置 因为SharedPreferences在Android N中不能设置为MODE_WORLD_READABLE
         prefs.makeWorldReadable();
@@ -131,8 +131,8 @@ public class XposedInterface implements IXposedHookLoadPackage, IXposedHookZygot
         // 专属选项
         switch (packageName) {
             // 用于检查xposed是否激活
-            case "com.omarea.vtools":
-            case "com.omarea.vboot":
+            case "com.yuanshiguang.nekoscene":
+            case "com.yuanshiguang.vboot":
                 new ActiveCheck().isActive(loadPackageParam);
                 break;
             case "com.tencent.mm": {

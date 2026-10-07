@@ -1,10 +1,10 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.content.Context
 import android.util.Log
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.*
-import com.omarea.model.ZramWriteBackStat
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.*
+import com.yuanshiguang.model.ZramWriteBackStat
 import java.io.File
 
 /**

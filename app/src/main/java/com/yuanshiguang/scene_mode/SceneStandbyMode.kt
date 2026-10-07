@@ -1,11 +1,11 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.Context
-import com.omarea.common.shell.KeepShell
-import com.omarea.model.AppInfo.AppType.SYSTEM
-import com.omarea.model.AppInfo.AppType.USER
-import com.omarea.utils.AppListHelper
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShell
+import com.yuanshiguang.model.AppInfo.AppType.SYSTEM
+import com.yuanshiguang.model.AppInfo.AppType.USER
+import com.yuanshiguang.utils.AppListHelper
+import com.yuanshiguang.nekoscene.R
 
 class SceneStandbyMode(private val context: Context, private val keepShell: KeepShell) {
     companion object {

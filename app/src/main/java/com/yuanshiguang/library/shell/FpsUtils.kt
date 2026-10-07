@@ -1,8 +1,8 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
-import com.omarea.common.shell.KeepShell
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile.fileExists
+import com.yuanshiguang.common.shell.KeepShell
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile.fileExists
 
 /**
  * 帧率检测

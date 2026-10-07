@@ -1,6 +1,6 @@
-package com.omarea.model;
+package com.yuanshiguang.model;
 
-import com.omarea.data.EventType;
+import com.yuanshiguang.data.EventType;
 
 import java.io.Serializable;
 import java.util.ArrayList;

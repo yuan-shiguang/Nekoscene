@@ -1,4 +1,4 @@
-package com.omarea.vtools.fragments
+package com.yuanshiguang.nekoscene.fragments
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -16,23 +16,23 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import com.omarea.Scene
-import com.omarea.common.shared.FilePathResolver
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ThemeMode
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.krscript.model.PageNode
-import com.omarea.library.shell.ThermalDisguise
-import com.omarea.permissions.CheckRootStatus
-import com.omarea.scene_mode.CpuConfigInstaller
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.store.SpfConfig
-import com.omarea.utils.AccessibleServiceHelper
-import com.omarea.vtools.R
-import com.omarea.vtools.activities.*
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.shared.FilePathResolver
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ThemeMode
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.krscript.model.PageNode
+import com.yuanshiguang.library.shell.ThermalDisguise
+import com.yuanshiguang.permissions.CheckRootStatus
+import com.yuanshiguang.scene_mode.CpuConfigInstaller
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.AccessibleServiceHelper
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.activities.*
 import com.projectkr.shell.OpenPageHelper
 import kotlinx.android.synthetic.main.fragment_cpu_modes.*
 import java.io.File
@@ -223,7 +223,7 @@ class FragmentCpuModes : Fragment() {
                 if (AccessibleServiceHelper().serviceRunning(context!!)) {
                     val intent = Intent(Intent.ACTION_VIEW)
                     intent.setClassName(
-                        "com.omarea.vtools", "com.omarea.vtools.activities.ActivityFreezeApps2"
+                        "com.yuanshiguang.nekoscene", "com.yuanshiguang.nekoscene.activities.ActivityFreezeApps2"
                     )
                     startActivity(intent)
                 } else {

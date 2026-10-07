@@ -1,4 +1,4 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -8,8 +8,8 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.LayerDrawable
 import android.os.Build
-import com.omarea.common.shared.BitmapUtil
-import com.omarea.common.shared.FileWrite
+import com.yuanshiguang.common.shared.BitmapUtil
+import com.yuanshiguang.common.shared.FileWrite
 
 public class LogoCacheManager(private var context: Context) {
     private fun drawableToBitmap(drawable: Drawable): Bitmap? {

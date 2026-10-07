@@ -1,4 +1,4 @@
-package com.omarea.data.publisher
+package com.yuanshiguang.data.publisher
 
 import android.app.KeyguardManager
 import android.content.BroadcastReceiver
@@ -8,8 +8,8 @@ import android.content.IntentFilter
 import android.os.Build
 import android.os.Handler
 import android.os.Looper
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
 
 /**
  * 监听屏幕开关事件

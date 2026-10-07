@@ -1,4 +1,4 @@
-package com.omarea.xposed.wx;
+package com.yuanshiguang.xposed.wx;
 
 import android.app.Activity;
 import android.graphics.Color;

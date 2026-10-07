@@ -1,13 +1,13 @@
-package com.omarea.shell_utils
+package com.yuanshiguang.shell_utils
 
 import android.app.Activity
 import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.utils.CommonCmds
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.utils.CommonCmds
 
 /**
  * Created by Hello on 2017/11/01.

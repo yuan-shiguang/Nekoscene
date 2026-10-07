@@ -1,12 +1,12 @@
-package com.omarea.ui.power
+package com.yuanshiguang.ui.power
 
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
 import android.view.View
-import com.omarea.model.PowerHistory
-import com.omarea.store.BatteryHistoryStore
-import com.omarea.vtools.R
+import com.yuanshiguang.model.PowerHistory
+import com.yuanshiguang.store.BatteryHistoryStore
+import com.yuanshiguang.nekoscene.R
 
 class PowerTimeView : View {
     private lateinit var storage: BatteryHistoryStore

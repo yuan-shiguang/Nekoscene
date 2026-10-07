@@ -31,7 +31,7 @@
             android:singleLine="true"
             android:textSize="16dp" />
 
-        <com.omarea.common.ui.OverScrollGridView
+        <com.yuanshiguang.common.ui.OverScrollGridView
             android:layout_marginTop="10dp"
             android:background="@drawable/list_view_bg"
             android:layout_below="@id/freeze_apps_search"

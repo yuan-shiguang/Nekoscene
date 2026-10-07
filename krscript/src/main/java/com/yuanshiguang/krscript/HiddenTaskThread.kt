@@ -1,12 +1,12 @@
-package com.omarea.krscript
+package com.yuanshiguang.krscript
 
 import android.content.Context
 import android.os.Bundle
 import android.text.SpannableString
 import android.widget.Toast
-import com.omarea.krscript.executor.ShellExecutor
-import com.omarea.krscript.model.RunnableNode
-import com.omarea.krscript.model.ShellHandlerBase
+import com.yuanshiguang.krscript.executor.ShellExecutor
+import com.yuanshiguang.krscript.model.RunnableNode
+import com.yuanshiguang.krscript.model.ShellHandlerBase
 
 class HiddenTaskThread(private var process: Process) : Thread() {
     override fun run() {

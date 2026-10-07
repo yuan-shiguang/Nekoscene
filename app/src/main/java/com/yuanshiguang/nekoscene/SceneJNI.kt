@@ -1,4 +1,4 @@
-package com.omarea.vtools
+package com.yuanshiguang.nekoscene
 
 class SceneJNI {
     external fun getKernelPropLong(path: String): Long

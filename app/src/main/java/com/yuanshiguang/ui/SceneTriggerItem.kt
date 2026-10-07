@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
-import com.omarea.data.EventType
-import com.omarea.model.TaskAction
-import com.omarea.model.TriggerInfo
-import com.omarea.vtools.R
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.model.TaskAction
+import com.yuanshiguang.model.TriggerInfo
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.list_scene_task_item.view.*
 
 class SceneTriggerItem : LinearLayout {

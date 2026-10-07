@@ -1,14 +1,14 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.app.Activity
 import android.view.View
 import android.widget.CompoundButton
 import android.widget.Toast
-import com.omarea.Scene
-import com.omarea.common.ui.DialogHelper
-import com.omarea.utils.AccessibleServiceHelper
-import com.omarea.vtools.R
-import com.omarea.vtools.popup.*
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.utils.AccessibleServiceHelper
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.popup.*
 
 class DialogMonitor(var context: Activity) {
     fun show() {

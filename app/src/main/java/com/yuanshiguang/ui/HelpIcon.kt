@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.content.Context
 import android.util.AttributeSet
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageButton
 import android.widget.RelativeLayout
-import com.omarea.common.ui.DialogHelper
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
 
 class HelpIcon : RelativeLayout {
     private fun init(context: Context?, attrs: AttributeSet?) {

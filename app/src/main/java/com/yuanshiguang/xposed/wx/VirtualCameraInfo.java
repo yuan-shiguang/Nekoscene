@@ -1,4 +1,4 @@
-package com.omarea.xposed.wx;
+package com.yuanshiguang.xposed.wx;
 
 public class VirtualCameraInfo {
     public VirtualCameraInfo(int cameraId, double zoomRatio) {

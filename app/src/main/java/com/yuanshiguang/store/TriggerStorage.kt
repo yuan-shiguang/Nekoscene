@@ -1,8 +1,8 @@
-package com.omarea.store
+package com.yuanshiguang.store
 
 import android.content.Context
-import com.omarea.common.shared.ObjectStorage
-import com.omarea.model.TriggerInfo
+import com.yuanshiguang.common.shared.ObjectStorage
+import com.yuanshiguang.model.TriggerInfo
 
 class TriggerStorage(private val context: Context) : ObjectStorage<TriggerInfo>(context) {
     override public fun load(configFile: String): TriggerInfo? {

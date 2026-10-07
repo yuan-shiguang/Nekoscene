@@ -220,7 +220,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.omarea.ui.UMExpandLayout
+        <com.yuanshiguang.ui.UMExpandLayout
             android:id="@+id/freeze_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -236,7 +236,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="冻结应用时不隐藏桌面图标，而仅仅将其置灰（与应用管理中的[暂停使用]效果相同），从而避免冻结应用时破坏桌面布局，此功能需要Android P+" />
@@ -258,10 +258,10 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:text="Scene作为Xposed模块激活[且被允许自启动]后，以下桌面可直接打开冻结的应用：\n一加桌面、一加Hydrogen桌面、一加氢桌面\nLawnchair测试版、Lawnchair魔趣版\nMIUI桌面、POCO桌面、MIUI全局搜索\nLineageOS Trebuchet\n系统设置、Pixel 启动器\n\n开启授权通融后，则所有应用都可以打开冻结的应用" />
+                        app:text="Nekoscene作为Xposed模块激活[且被允许自启动]后，以下桌面可直接打开冻结的应用：\n一加桌面、一加Hydrogen桌面、一加氢桌面\nLawnchair测试版、Lawnchair魔趣版\nMIUI桌面、POCO桌面、MIUI全局搜索\nLineageOS Trebuchet\n系统设置、Pixel 启动器\n\n开启授权通融后，则所有应用都可以打开冻结的应用" />
 
                     <Switch
                         android:id="@+id/freeze_any_unfreeze"
@@ -278,7 +278,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="离开应用界面超过此时间后冻结，0表示不限制。锁屏1分钟后自动冻结所有偏见应用，不受此设置影响！" />
@@ -324,7 +324,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="有未添加快捷方式到桌面的偏见应用时，弹出添加快捷方式提示" />
@@ -344,7 +344,7 @@
                     android:gravity="center_vertical"
                     android:orientation="horizontal">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="在桌面显示“应用偏见”管理界面快捷入口" />
@@ -357,7 +357,7 @@
                         android:text="桌面快捷入口" />
                 </LinearLayout>
             </LinearLayout>
-        </com.omarea.ui.UMExpandLayout>
+        </com.yuanshiguang.ui.UMExpandLayout>
         <ImageView
             android:layout_marginTop="8dp"
             android:layout_marginBottom="@dimen/activity_vertical_margin"

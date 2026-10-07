@@ -1,4 +1,4 @@
-package com.omarea.common.shell
+package com.yuanshiguang.common.shell
 
 import android.os.Handler
 import java.nio.charset.Charset

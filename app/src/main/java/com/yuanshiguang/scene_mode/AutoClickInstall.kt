@@ -1,10 +1,10 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
 import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.store.SpfConfig
 import java.util.*
 
 /**

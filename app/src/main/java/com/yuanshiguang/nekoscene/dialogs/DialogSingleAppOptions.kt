@@ -1,4 +1,4 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.app.Activity
 import android.content.ClipboardManager
@@ -14,11 +14,11 @@ import android.widget.CompoundButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import com.omarea.common.shared.MagiskExtend
-import com.omarea.common.ui.DialogHelper
-import com.omarea.model.AppInfo
-import com.omarea.utils.CommonCmds
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.MagiskExtend
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.utils.CommonCmds
+import com.yuanshiguang.nekoscene.R
 import java.io.File
 
 /**

@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.app.Activity
 import android.graphics.drawable.Drawable
@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.omarea.vtools.R
+import com.yuanshiguang.nekoscene.R
 
 class TabIconHelper2(
         private var tabLayout: TabLayout,

@@ -1,11 +1,11 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.content.Context
 import android.view.View
 import android.widget.ImageView
-import com.omarea.krscript.R
-import com.omarea.krscript.config.IconPathAnalysis
-import com.omarea.krscript.model.ClickableNode
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.config.IconPathAnalysis
+import com.yuanshiguang.krscript.model.ClickableNode
 
 open class ListItemClickable(context: Context,
                              layoutId: Int,

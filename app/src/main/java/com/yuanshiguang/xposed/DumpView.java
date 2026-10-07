@@ -1,4 +1,4 @@
-package com.omarea.xposed;
+package com.yuanshiguang.xposed;
 
 import android.view.View;
 import android.view.ViewGroup;

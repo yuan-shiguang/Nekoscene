@@ -1,6 +1,6 @@
-package com.omarea.library.shell;
+package com.yuanshiguang.library.shell;
 
-import com.omarea.common.shell.KernelProrp;
+import com.yuanshiguang.common.shell.KernelProrp;
 
 public class MemoryUtils {
     public static class MemoryInfo {

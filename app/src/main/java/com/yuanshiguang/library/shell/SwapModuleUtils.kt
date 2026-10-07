@@ -1,9 +1,9 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.content.SharedPreferences
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.store.SpfConfig
 
 /*
 # 配置示例

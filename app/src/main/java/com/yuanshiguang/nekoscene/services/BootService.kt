@@ -1,4 +1,4 @@
-package com.omarea.vtools.services
+package com.yuanshiguang.nekoscene.services
 
 import android.app.ActivityManager
 import android.app.IntentService
@@ -10,22 +10,22 @@ import android.content.SharedPreferences
 import android.os.Build
 import android.os.PowerManager
 import androidx.core.app.NotificationCompat
-import com.omarea.common.shared.RawText
-import com.omarea.common.shell.KeepShell
-import com.omarea.common.shell.KernelProrp
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.library.shell.BatteryUtils
-import com.omarea.library.shell.LMKUtils
-import com.omarea.library.shell.PropsUtils
-import com.omarea.library.shell.SwapUtils
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.scene_mode.SceneMode
-import com.omarea.store.CpuConfigStorage
-import com.omarea.store.SceneConfigStore
-import com.omarea.store.SpfConfig
-import com.omarea.utils.CommonCmds
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.RawText
+import com.yuanshiguang.common.shell.KeepShell
+import com.yuanshiguang.common.shell.KernelProrp
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.library.shell.BatteryUtils
+import com.yuanshiguang.library.shell.LMKUtils
+import com.yuanshiguang.library.shell.PropsUtils
+import com.yuanshiguang.library.shell.SwapUtils
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.scene_mode.SceneMode
+import com.yuanshiguang.store.CpuConfigStorage
+import com.yuanshiguang.store.SceneConfigStore
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.CommonCmds
+import com.yuanshiguang.nekoscene.R
 
 /**
  * Created by Hello on 2017/12/27.

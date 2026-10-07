@@ -1,0 +1,60 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ master, scene5 ]
+  pull_request:
+    branches: [ master, scene5 ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Set up JDK 11
+      uses: actions/setup-java@v4
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: gradle
+
+    # 用 sdkmanager 安装与 app/build.gradle 中 ndkVersion 完全一致的 NDK，
+    # 使其落在 $ANDROID_SDK_ROOT/ndk/23.1.7779620，AGP 才能按版本号找到。
+    # （原本的 nttld/setup-ndk@v1 把 NDK 装到了非标准目录，AGP 按 ndkVersion 找不到，
+    #  导致 “No version of NDK matched the requested version 23.1.7779620” 配置失败。）
+    - name: Install NDK 23.1.7779620
+      run: |
+        SDKMANAGER="${ANDROID_SDK_ROOT:-$ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager"
+        yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+        yes | "$SDKMANAGER" "ndk;23.1.7779620"
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Build with Gradle
+      run: ./gradlew assembleRelease
+
+    - name: Upload APK artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: scene-dev
+        path: ${{ github.workspace }}/app/build/outputs/apk/release/app-release.apk
+
+    # 注：以下 Deploy 步骤仍指向上游 helloklf/vtools-dev-apks，且依赖 secrets.ACCESS_TOKEN。
+    # 在自己的 fork 上通常不应推送到上游仓库，故设为 continue-on-error 以免阻断构建结果。
+    # 如需自动发布 APK，请把 GITHUB_REPO 改成你自己的仓库，并在仓库 Secrets 中配置 ACCESS_TOKEN。
+    - name: Deploy
+      continue-on-error: true
+      env:
+        GITHUB_REPO: github.com/helloklf/vtools-dev-apks.git
+      run: |
+        cd ${{ github.workspace }}/app/build/outputs/apk/release/
+        git init
+        git config user.name "yuan-shiguang"
+        git config user.email "385325061@qq.com"
+        git add .
+        git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+        git push --force --quiet "https://${{ secrets.ACCESS_TOKEN }}@$GITHUB_REPO" master:master

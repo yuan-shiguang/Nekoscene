@@ -1,4 +1,4 @@
-package com.omarea.ui;
+package com.yuanshiguang.ui;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,10 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
-import com.omarea.common.shared.RootFileInfo;
-import com.omarea.common.ui.DialogHelper;
-import com.omarea.common.ui.ProgressBarDialog;
-import com.omarea.vtools.R;
+import com.yuanshiguang.common.shared.RootFileInfo;
+import com.yuanshiguang.common.ui.DialogHelper;
+import com.yuanshiguang.common.ui.ProgressBarDialog;
+import com.yuanshiguang.nekoscene.R;
 
 import java.util.ArrayList;
 

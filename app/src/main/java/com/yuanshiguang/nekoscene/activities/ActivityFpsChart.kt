@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.graphics.Color
@@ -12,14 +12,14 @@ import android.text.style.StyleSpan
 import android.view.View
 import android.webkit.*
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.omarea.common.ui.DialogHelper
-import com.omarea.library.basic.AppInfoLoader
-import com.omarea.library.shell.PlatformUtils
-import com.omarea.store.FpsWatchStore
-import com.omarea.ui.fps.AdapterSessions
-import com.omarea.ui.fps.FpsDataView
-import com.omarea.vtools.R
-import com.omarea.vtools.popup.FloatFpsWatch
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.library.basic.AppInfoLoader
+import com.yuanshiguang.library.shell.PlatformUtils
+import com.yuanshiguang.store.FpsWatchStore
+import com.yuanshiguang.ui.fps.AdapterSessions
+import com.yuanshiguang.ui.fps.FpsDataView
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.popup.FloatFpsWatch
 import kotlinx.android.synthetic.main.activity_fps_chart.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

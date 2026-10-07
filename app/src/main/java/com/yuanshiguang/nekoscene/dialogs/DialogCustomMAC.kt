@@ -1,4 +1,4 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -6,11 +6,11 @@ import android.view.LayoutInflater
 import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.Toast
-import com.omarea.common.shared.RawText
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.ui.DialogHelper
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.RawText
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
 
 /**
  * Created by Hello on 2018/01/17.

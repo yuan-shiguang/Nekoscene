@@ -1,4 +1,4 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.Intent
 import android.graphics.drawable.Icon
@@ -6,8 +6,8 @@ import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import androidx.annotation.RequiresApi
-import com.omarea.vtools.R
-import com.omarea.vtools.activities.ActivityPowerModeTile
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.activities.ActivityPowerModeTile
 
 @RequiresApi(api = Build.VERSION_CODES.N)
 class SceneTileService : TileService() {

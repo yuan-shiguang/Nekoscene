@@ -1,8 +1,8 @@
-package com.omarea.shell_utils;
+package com.yuanshiguang.shell_utils;
 
 import android.util.Log;
 
-import com.omarea.common.shell.ShellExecutor;
+import com.yuanshiguang.common.shell.ShellExecutor;
 
 import java.io.BufferedReader;
 import java.io.DataOutputStream;

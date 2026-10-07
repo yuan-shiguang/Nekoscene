@@ -1,6 +1,6 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 class DDRUtils() {
     fun getDDRType(): Int {

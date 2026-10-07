@@ -1,4 +1,4 @@
-package com.omarea.library.permissions
+package com.yuanshiguang.library.permissions
 
 import android.Manifest
 import android.content.Context
@@ -6,7 +6,7 @@ import android.os.Build
 import android.os.Environment
 import android.provider.Settings
 import androidx.core.content.PermissionChecker
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 class GeneralPermissions(private val context: Context) {
     private fun checkPermission(permission: String): Boolean = PermissionChecker.checkSelfPermission(context, permission) == PermissionChecker.PERMISSION_GRANTED

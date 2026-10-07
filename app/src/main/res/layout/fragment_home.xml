@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:padding="8dp">
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:id="@+id/home_root"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -43,7 +43,7 @@
                         android:text="Memory"
                         android:textSize="12.5dp" />
 
-                    <com.omarea.ui.MemoryChartView
+                    <com.yuanshiguang.ui.MemoryChartView
                         android:alpha="0.7"
                         android:id="@+id/home_memory_total"
                         android:layout_width="100dp"
@@ -61,7 +61,7 @@
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <com.omarea.ui.RamBarView
+                        <com.yuanshiguang.ui.RamBarView
                             android:layout_toStartOf="@+id/home_memory_clear"
                             android:alpha="0.4"
                             android:id="@+id/home_ramstat"
@@ -101,7 +101,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                        <com.omarea.ui.RamBarView
+                        <com.yuanshiguang.ui.RamBarView
                             android:layout_toStartOf="@+id/home_memory_compact"
                             android:alpha="0.4"
                             android:id="@+id/home_swapstat"
@@ -187,7 +187,7 @@
                     android:layout_width="100dp"
                     android:layout_height="100dp">
 
-                    <com.omarea.ui.CpuChartView
+                    <com.yuanshiguang.ui.CpuChartView
                         android:id="@+id/home_gpu_chat"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -286,7 +286,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="85dp">
 
-                            <com.omarea.ui.CpuBigBarView
+                            <com.yuanshiguang.ui.CpuBigBarView
                                 android:layout_gravity="center_vertical"
                                 android:id="@+id/home_cpu_chat"
                                 android:layout_width="125dp"
@@ -337,7 +337,7 @@
                     android:layout_height="1dp"
                     android:background="#44888888" />
 
-                <com.omarea.common.ui.OverScrollGridView
+                <com.yuanshiguang.common.ui.OverScrollGridView
                     android:id="@+id/cpu_core_list"
                     android:layout_width="match_parent"
                     android:layout_height="170dp"
@@ -555,12 +555,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_weight="1"
-                            android:text="访问Scene官网"
+                            android:text="访问Nekoscene官网"
                             android:textColor="#ff888888" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 </LinearLayout>

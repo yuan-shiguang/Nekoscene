@@ -1,9 +1,9 @@
-package com.omarea.kr;
+package com.yuanshiguang.kr;
 
 import android.content.Context;
 
-import com.omarea.krscript.executor.ScriptEnvironmen;
-import com.omarea.krscript.model.PageNode;
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen;
+import com.yuanshiguang.krscript.model.PageNode;
 
 import java.io.InputStream;
 import java.nio.charset.Charset;

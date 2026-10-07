@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/layout_app_bar">
@@ -36,7 +36,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_weight="1">
 
-                    <com.omarea.ui.BatteryView
+                    <com.yuanshiguang.ui.BatteryView
                         android:layout_margin="@dimen/activity_vertical_margin"
                         android:id="@+id/battery_capacity_chart"
                         android:layout_width="140dp"
@@ -124,7 +124,7 @@
                     android:layout_height="wrap_content"
                     android:text="电池电流/电量" />
 
-                <com.omarea.ui.charge.ChargeCurveView
+                <com.yuanshiguang.ui.charge.ChargeCurveView
                     android:id="@+id/view_speed"
                     android:layout_width="match_parent"
                     android:layout_height="250dp" />
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:text="电量/时间" />
 
-                <com.omarea.ui.charge.ChargeTimeView
+                <com.yuanshiguang.ui.charge.ChargeTimeView
                     android:id="@+id/view_time"
                     android:layout_width="match_parent"
                     android:layout_height="250dp" />
@@ -158,7 +158,7 @@
                     android:layout_height="wrap_content"
                     android:text="温度/电量" />
 
-                <com.omarea.ui.charge.ChargeTempView
+                <com.yuanshiguang.ui.charge.ChargeTempView
                     android:id="@+id/view_temperature"
                     android:layout_width="match_parent"
                     android:layout_height="250dp" />
@@ -215,5 +215,5 @@
             </LinearLayout>
 
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 </RelativeLayout>

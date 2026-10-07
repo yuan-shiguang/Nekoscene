@@ -1,4 +1,4 @@
-package com.omarea.common.shared;
+package com.yuanshiguang.common.shared;
 
 import android.annotation.SuppressLint;
 import android.content.ContentUris;

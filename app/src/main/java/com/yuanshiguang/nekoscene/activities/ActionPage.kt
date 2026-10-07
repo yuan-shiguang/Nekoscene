@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.Manifest
 import android.app.Activity
@@ -14,20 +14,20 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
-import com.omarea.common.shared.FilePathResolver
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.krscript.TryOpenActivity
-import com.omarea.krscript.config.IconPathAnalysis
-import com.omarea.krscript.config.PageConfigReader
-import com.omarea.krscript.config.PageConfigSh
-import com.omarea.krscript.executor.ScriptEnvironmen
-import com.omarea.krscript.model.*
-import com.omarea.krscript.shortcut.ActionShortcutManager
-import com.omarea.krscript.ui.ActionListFragment
-import com.omarea.krscript.ui.DialogLogFragment
-import com.omarea.krscript.ui.PageMenuLoader
-import com.omarea.krscript.ui.ParamsFileChooserRender
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FilePathResolver
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.krscript.TryOpenActivity
+import com.yuanshiguang.krscript.config.IconPathAnalysis
+import com.yuanshiguang.krscript.config.PageConfigReader
+import com.yuanshiguang.krscript.config.PageConfigSh
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen
+import com.yuanshiguang.krscript.model.*
+import com.yuanshiguang.krscript.shortcut.ActionShortcutManager
+import com.yuanshiguang.krscript.ui.ActionListFragment
+import com.yuanshiguang.krscript.ui.DialogLogFragment
+import com.yuanshiguang.krscript.ui.PageMenuLoader
+import com.yuanshiguang.krscript.ui.ParamsFileChooserRender
+import com.yuanshiguang.nekoscene.R
 import com.projectkr.shell.OpenPageHelper
 import kotlinx.android.synthetic.main.activity_action_page.*
 

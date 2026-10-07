@@ -1,4 +1,4 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.ContentResolver
 import android.provider.Settings

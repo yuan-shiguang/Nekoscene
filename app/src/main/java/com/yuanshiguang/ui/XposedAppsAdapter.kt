@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.content.Context
 import android.graphics.Color
@@ -10,10 +10,10 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.TextView
-import com.omarea.common.ui.OverScrollListView
-import com.omarea.library.basic.AppInfoLoader
-import com.omarea.model.AppInfo
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.OverScrollListView
+import com.yuanshiguang.library.basic.AppInfoLoader
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.nekoscene.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

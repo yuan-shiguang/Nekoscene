@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -12,9 +12,9 @@ import android.widget.BaseAdapter
 import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
-import com.omarea.library.basic.AppInfoLoader
-import com.omarea.model.AppInfo
-import com.omarea.vtools.R
+import com.yuanshiguang.library.basic.AppInfoLoader
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.nekoscene.R
 import kotlinx.coroutines.*
 import java.util.ArrayList
 import java.util.HashMap

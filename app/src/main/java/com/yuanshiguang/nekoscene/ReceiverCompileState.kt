@@ -1,4 +1,4 @@
-package com.omarea.vtools
+package com.yuanshiguang.nekoscene
 
 import android.app.IntentService
 import android.app.NotificationChannel
@@ -8,7 +8,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import com.omarea.Scene
+import com.yuanshiguang.Scene
 
 
 class ReceiverCompileState : BroadcastReceiver() {

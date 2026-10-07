@@ -1,4 +1,4 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.app.AlertDialog
 import android.content.Context
@@ -9,9 +9,9 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.*
-import com.omarea.common.ui.DialogHelper
-import com.omarea.krscript.R
-import com.omarea.krscript.model.ActionParamInfo
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.model.ActionParamInfo
 
 class ParamsColorPicker(private val actionParamInfo: ActionParamInfo, private val context: Context) {
     fun render(): View {

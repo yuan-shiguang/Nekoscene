@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -9,12 +9,12 @@ import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.library.shell.GAppsUtilis
-import com.omarea.permissions.CheckRootStatus
-import com.omarea.scene_mode.SceneMode
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.library.shell.GAppsUtilis
+import com.yuanshiguang.permissions.CheckRootStatus
+import com.yuanshiguang.scene_mode.SceneMode
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_quick_start.*
 import java.lang.ref.WeakReference
 

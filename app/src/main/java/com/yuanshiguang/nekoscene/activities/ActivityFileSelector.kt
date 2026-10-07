@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.app.Activity
 import android.content.Intent
@@ -7,10 +7,10 @@ import android.view.KeyEvent
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.ui.AdapterFileSelector
-import com.omarea.utils.CommonCmds
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.ui.AdapterFileSelector
+import com.yuanshiguang.utils.CommonCmds
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_file_selector.*
 import java.io.File
 

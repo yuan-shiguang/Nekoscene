@@ -1,13 +1,13 @@
-package com.omarea.krscript.config
+package com.yuanshiguang.krscript.config
 
 import android.app.Activity
 import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
-import com.omarea.krscript.R
-import com.omarea.krscript.executor.ScriptEnvironmen
-import com.omarea.krscript.model.NodeInfoBase
-import com.omarea.krscript.model.PageNode
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen
+import com.yuanshiguang.krscript.model.NodeInfoBase
+import com.yuanshiguang.krscript.model.PageNode
 import java.io.ByteArrayInputStream
 
 class PageConfigSh(private var activity: Activity, private var pageConfigSh: String, private var parentConfig: PageNode?) {

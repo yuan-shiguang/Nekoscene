@@ -1,9 +1,9 @@
-package com.omarea.shell_utils;
+package com.yuanshiguang.shell_utils;
 
 import android.os.Environment;
 
-import com.omarea.common.shell.KeepShellPublic;
-import com.omarea.common.shell.RootFile;
+import com.yuanshiguang.common.shell.KeepShellPublic;
+import com.yuanshiguang.common.shell.RootFile;
 
 public class AppErrorLogcatUtils {
     private String logPath = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Android/vtools-error.log";

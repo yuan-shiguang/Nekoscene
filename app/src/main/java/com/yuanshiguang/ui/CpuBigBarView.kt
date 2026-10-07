@@ -1,11 +1,11 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
-import com.omarea.vtools.R
+import com.yuanshiguang.nekoscene.R
 import java.util.concurrent.LinkedBlockingQueue
 
 

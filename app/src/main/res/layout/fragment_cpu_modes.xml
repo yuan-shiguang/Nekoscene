@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -328,7 +328,7 @@
                     android:layout_marginTop="4dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                    <com.omarea.ui.UMExpandLayout
+                    <com.yuanshiguang.ui.UMExpandLayout
                         android:id="@+id/dynamic_control_opts2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -348,7 +348,7 @@
                                 android:layout_height="wrap_content"
                                 android:orientation="horizontal">
 
-                                <com.omarea.ui.HelpIcon
+                                <com.yuanshiguang.ui.HelpIcon
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     app:text="@string/schedule_screen_on_desc" />
@@ -377,7 +377,7 @@
                                 android:layout_marginTop="@dimen/activity_vertical_margin"
                                 android:orientation="horizontal">
 
-                                <com.omarea.ui.HelpIcon
+                                <com.yuanshiguang.ui.HelpIcon
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     app:text="@string/schedule_screen_off_desc" />
@@ -408,7 +408,7 @@
                                 android:orientation="horizontal"
                                 android:paddingEnd="8dp">
 
-                                <com.omarea.ui.HelpIcon
+                                <com.yuanshiguang.ui.HelpIcon
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     app:text="@string/schedule_enhanced_desc" />
@@ -432,7 +432,7 @@
                                 android:orientation="horizontal"
                                 android:paddingEnd="8dp">
 
-                                <com.omarea.ui.HelpIcon
+                                <com.yuanshiguang.ui.HelpIcon
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     app:text="@string/schedule_delay_desc" />
@@ -448,7 +448,7 @@
 
                             </LinearLayout>
                         </LinearLayout>
-                    </com.omarea.ui.UMExpandLayout>
+                    </com.yuanshiguang.ui.UMExpandLayout>
 
                     <ImageView
                         android:layout_below="@id/dynamic_control_opts2"
@@ -718,5 +718,5 @@
 
             </LinearLayout>
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 </RelativeLayout>

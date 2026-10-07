@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.content.Context
 import android.content.pm.PackageManager
@@ -15,9 +15,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.omarea.model.AppInfo
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.vtools.R
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.nekoscene.R
 import java.io.File
 import java.util.*
 import kotlin.collections.HashMap

@@ -1,6 +1,6 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 /**
  * Created by Hello on 2017/8/8.

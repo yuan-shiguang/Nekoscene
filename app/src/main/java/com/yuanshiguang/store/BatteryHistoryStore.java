@@ -1,4 +1,4 @@
-package com.omarea.store;
+package com.yuanshiguang.store;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -6,9 +6,9 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.BatteryManager;
 
-import com.omarea.model.BatteryAvgStatus;
-import com.omarea.model.BatteryStatus;
-import com.omarea.model.PowerHistory;
+import com.yuanshiguang.model.BatteryAvgStatus;
+import com.yuanshiguang.model.BatteryStatus;
+import com.yuanshiguang.model.PowerHistory;
 
 import java.util.ArrayList;
 

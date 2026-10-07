@@ -1,4 +1,4 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.graphics.Color
 import android.view.Gravity
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.*
 import androidx.fragment.app.FragmentActivity
-import com.omarea.common.model.SelectItem
-import com.omarea.krscript.R
-import com.omarea.krscript.model.ActionParamInfo
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.model.ActionParamInfo
 
 class ActionParamsLayoutRender(private var linearLayout: LinearLayout, activity: FragmentActivity) {
     companion object {

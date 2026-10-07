@@ -1,4 +1,4 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -13,19 +13,19 @@ import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import android.widget.Toast
-import com.omarea.common.model.SelectItem
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.DialogItemChooser
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.common.ui.ThemeMode
-import com.omarea.krscript.BgTaskThread
-import com.omarea.krscript.HiddenTaskThread
-import com.omarea.krscript.R
-import com.omarea.krscript.TryOpenActivity
-import com.omarea.krscript.config.IconPathAnalysis
-import com.omarea.krscript.executor.ScriptEnvironmen
-import com.omarea.krscript.model.*
-import com.omarea.krscript.shortcut.ActionShortcutManager
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.DialogItemChooser
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.common.ui.ThemeMode
+import com.yuanshiguang.krscript.BgTaskThread
+import com.yuanshiguang.krscript.HiddenTaskThread
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.TryOpenActivity
+import com.yuanshiguang.krscript.config.IconPathAnalysis
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen
+import com.yuanshiguang.krscript.model.*
+import com.yuanshiguang.krscript.shortcut.ActionShortcutManager
 
 class ActionListFragment : androidx.fragment.app.Fragment(), PageLayoutRender.OnItemClickListener {
     companion object {

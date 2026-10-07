@@ -1,11 +1,11 @@
-package com.omarea.utils
+package com.yuanshiguang.utils
 
 import android.content.Context
 import android.os.Environment
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.scene_mode.AlwaysNotification
-import com.omarea.shell_utils.AppErrorLogcatUtils
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.scene_mode.AlwaysNotification
+import com.yuanshiguang.shell_utils.AppErrorLogcatUtils
+import com.yuanshiguang.store.SpfConfig
 import java.io.File
 import java.io.FileOutputStream
 import java.io.PrintWriter

@@ -1,4 +1,4 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.annotation.SuppressLint
 import android.content.ClipboardManager
@@ -8,16 +8,16 @@ import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.omarea.common.model.SelectItem
-import com.omarea.common.shared.MagiskExtend
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.DialogItemChooser2
-import com.omarea.library.shell.PropsUtils
-import com.omarea.utils.CommonCmds
-import com.omarea.vtools.R
-import com.omarea.vtools.activities.ActivityBase
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.common.shared.MagiskExtend
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.DialogItemChooser2
+import com.yuanshiguang.library.shell.PropsUtils
+import com.yuanshiguang.utils.CommonCmds
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.activities.ActivityBase
 
 /**
  * Created by Hello on 2017/12/03.

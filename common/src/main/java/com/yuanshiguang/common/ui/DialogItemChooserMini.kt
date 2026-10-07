@@ -1,4 +1,4 @@
-package com.omarea.common.ui
+package com.yuanshiguang.common.ui
 
 import android.app.Dialog
 import android.content.Context
@@ -12,8 +12,8 @@ import android.widget.AbsListView
 import android.widget.EditText
 import android.widget.Filterable
 import android.widget.TextView
-import com.omarea.common.R
-import com.omarea.common.model.SelectItem
+import com.yuanshiguang.common.R
+import com.yuanshiguang.common.model.SelectItem
 
 class DialogItemChooserMini(
         private val context: Context,

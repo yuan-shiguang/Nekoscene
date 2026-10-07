@@ -1,10 +1,10 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.content.Context
 import android.view.View
 import android.widget.ImageView
-import com.omarea.krscript.R
-import com.omarea.krscript.model.PageNode
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.model.PageNode
 
 class ListItemPage(context: Context, config: PageNode) : ListItemClickable(context, R.layout.kr_action_list_item, config) {
     private val widgetView = layout.findViewById<ImageView?>(R.id.kr_widget)

@@ -1,4 +1,4 @@
-package com.omarea.krscript;
+package com.yuanshiguang.krscript;
 
 import android.content.Context;
 import android.os.Process;

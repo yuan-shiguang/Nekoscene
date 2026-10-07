@@ -1,10 +1,10 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.app.Activity
 import android.content.Context
 import android.view.View
-import com.omarea.common.ui.DialogHelper
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.nekoscene.R
 
 class DialogAppCGroupMem(var context: Activity, val current: String?, val iResultCallback: IResultCallback) {
     interface IResultCallback {

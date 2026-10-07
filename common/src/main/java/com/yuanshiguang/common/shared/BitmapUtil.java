@@ -1,4 +1,4 @@
-package com.omarea.common.shared;
+package com.yuanshiguang.common.shared;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

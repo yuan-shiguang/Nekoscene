@@ -1,4 +1,4 @@
-package com.omarea.vtools.fragments
+package com.yuanshiguang.nekoscene.fragments
 
 import android.content.ComponentName
 import android.content.Intent
@@ -12,18 +12,18 @@ import android.widget.GridLayout
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.omarea.Scene
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ThemeMode
-import com.omarea.kr.KrScriptConfig
-import com.omarea.library.shell.BatteryUtils
-import com.omarea.permissions.CheckRootStatus
-import com.omarea.shell_utils.BackupRestoreUtils
-import com.omarea.utils.AccessibleServiceHelper
-import com.omarea.vtools.R
-import com.omarea.vtools.activities.*
-import com.omarea.vtools.dialogs.DialogXposedGlobalConfig
-import com.omarea.xposed.XposedCheck
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ThemeMode
+import com.yuanshiguang.kr.KrScriptConfig
+import com.yuanshiguang.library.shell.BatteryUtils
+import com.yuanshiguang.permissions.CheckRootStatus
+import com.yuanshiguang.shell_utils.BackupRestoreUtils
+import com.yuanshiguang.utils.AccessibleServiceHelper
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.activities.*
+import com.yuanshiguang.nekoscene.dialogs.DialogXposedGlobalConfig
+import com.yuanshiguang.xposed.XposedCheck
 import com.projectkr.shell.OpenPageHelper
 import kotlinx.android.synthetic.main.fragment_nav.*
 
@@ -196,7 +196,7 @@ class FragmentNav : Fragment(), View.OnClickListener {
     private fun xposedCheck(onPass: Runnable) {
         var vAddinsInstalled: Boolean
         try {
-            vAddinsInstalled = context!!.packageManager.getPackageInfo("com.omarea.vaddin", 0) != null
+            vAddinsInstalled = context!!.packageManager.getPackageInfo("com.yuanshiguang.vaddin", 0) != null
         } catch (ex: Exception) {
             vAddinsInstalled = false
         }

@@ -1,8 +1,8 @@
-package com.omarea.store
+package com.yuanshiguang.store
 
 import android.content.Context
-import com.omarea.common.shared.ObjectStorage
-import com.omarea.model.TimingTaskInfo
+import com.yuanshiguang.common.shared.ObjectStorage
+import com.yuanshiguang.model.TimingTaskInfo
 
 class TimingTaskStorage(private val context: Context) : ObjectStorage<TimingTaskInfo>(context) {
     override public fun load(configFile: String): TimingTaskInfo? {

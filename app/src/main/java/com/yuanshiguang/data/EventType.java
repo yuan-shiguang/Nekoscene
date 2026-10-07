@@ -1,4 +1,4 @@
-package com.omarea.data;
+package com.yuanshiguang.data;
 
 public enum EventType {
     POWER_CONNECTED,            // 充电器连接

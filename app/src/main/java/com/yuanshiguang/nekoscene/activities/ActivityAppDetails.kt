@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -15,24 +15,24 @@ import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import com.omarea.common.ui.DialogHelper
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.library.permissions.NotificationListener
-import com.omarea.library.shell.CGroupMemoryUtlis
-import com.omarea.model.SceneConfigInfo
-import com.omarea.permissions.WriteSettings
-import com.omarea.scene_mode.ImmersivePolicyControl
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.scene_mode.SceneMode
-import com.omarea.store.SceneConfigStore
-import com.omarea.store.SpfConfig
-import com.omarea.utils.AccessibleServiceHelper
-import com.omarea.vtools.R
-import com.omarea.vtools.dialogs.DialogAppBoostPolicy
-import com.omarea.vtools.dialogs.DialogAppCGroupMem
-import com.omarea.vtools.dialogs.DialogAppOrientation
-import com.omarea.vtools.dialogs.DialogAppPowerConfig
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.library.permissions.NotificationListener
+import com.yuanshiguang.library.shell.CGroupMemoryUtlis
+import com.yuanshiguang.model.SceneConfigInfo
+import com.yuanshiguang.permissions.WriteSettings
+import com.yuanshiguang.scene_mode.ImmersivePolicyControl
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.scene_mode.SceneMode
+import com.yuanshiguang.store.SceneConfigStore
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.AccessibleServiceHelper
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.dialogs.DialogAppBoostPolicy
+import com.yuanshiguang.nekoscene.dialogs.DialogAppCGroupMem
+import com.yuanshiguang.nekoscene.dialogs.DialogAppOrientation
+import com.yuanshiguang.nekoscene.dialogs.DialogAppPowerConfig
 import kotlinx.android.synthetic.main.activity_app_details.*
 
 class ActivityAppDetails : ActivityBase() {

@@ -1,4 +1,4 @@
-package com.omarea.vtools.popup
+package com.yuanshiguang.nekoscene.popup
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
@@ -7,8 +7,8 @@ import android.graphics.PixelFormat
 import android.os.Build
 import android.view.View
 import android.view.WindowManager
-import com.omarea.Scene
-import com.omarea.model.SceneConfigInfo
+import com.yuanshiguang.Scene
+import com.yuanshiguang.model.SceneConfigInfo
 
 class FloatScreenRotation(mContext: Context) {
     private var view: View = View(mContext)

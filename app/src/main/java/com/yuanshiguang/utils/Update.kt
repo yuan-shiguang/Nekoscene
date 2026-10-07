@@ -1,4 +1,4 @@
-package com.omarea.utils
+package com.yuanshiguang.utils
 
 
 import android.content.ContentResolver
@@ -12,7 +12,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
 import androidx.core.content.FileProvider
-import com.omarea.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.DialogHelper
 import org.json.JSONObject
 import java.io.BufferedReader
 import java.io.File

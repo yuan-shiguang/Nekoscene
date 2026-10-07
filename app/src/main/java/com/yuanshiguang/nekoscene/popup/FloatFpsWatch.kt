@@ -1,4 +1,4 @@
-package com.omarea.vtools.popup
+package com.yuanshiguang.nekoscene.popup
 
 import android.accessibilityservice.AccessibilityService
 import android.annotation.SuppressLint
@@ -18,18 +18,18 @@ import android.view.WindowManager.LayoutParams
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.data.IEventReceiver
-import com.omarea.library.shell.CpuFrequencyUtils
-import com.omarea.library.shell.CpuLoadUtils
-import com.omarea.library.shell.FpsUtils
-import com.omarea.library.shell.GpuUtils
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.store.FpsWatchStore
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.data.IEventReceiver
+import com.yuanshiguang.library.shell.CpuFrequencyUtils
+import com.yuanshiguang.library.shell.CpuLoadUtils
+import com.yuanshiguang.library.shell.FpsUtils
+import com.yuanshiguang.library.shell.GpuUtils
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.store.FpsWatchStore
+import com.yuanshiguang.nekoscene.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.util.*

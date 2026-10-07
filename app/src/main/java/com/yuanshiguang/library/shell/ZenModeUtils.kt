@@ -1,8 +1,8 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.content.Context
 import android.provider.Settings
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 // 勿扰模式
 class ZenModeUtils(private val context: Context) {

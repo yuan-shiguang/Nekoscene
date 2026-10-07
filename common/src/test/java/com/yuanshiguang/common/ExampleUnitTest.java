@@ -1,4 +1,4 @@
-package com.omarea.common;
+package com.yuanshiguang.common;
 
 import org.junit.Test;
 

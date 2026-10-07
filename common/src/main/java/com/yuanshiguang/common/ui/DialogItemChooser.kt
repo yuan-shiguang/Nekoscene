@@ -1,4 +1,4 @@
-package com.omarea.common.ui
+package com.yuanshiguang.common.ui
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
 import android.widget.*
-import com.omarea.common.R
-import com.omarea.common.model.SelectItem
+import com.yuanshiguang.common.R
+import com.yuanshiguang.common.model.SelectItem
 
 class DialogItemChooser(
         // 是否深色模式

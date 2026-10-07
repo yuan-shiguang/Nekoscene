@@ -1,9 +1,9 @@
-package com.omarea.krscript
+package com.yuanshiguang.krscript
 
 import android.content.Context
 import android.content.Intent
 import android.widget.Toast
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 class TryOpenActivity(private val context:  Context, private val activity:String) {
     private fun getIntent(): Intent? {

@@ -1,4 +1,4 @@
-package com.omarea.krscript.downloader;
+package com.yuanshiguang.krscript.downloader;
 
 import android.os.Environment;
 

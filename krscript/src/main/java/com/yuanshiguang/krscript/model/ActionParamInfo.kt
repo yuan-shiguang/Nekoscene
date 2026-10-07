@@ -1,6 +1,6 @@
-package com.omarea.krscript.model
+package com.yuanshiguang.krscript.model
 
-import com.omarea.common.model.SelectItem
+import com.yuanshiguang.common.model.SelectItem
 
 class ActionParamInfo {
     // 参数名：必需保持唯一

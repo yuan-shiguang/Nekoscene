@@ -1,4 +1,4 @@
-package com.omarea.common.ui
+package com.yuanshiguang.common.ui
 
 import android.app.Activity
 import android.app.AlertDialog
@@ -14,7 +14,7 @@ import android.view.*
 import android.widget.FrameLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatDelegate
-import com.omarea.common.R
+import com.yuanshiguang.common.R
 
 class DialogHelper {
     class DialogButton(public val text: String, public val onClick: Runnable? = null, public val dismiss: Boolean = true) {

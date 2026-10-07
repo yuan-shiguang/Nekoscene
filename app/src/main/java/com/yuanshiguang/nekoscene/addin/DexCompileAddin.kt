@@ -1,4 +1,4 @@
-package com.omarea.vtools.addin
+package com.yuanshiguang.nekoscene.addin
 
 import android.app.AlertDialog
 import android.content.Intent
@@ -6,12 +6,12 @@ import android.net.Uri
 import android.os.Build
 import android.view.View
 import android.widget.Toast
-import com.omarea.common.ui.DialogHelper
-import com.omarea.library.shell.PropsUtils
-import com.omarea.utils.CommonCmds
-import com.omarea.vtools.R
-import com.omarea.vtools.activities.ActivityBase
-import com.omarea.vtools.services.CompileService
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.library.shell.PropsUtils
+import com.yuanshiguang.utils.CommonCmds
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.activities.ActivityBase
+import com.yuanshiguang.nekoscene.services.CompileService
 
 /**
  * Created by Hello on 2018/02/20.

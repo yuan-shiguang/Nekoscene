@@ -1,4 +1,4 @@
-package com.omarea.store
+package com.yuanshiguang.store
 
 import android.content.Context
 import android.provider.Settings

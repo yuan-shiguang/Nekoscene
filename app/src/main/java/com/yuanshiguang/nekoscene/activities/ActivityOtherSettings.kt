@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.Manifest
 import android.content.Context
@@ -9,14 +9,14 @@ import android.os.Looper
 import android.view.View
 import android.widget.Switch
 import androidx.core.content.PermissionChecker
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.ui.DialogHelper
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.shell_utils.AppErrorLogcatUtils
-import com.omarea.store.SpfConfig
-import com.omarea.utils.CommonCmds
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.shell_utils.AppErrorLogcatUtils
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.CommonCmds
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_other_settings.*
 
 class ActivityOtherSettings : ActivityBase() {

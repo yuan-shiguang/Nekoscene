@@ -1,4 +1,4 @@
-package com.omarea.data
+package com.yuanshiguang.data
 
 interface IEventReceiver {
     fun eventFilter(eventType: EventType): Boolean

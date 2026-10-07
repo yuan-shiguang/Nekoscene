@@ -1,16 +1,16 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.app.IntentService
 import android.content.Context
 import android.content.Intent
 import android.os.BatteryManager
 import android.widget.Toast
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.data.IEventReceiver
-import com.omarea.library.basic.ScreenState
-import com.omarea.store.TimingTaskStorage
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.data.IEventReceiver
+import com.yuanshiguang.library.basic.ScreenState
+import com.yuanshiguang.store.TimingTaskStorage
 
 class SceneTaskIntentService : IntentService("SceneTaskIntentService") {
     override fun onHandleIntent(intent: Intent?) {

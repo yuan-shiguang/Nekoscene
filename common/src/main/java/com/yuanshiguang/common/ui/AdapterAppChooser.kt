@@ -1,4 +1,4 @@
-package com.omarea.common.ui
+package com.yuanshiguang.common.ui
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -6,7 +6,7 @@ import android.util.LruCache
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
-import com.omarea.common.R
+import com.yuanshiguang.common.R
 import kotlinx.coroutines.*
 import java.util.*
 

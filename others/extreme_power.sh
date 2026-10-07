@@ -2,7 +2,7 @@ prop="persist.vtools.suspend"
 status=`getprop $prop`
 
 function on() {
-apps=`pm list package -3 | grep -v com.omarea | grep -v launcher | grep -v xposed | grep -v magisk | cut -f2 -d ':'`
+apps=`pm list package -3 | grep -v com.yuanshiguang | grep -v launcher | grep -v xposed | grep -v magisk | cut -f2 -d ':'`
 system_apps="
 com.xiaomi.market
 com.miui.player

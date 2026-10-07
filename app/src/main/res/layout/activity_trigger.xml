@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.omarea.common.ui.OverScrollView
+        <com.yuanshiguang.common.ui.OverScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -203,7 +203,7 @@
                             android:textColor="@android:color/holo_red_dark"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="待机模式是Scene设计的一项功能，进入待机模式时会禁用所有冻结名单中的应用从而减少后台活动。应用冻结状态下图标将显示为灰色，点击时提示“此应用由ROOT管理”。" />
+                            android:text="待机模式是Nekoscene设计的一项功能，进入待机模式时会禁用所有冻结名单中的应用从而减少后台活动。应用冻结状态下图标将显示为灰色，点击时提示“此应用由ROOT管理”。" />
 
                     </LinearLayout>
 
@@ -278,6 +278,6 @@
                         android:layout_height="wrap_content" />
                 </LinearLayout>
             </LinearLayout>
-        </com.omarea.common.ui.OverScrollView>
+        </com.yuanshiguang.common.ui.OverScrollView>
     </LinearLayout>
 </RelativeLayout>

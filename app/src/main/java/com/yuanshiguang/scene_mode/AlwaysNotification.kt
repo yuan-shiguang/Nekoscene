@@ -1,4 +1,4 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.app.*
 import android.content.Context
@@ -9,12 +9,12 @@ import android.os.BatteryManager
 import android.os.Build
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
-import com.omarea.Scene
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.data.IEventReceiver
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
+import com.yuanshiguang.Scene
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.data.IEventReceiver
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
 
 /**
  * 常驻通知

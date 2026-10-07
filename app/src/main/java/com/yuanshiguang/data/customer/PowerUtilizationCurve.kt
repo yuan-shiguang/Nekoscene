@@ -1,17 +1,17 @@
-package com.omarea.data.customer
+package com.yuanshiguang.data.customer
 
 import android.content.Context
 import android.os.BatteryManager
 import android.os.Build
 import android.os.SystemClock
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.data.IEventReceiver
-import com.omarea.library.basic.ScreenState
-import com.omarea.model.BatteryStatus
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.store.BatteryHistoryStore
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.data.IEventReceiver
+import com.yuanshiguang.library.basic.ScreenState
+import com.yuanshiguang.model.BatteryStatus
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.store.BatteryHistoryStore
+import com.yuanshiguang.store.SpfConfig
 import java.util.*
 
 class PowerUtilizationCurve(context: Context) : IEventReceiver {

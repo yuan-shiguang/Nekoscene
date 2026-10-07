@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Intent
 import android.net.Uri
@@ -7,8 +7,8 @@ import android.os.Bundle
 import android.provider.Settings
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.vtools.popup.FloatPowercfgSelector
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.nekoscene.popup.FloatPowercfgSelector
 
 class ActivityPowerModeTile : AppCompatActivity() {
 

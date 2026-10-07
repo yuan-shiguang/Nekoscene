@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.app.Activity
 import android.graphics.drawable.Drawable
@@ -7,7 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TabHost
 import android.widget.TextView
-import com.omarea.vtools.R
+import com.yuanshiguang.nekoscene.R
 
 /*
 

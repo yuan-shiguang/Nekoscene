@@ -1,9 +1,9 @@
-package com.omarea.vtools
+package com.yuanshiguang.nekoscene
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import com.omarea.vtools.services.BootService
+import com.yuanshiguang.nekoscene.services.BootService
 
 
 class ReceiverBoot : BroadcastReceiver() {

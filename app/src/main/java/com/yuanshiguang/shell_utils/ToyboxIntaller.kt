@@ -1,10 +1,10 @@
-package com.omarea.shell_utils
+package com.yuanshiguang.shell_utils
 
 import android.content.Context
 import android.os.Build
-import com.omarea.common.shared.FileWrite.getPrivateFilePath
-import com.omarea.common.shared.FileWrite.writePrivateFile
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FileWrite.getPrivateFilePath
+import com.yuanshiguang.common.shared.FileWrite.writePrivateFile
+import com.yuanshiguang.nekoscene.R
 import java.io.File
 import java.util.*
 

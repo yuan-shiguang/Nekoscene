@@ -1,4 +1,4 @@
-package com.omarea.common.ui
+package com.yuanshiguang.common.ui
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -8,8 +8,8 @@ import android.os.Message
 import android.view.LayoutInflater
 import android.widget.TextView
 import android.widget.Toast
-import com.omarea.common.R
-import com.omarea.common.shell.AsynSuShellUnit
+import com.yuanshiguang.common.R
+import com.yuanshiguang.common.shell.AsynSuShellUnit
 import java.util.LinkedHashSet
 
 open class ProgressBarDialog(private var context: Activity, private var uniqueId: String? = null) {

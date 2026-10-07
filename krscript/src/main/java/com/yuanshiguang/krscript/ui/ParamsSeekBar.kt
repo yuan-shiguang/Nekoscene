@@ -1,4 +1,4 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.widget.ImageButton
 import android.widget.SeekBar
 import android.widget.TextView
-import com.omarea.krscript.R
-import com.omarea.krscript.model.ActionParamInfo
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.model.ActionParamInfo
 
 class ParamsSeekBar(private var actionParamInfo: ActionParamInfo, private var context: Context) {
     fun render(): View {

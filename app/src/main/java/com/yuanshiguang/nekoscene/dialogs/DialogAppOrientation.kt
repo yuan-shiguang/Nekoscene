@@ -1,13 +1,13 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.app.Activity
 import android.content.Context
 import android.content.pm.ActivityInfo
 import android.view.View
 import android.widget.CompoundButton
-import com.omarea.common.ui.DialogHelper
-import com.omarea.library.basic.RadioGroupSimulator
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.library.basic.RadioGroupSimulator
+import com.yuanshiguang.nekoscene.R
 
 class DialogAppOrientation(var context: Activity, val current: Int?, val iResultCallback: IResultCallback) {
     interface IResultCallback {

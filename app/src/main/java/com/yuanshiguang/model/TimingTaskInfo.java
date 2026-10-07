@@ -1,4 +1,4 @@
-package com.omarea.model;
+package com.yuanshiguang.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;

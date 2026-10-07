@@ -1,12 +1,12 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.content.Context
 import android.util.Log
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shared.RawText
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shared.RawText
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.nekoscene.R
 import java.nio.charset.Charset
 
 public class CGroupMemoryUtlis(private val context: Context) {

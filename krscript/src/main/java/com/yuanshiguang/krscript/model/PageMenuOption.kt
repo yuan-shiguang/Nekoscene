@@ -1,4 +1,4 @@
-package com.omarea.krscript.model
+package com.yuanshiguang.krscript.model
 
 public class PageMenuOption(currentConfigXml: String) : RunnableNode(currentConfigXml) {
     // 类型为普通菜单项还是其它具有特定行为的菜单项

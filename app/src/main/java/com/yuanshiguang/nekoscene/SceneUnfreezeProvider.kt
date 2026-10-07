@@ -1,4 +1,4 @@
-package com.omarea.vtools
+package com.yuanshiguang.nekoscene
 
 import android.content.ContentProvider
 import android.content.ContentValues
@@ -7,13 +7,13 @@ import android.content.SharedPreferences
 import android.database.Cursor
 import android.net.Uri
 import android.util.Log
-import com.omarea.Scene
-import com.omarea.scene_mode.SceneMode
-import com.omarea.store.SceneConfigStore
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.Scene
+import com.yuanshiguang.scene_mode.SceneMode
+import com.yuanshiguang.store.SceneConfigStore
+import com.yuanshiguang.store.SpfConfig
 
 class SceneUnfreezeProvider : ContentProvider() {
-    // 冻结 Test: adb shell content delete --uri content://com.omarea.vtools.SceneUnfreezeProvider --where "id in ('com.estrongs.android.pop')"
+    // 冻结 Test: adb shell content delete --uri content://com.yuanshiguang.nekoscene.SceneUnfreezeProvider --where "id in ('com.estrongs.android.pop')"
     override fun delete(uri: Uri, selection: String?, selectionArgs: Array<String>?): Int {
         // Log.d("SceneUnfreezeProvider", "" + selection)
         // Log.d("SceneUnfreezeProvider", "" + selectionArgs?.joinToString { "," })

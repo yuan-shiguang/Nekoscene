@@ -1,6 +1,6 @@
-package com.omarea.common.shared
+package com.yuanshiguang.common.shared
 
-import com.omarea.common.shell.RootFile
+import com.yuanshiguang.common.shell.RootFile
 
 class RootFileInfo {
     constructor()

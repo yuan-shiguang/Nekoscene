@@ -1,5 +1,5 @@
 // IAppConfigAidlInterface.aidl
-package com.omarea.vaddin;
+package com.yuanshiguang.vaddin;
 
 // Declare any non-default types here with import statements
 

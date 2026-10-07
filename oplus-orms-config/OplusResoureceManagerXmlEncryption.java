@@ -1,7 +1,7 @@
 //
 // Decompiled by Jadx - 559ms
 //
-package com.omarea.library.basic;
+package com.yuanshiguang.library.basic;
 
 import android.annotation.SuppressLint;
 

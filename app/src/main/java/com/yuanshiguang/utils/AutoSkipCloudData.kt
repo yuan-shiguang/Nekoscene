@@ -1,8 +1,8 @@
-package com.omarea.utils
+package com.yuanshiguang.utils
 
 import android.content.Context
-import com.omarea.Scene
-import com.omarea.store.AutoSkipConfigStore
+import com.yuanshiguang.Scene
+import com.yuanshiguang.store.AutoSkipConfigStore
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

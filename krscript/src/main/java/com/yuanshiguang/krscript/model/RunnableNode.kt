@@ -1,4 +1,4 @@
-package com.omarea.krscript.model
+package com.yuanshiguang.krscript.model
 
 open class RunnableNode(currentConfigXml: String) : ClickableNode(currentConfigXml) {
 

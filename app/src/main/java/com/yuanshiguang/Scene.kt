@@ -1,4 +1,4 @@
-package com.omarea
+package com.yuanshiguang
 
 import android.app.Application
 import android.app.UiModeManager
@@ -8,21 +8,21 @@ import android.content.res.Configuration
 import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.ShellExecutor
-import com.omarea.data.EventBus
-import com.omarea.data.customer.ChargeCurve
-import com.omarea.data.customer.PowerUtilizationCurve
-import com.omarea.data.customer.ScreenOffCleanup
-import com.omarea.data.publisher.BatteryState
-import com.omarea.data.publisher.ScreenState
-import com.omarea.permissions.Busybox
-import com.omarea.permissions.CheckRootStatus
-import com.omarea.scene_mode.TimingTaskManager
-import com.omarea.scene_mode.TriggerIEventMonitor
-import com.omarea.store.SpfConfig
-import com.omarea.utils.CrashHandler
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.ShellExecutor
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.customer.ChargeCurve
+import com.yuanshiguang.data.customer.PowerUtilizationCurve
+import com.yuanshiguang.data.customer.ScreenOffCleanup
+import com.yuanshiguang.data.publisher.BatteryState
+import com.yuanshiguang.data.publisher.ScreenState
+import com.yuanshiguang.permissions.Busybox
+import com.yuanshiguang.permissions.CheckRootStatus
+import com.yuanshiguang.scene_mode.TimingTaskManager
+import com.yuanshiguang.scene_mode.TriggerIEventMonitor
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.CrashHandler
+import com.yuanshiguang.nekoscene.R
 
 class Scene : Application() {
     companion object {

@@ -1,4 +1,4 @@
-package com.omarea.vtools.fragments
+package com.yuanshiguang.nekoscene.fragments
 
 import android.app.Activity
 import android.os.Bundle
@@ -11,15 +11,15 @@ import android.widget.AdapterView.OnItemClickListener
 import android.widget.CheckBox
 import android.widget.HeaderViewListAdapter
 import android.widget.Toast
-import com.omarea.Scene
-import com.omarea.common.ui.OverScrollListView
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.model.AppInfo
-import com.omarea.ui.AdapterAppList
-import com.omarea.utils.AppListHelper
-import com.omarea.vtools.R
-import com.omarea.vtools.dialogs.DialogAppOptions
-import com.omarea.vtools.dialogs.DialogSingleAppOptions
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.ui.OverScrollListView
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.ui.AdapterAppList
+import com.yuanshiguang.utils.AppListHelper
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.dialogs.DialogAppOptions
+import com.yuanshiguang.nekoscene.dialogs.DialogSingleAppOptions
 import kotlinx.android.synthetic.main.fragment_app_list.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

@@ -1,11 +1,11 @@
-package com.omarea.permissions
+package com.yuanshiguang.permissions
 
 import android.content.Context
 import android.os.Build
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.ui.DialogHelper
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.nekoscene.R
 import java.io.File
 import java.util.*
 

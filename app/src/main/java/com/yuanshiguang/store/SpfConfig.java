@@ -1,4 +1,4 @@
-package com.omarea.store;
+package com.yuanshiguang.store;
 
 /**
  * 公共参数

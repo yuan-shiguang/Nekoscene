@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.omarea.common.ui.OverScrollView
+<com.yuanshiguang.common.ui.OverScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -60,7 +60,7 @@
                     style="@style/textSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Scene提供的预设，各个模式泾渭分明" />
+                    android:text="Nekoscene提供的预设，各个模式泾渭分明" />
             </LinearLayout>
 
         </LinearLayout>
@@ -102,7 +102,7 @@
                     style="@style/textSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Scene提供的预设，整体上更关注性能释放" />
+                    android:text="Nekoscene提供的预设，整体上更关注性能释放" />
             </LinearLayout>
 
         </LinearLayout>
@@ -235,4 +235,4 @@
 
     </LinearLayout>
 
-</com.omarea.common.ui.OverScrollView>
+</com.yuanshiguang.common.ui.OverScrollView>

@@ -1,4 +1,4 @@
-package com.omarea.model
+package com.yuanshiguang.model
 
 public class ZramWriteBackStat {
     public var backingDev: String? = null

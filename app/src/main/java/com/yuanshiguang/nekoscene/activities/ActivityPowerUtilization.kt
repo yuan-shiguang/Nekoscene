@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Intent
 import android.os.BatteryManager
@@ -13,13 +13,13 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.omarea.data.GlobalStatus
-import com.omarea.library.device.BatteryCapacity
-import com.omarea.library.shell.BatteryUtils
-import com.omarea.store.BatteryHistoryStore
-import com.omarea.ui.power.AdapterBatteryStats
-import com.omarea.vtools.R
-import com.omarea.vtools.dialogs.DialogElectricityUnit
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.library.device.BatteryCapacity
+import com.yuanshiguang.library.shell.BatteryUtils
+import com.yuanshiguang.store.BatteryHistoryStore
+import com.yuanshiguang.ui.power.AdapterBatteryStats
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.dialogs.DialogElectricityUnit
 import kotlinx.android.synthetic.main.activity_power_utilization.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

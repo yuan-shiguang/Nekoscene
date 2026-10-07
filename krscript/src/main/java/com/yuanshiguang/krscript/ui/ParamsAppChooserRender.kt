@@ -1,15 +1,15 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.content.pm.PackageManager
 import android.view.LayoutInflater
 import android.view.View
 import android.widget.TextView
 import androidx.fragment.app.FragmentActivity
-import com.omarea.common.model.SelectItem
-import com.omarea.common.ui.AdapterAppChooser
-import com.omarea.common.ui.DialogAppChooser
-import com.omarea.krscript.R
-import com.omarea.krscript.model.ActionParamInfo
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.common.ui.AdapterAppChooser
+import com.yuanshiguang.common.ui.DialogAppChooser
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.model.ActionParamInfo
 
 class ParamsAppChooserRender(private var actionParamInfo: ActionParamInfo, private var context: FragmentActivity) : DialogAppChooser.Callback {
     private val systemUiVisibility = context.window?.decorView?.systemUiVisibility

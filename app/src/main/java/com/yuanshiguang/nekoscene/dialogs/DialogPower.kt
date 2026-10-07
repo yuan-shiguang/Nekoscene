@@ -1,10 +1,10 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.app.Activity
 import android.view.View
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.ui.DialogHelper
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.nekoscene.R
 
 class DialogPower(var context: Activity) {
     fun showPowerMenu() {

@@ -1,4 +1,4 @@
-package com.omarea.krscript.model
+package com.yuanshiguang.krscript.model
 
 public class PageNode(currentConfigXml: String) : ClickableNode(currentConfigXml) {
     public var pageConfigPath: String = ""

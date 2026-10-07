@@ -91,7 +91,7 @@
         android:background="@drawable/in_card_item"
         android:padding="@dimen/activity_vertical_margin"
         style="@style/textSmall"
-        android:text="在手机屏幕关闭时，Scene会停止记录电池状态以减少耗电，在图表中显示为灰色虚线。"
+        android:text="在手机屏幕关闭时，Nekoscene会停止记录电池状态以减少耗电，在图表中显示为灰色虚线。"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <TextView
@@ -100,7 +100,7 @@
         android:background="@drawable/in_card_item"
         android:padding="@dimen/activity_vertical_margin"
         style="@style/textSmall"
-        android:text="但如果图表中出现蓝色虚线，Scene后台进程被休眠，未能按计划的频率记录电池状态。"
+        android:text="但如果图表中出现蓝色虚线，Nekoscene后台进程被休眠，未能按计划的频率记录电池状态。"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

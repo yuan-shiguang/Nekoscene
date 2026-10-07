@@ -1,4 +1,4 @@
-package com.omarea.common.ui
+package com.yuanshiguang.common.ui
 
 class ThemeMode {
     var isDarkMode: Boolean = false

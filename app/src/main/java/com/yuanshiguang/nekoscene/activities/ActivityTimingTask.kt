@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.app.TimePickerDialog
 import android.os.Build
@@ -8,17 +8,17 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.CompoundButton
 import android.widget.Toast
-import com.omarea.common.model.SelectItem
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.ui.DialogItemChooser2
-import com.omarea.krscript.executor.ExtractAssets
-import com.omarea.library.calculator.GetUpTime
-import com.omarea.model.CustomTaskAction
-import com.omarea.model.TaskAction
-import com.omarea.model.TimingTaskInfo
-import com.omarea.scene_mode.TimingTaskManager
-import com.omarea.store.TimingTaskStorage
-import com.omarea.vtools.R
+import com.yuanshiguang.common.model.SelectItem
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.ui.DialogItemChooser2
+import com.yuanshiguang.krscript.executor.ExtractAssets
+import com.yuanshiguang.library.calculator.GetUpTime
+import com.yuanshiguang.model.CustomTaskAction
+import com.yuanshiguang.model.TaskAction
+import com.yuanshiguang.model.TimingTaskInfo
+import com.yuanshiguang.scene_mode.TimingTaskManager
+import com.yuanshiguang.store.TimingTaskStorage
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_timing_task.*
 import java.io.File
 import java.io.FilenameFilter

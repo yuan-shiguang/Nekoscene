@@ -1,4 +1,4 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -8,13 +8,13 @@ import android.os.Build
 import android.os.PowerManager
 import android.widget.Toast
 import androidx.core.app.NotificationCompat
-import com.omarea.common.shell.KeepShell
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.library.shell.FstrimUtils
-import com.omarea.library.shell.ZenModeUtils
-import com.omarea.model.CustomTaskAction
-import com.omarea.model.TaskAction
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShell
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.library.shell.FstrimUtils
+import com.yuanshiguang.library.shell.ZenModeUtils
+import com.yuanshiguang.model.CustomTaskAction
+import com.yuanshiguang.model.TaskAction
+import com.yuanshiguang.nekoscene.R
 import java.util.*
 
 class TaskActionsExecutor(

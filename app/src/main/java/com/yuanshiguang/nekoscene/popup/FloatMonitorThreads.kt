@@ -1,4 +1,4 @@
-package com.omarea.vtools.popup
+package com.yuanshiguang.nekoscene.popup
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
@@ -11,10 +11,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.WindowManager
 import android.widget.TextView
-import com.omarea.Scene
-import com.omarea.data.GlobalStatus
-import com.omarea.library.shell.ProcessUtilsSimple
-import com.omarea.vtools.R
+import com.yuanshiguang.Scene
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.library.shell.ProcessUtilsSimple
+import com.yuanshiguang.nekoscene.R
 import java.util.*
 
 class FloatMonitorThreads(private val mContext: Context) {

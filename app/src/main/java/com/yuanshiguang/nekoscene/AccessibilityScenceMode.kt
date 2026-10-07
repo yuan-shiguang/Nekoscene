@@ -1,4 +1,4 @@
-package com.omarea.vtools
+package com.yuanshiguang.nekoscene
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
@@ -12,20 +12,21 @@ import android.view.accessibility.AccessibilityEvent
 import android.view.accessibility.AccessibilityNodeInfo
 import android.view.accessibility.AccessibilityWindowInfo
 import android.widget.Toast
-import com.omarea.Scene
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.data.IEventReceiver
-import com.omarea.library.basic.InputMethodApp
-import com.omarea.library.basic.LauncherApps
-import com.omarea.library.calculator.Flags
-import com.omarea.scene_mode.AppSwitchHandler
-import com.omarea.scene_mode.AutoClickInstall
-import com.omarea.scene_mode.AutoSkipAd
-import com.omarea.store.SpfConfig
-import com.omarea.utils.AutoSkipCloudData
-import com.omarea.vtools.popup.FloatLogView
+import com.yuanshiguang.Scene
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.data.IEventReceiver
+import com.yuanshiguang.library.basic.AccessibleServiceState
+import com.yuanshiguang.library.basic.InputMethodApp
+import com.yuanshiguang.library.basic.LauncherApps
+import com.yuanshiguang.library.calculator.Flags
+import com.yuanshiguang.scene_mode.AppSwitchHandler
+import com.yuanshiguang.scene_mode.AutoClickInstall
+import com.yuanshiguang.scene_mode.AutoSkipAd
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.AutoSkipCloudData
+import com.yuanshiguang.nekoscene.popup.FloatLogView
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -158,7 +159,7 @@ public class AccessibilityScenceMode : AccessibilityService(), IEventReceiver {
                 modernModeEvent()
             }
         } else if (eventType == EventType.SCREEN_ON) {
-            if (!serviceIsConnected) {
+            if (!AccessibleServiceState.isServiceConnected) {
                 Scene.toast("辅助服务已失效，请重新激活辅助服务！")
             }
         } else if (eventType == EventType.STATE_RESUME) {
@@ -188,7 +189,7 @@ public class AccessibilityScenceMode : AccessibilityService(), IEventReceiver {
         // 获取屏幕方向
         onScreenConfigurationChanged(this.resources.configuration)
 
-        serviceIsConnected = true
+        AccessibleServiceState.isServiceConnected = true
 
         updateConfig()
 
@@ -238,7 +239,7 @@ public class AccessibilityScenceMode : AccessibilityService(), IEventReceiver {
         val packageName = event.packageName
         if (packageName != null) {
             when {
-                packageName == "com.omarea.gesture" || packageName == "com.omarea.filter" -> {
+                packageName == "com.yuanshiguang.gesture" || packageName == "com.yuanshiguang.filter" -> {
                     return
                 }
                 /*
@@ -246,7 +247,7 @@ public class AccessibilityScenceMode : AccessibilityService(), IEventReceiver {
                     return
                 }
                 */
-                // packageName == "com.omarea.vtools" -> return
+                // packageName == "com.yuanshiguang.nekoscene" -> return
                 packageName.contains("packageinstaller") -> {
                     if (event.className == "com.android.packageinstaller.permission.ui.GrantPermissionsActivity") // MIUI权限控制器
                         return
@@ -395,7 +396,7 @@ public class AccessibilityScenceMode : AccessibilityService(), IEventReceiver {
                     /*
                     val wp = window.root?.packageName
                     // 获取窗口 root节点 会有性能问题，因此去掉此判断逻辑
-                    if (wp == null || wp == "android" || wp == "com.android.systemui" || wp == "com.miui.freeform" || wp == "com.omarea.gesture" || wp == "com.omarea.filter" || wp == "com.android.permissioncontroller") {
+                    if (wp == null || wp == "android" || wp == "com.android.systemui" || wp == "com.miui.freeform" || wp == "com.yuanshiguang.gesture" || wp == "com.yuanshiguang.filter" || wp == "com.android.permissioncontroller") {
                         continue
                     }
                     */
@@ -618,10 +619,9 @@ public class AccessibilityScenceMode : AccessibilityService(), IEventReceiver {
         }
     }
 
-    private var serviceIsConnected = false
 
     override fun onUnbind(intent: Intent?): Boolean {
-        serviceIsConnected = false
+        AccessibleServiceState.isServiceConnected = false
         destroy()
         stopSelf()
         return super.onUnbind(intent)

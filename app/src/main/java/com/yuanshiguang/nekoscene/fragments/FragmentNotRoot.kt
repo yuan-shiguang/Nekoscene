@@ -1,11 +1,11 @@
-package com.omarea.vtools.fragments
+package com.yuanshiguang.nekoscene.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.omarea.permissions.CheckRootStatus
-import com.omarea.vtools.R
+import com.yuanshiguang.permissions.CheckRootStatus
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.fragment_not_root.*
 
 

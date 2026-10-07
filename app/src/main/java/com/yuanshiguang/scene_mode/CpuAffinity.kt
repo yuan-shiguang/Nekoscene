@@ -1,9 +1,9 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.Context
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.KernelProrp
-import com.omarea.library.shell.PlatformUtils
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KernelProrp
+import com.yuanshiguang.library.shell.PlatformUtils
 import org.json.JSONArray
 import org.json.JSONObject
 import java.util.*

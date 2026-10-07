@@ -1,14 +1,14 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.content.Context
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.core.content.ContextCompat
-import com.omarea.common.ui.OverScrollGridView
-import com.omarea.library.basic.AppInfoLoader
-import com.omarea.model.AppInfo
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.OverScrollGridView
+import com.yuanshiguang.library.basic.AppInfoLoader
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.nekoscene.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

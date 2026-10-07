@@ -1,7 +1,7 @@
-package com.omarea.vtools.addin
+package com.yuanshiguang.nekoscene.addin
 
 import android.app.Activity
-import com.omarea.common.ui.ProgressBarDialog
+import com.yuanshiguang.common.ui.ProgressBarDialog
 
 /**
  * Created by Hello on 2018/02/20.

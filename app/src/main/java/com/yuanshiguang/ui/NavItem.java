@@ -1,4 +1,4 @@
-package com.omarea.ui;
+package com.yuanshiguang.ui;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.omarea.vtools.R;
+import com.yuanshiguang.nekoscene.R;
 
 public class NavItem extends LinearLayout {
     public NavItem(Context context) {

@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.app.AlertDialog
@@ -11,12 +11,12 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.CompoundButton
 import android.widget.Toast
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.KernelProrp
-import com.omarea.common.shell.RootFile
-import com.omarea.common.ui.DialogHelper
-import com.omarea.library.device.MiuiThermalAESUtil
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KernelProrp
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.library.device.MiuiThermalAESUtil
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_miui_thermal.*
 import java.io.File
 import java.nio.charset.Charset

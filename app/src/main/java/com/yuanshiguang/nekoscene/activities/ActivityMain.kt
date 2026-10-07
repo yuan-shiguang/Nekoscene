@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -15,21 +15,21 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import com.omarea.Scene
-import com.omarea.common.shared.MagiskExtend
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.KernelProrp
-import com.omarea.common.shell.RootFile
-import com.omarea.common.ui.DialogHelper
-import com.omarea.permissions.CheckRootStatus
-import com.omarea.store.SpfConfig
-import com.omarea.ui.TabIconHelper2
-import com.omarea.utils.ElectricityUnit
-import com.omarea.utils.Update
-import com.omarea.vtools.R
-import com.omarea.vtools.dialogs.DialogMonitor
-import com.omarea.vtools.dialogs.DialogPower
-import com.omarea.vtools.fragments.*
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.shared.MagiskExtend
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KernelProrp
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.permissions.CheckRootStatus
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.ui.TabIconHelper2
+import com.yuanshiguang.utils.ElectricityUnit
+import com.yuanshiguang.utils.Update
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.dialogs.DialogMonitor
+import com.yuanshiguang.nekoscene.dialogs.DialogPower
+import com.yuanshiguang.nekoscene.fragments.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class ActivityMain : ActivityBase() {
@@ -142,7 +142,6 @@ class ActivityMain : ActivityBase() {
             FragmentNotRoot()
         }))
         tabIconHelper2.newTabSpec(getString(R.string.app_tuner), getDrawable(R.drawable.app_settings)!!, FragmentCpuModes())
-        tabIconHelper2.newTabSpec(getString(R.string.app_donate), getDrawable(R.drawable.app_like)!!, FragmentDonate())
         tab_content.adapter = tabIconHelper2.adapter
         tab_list.getTabAt(1)?.select() // 默认选中第二页
 

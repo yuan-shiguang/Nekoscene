@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
-    <com.omarea.common.ui.OverScrollView
+    <com.yuanshiguang.common.ui.OverScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/layout_app_bar">
@@ -57,7 +57,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="5dp"
                     android:gravity="center"
-                    android:text="开机后应用当前设置，需要允许Scene开机自启动"
+                    android:text="开机后应用当前设置，需要允许Nekoscene开机自启动"
                     android:textSize="13dp" />
             </LinearLayout>
 
@@ -69,7 +69,7 @@
                     android:layout_gravity="fill"
                     android:layout_marginBottom="10dp">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="Cpuset用于设定不同状态的进程可使用的CPU核心，给后台进程分配较少的CPU核心，可以保证后台过多时前台进程仍然能流畅运行，但也会导致单个核心持续满载，或下载工具后台时下载速度显著变慢。" />
@@ -170,7 +170,7 @@
                     android:layout_gravity="fill"
                     android:layout_marginBottom="10dp">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="一般来说，默认的调度器就是最好的，不需要更换，除非你使用的内核有特殊的优化，或者你有特殊的需求。\n\n最大\最小频率选项，建议配合功耗级别选项(如果你有看到的话)使用" />
@@ -248,7 +248,7 @@
                     android:layout_gravity="fill"
                     android:layout_marginBottom="10dp">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="Adreno GPU的性能有时会受到功耗级别（Power Level）限制。功耗级别0拥有最高性能，功耗级别数值越大性能越低(能达到的频率越低)\n\n一般来说，PowerLevel可选级别数量和可选频率数量是对等，设置频率时注意保持一致即可" />
@@ -327,7 +327,7 @@
                     android:layout_gravity="fill"
                     android:layout_marginBottom="10dp">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="Qualcomm在老旧SOC上使用的一些发热控制相关的模块，在骁龙835之后基本已被废弃。一般来说保持默认即可，如果你希望设备达到最佳性能，那么建议不要勾选任何一项！" />
@@ -389,7 +389,7 @@
                     android:layout_gravity="fill"
                     android:layout_marginBottom="10dp">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         app:text="Up/Down Threshold决定使用高性能核心的积极程度（数值越低越积极）" />
@@ -497,10 +497,10 @@
                     android:layout_gravity="fill"
                     android:layout_marginBottom="10dp">
 
-                    <com.omarea.ui.HelpIcon
+                    <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:text="诸如温控和场景智能加速都可能会不断调节参数，导致你关闭的核心被重新开启，这是正常现象\n\n除非你禁用掉所有企图自启调节相关的功能(Scene并不能帮你找出并关闭这些东西)" />
+                        app:text="诸如温控和场景智能加速都可能会不断调节参数，导致你关闭的核心被重新开启，这是正常现象\n\n除非你禁用掉所有企图自启调节相关的功能(Nekoscene并不能帮你找出并关闭这些东西)" />
 
                     <TextView
                         style="@style/textTitle"
@@ -516,5 +516,5 @@
                     android:columnCount="4" />
             </GridLayout>
         </LinearLayout>
-    </com.omarea.common.ui.OverScrollView>
+    </com.yuanshiguang.common.ui.OverScrollView>
 </RelativeLayout>

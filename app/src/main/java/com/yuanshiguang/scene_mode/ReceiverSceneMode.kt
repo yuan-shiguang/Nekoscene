@@ -1,4 +1,4 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.BroadcastReceiver
 import android.content.Context
@@ -7,7 +7,7 @@ import android.net.Uri
 import android.os.Build
 import android.provider.Settings
 import android.widget.Toast
-import com.omarea.vtools.popup.FloatPowercfgSelector
+import com.yuanshiguang.nekoscene.popup.FloatPowercfgSelector
 
 class ReceiverSceneMode : BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

@@ -1,4 +1,4 @@
-package com.omarea.krscript.model
+package com.yuanshiguang.krscript.model
 
 class GroupNode(currentPageConfigPath: String) : NodeInfoBase(currentPageConfigPath){
     var supported: Boolean = true

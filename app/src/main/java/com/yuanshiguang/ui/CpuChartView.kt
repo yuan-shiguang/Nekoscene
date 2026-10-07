@@ -1,4 +1,4 @@
-package com.omarea.ui
+package com.yuanshiguang.ui
 
 import android.animation.ValueAnimator
 import android.annotation.SuppressLint
@@ -9,7 +9,7 @@ import android.graphics.RectF
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.DecelerateInterpolator
-import com.omarea.vtools.R
+import com.yuanshiguang.nekoscene.R
 
 class CpuChartView : View {
     private var ratio = 0

@@ -1,4 +1,4 @@
-package com.omarea.vtools;
+package com.yuanshiguang.nekoscene;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Intent
 import android.os.*
@@ -9,12 +9,12 @@ import android.view.MenuItem
 import android.view.inputmethod.EditorInfo
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import com.omarea.ui.SearchTextWatcher
-import com.omarea.ui.TabIconHelper2
-import com.omarea.vtools.R
-import com.omarea.vtools.fragments.FragmentAppBackup
-import com.omarea.vtools.fragments.FragmentAppSystem
-import com.omarea.vtools.fragments.FragmentAppUser
+import com.yuanshiguang.ui.SearchTextWatcher
+import com.yuanshiguang.ui.TabIconHelper2
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.fragments.FragmentAppBackup
+import com.yuanshiguang.nekoscene.fragments.FragmentAppSystem
+import com.yuanshiguang.nekoscene.fragments.FragmentAppUser
 import kotlinx.android.synthetic.main.activity_applictions.*
 
 class ActivityApplistions : ActivityBase() {

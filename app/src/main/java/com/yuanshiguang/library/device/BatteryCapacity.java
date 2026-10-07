@@ -1,4 +1,4 @@
-package com.omarea.library.device;
+package com.yuanshiguang.library.device;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

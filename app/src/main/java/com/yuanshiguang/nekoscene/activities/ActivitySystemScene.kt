@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.content.Context
 import android.content.Intent
@@ -9,24 +9,24 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.widget.LinearLayout
-import com.omarea.common.ui.AdapterAppChooser
-import com.omarea.common.ui.DialogAppChooser
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.library.calculator.GetUpTime
-import com.omarea.model.AppInfo
-import com.omarea.model.TimingTaskInfo
-import com.omarea.model.TriggerInfo
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.scene_mode.SceneStandbyMode
-import com.omarea.scene_mode.TimingTaskManager
-import com.omarea.scene_mode.TriggerManager
-import com.omarea.store.SpfConfig
-import com.omarea.ui.SceneTaskItem
-import com.omarea.ui.SceneTriggerItem
-import com.omarea.ui.TabIconHelper
-import com.omarea.utils.AppListHelper
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.AdapterAppChooser
+import com.yuanshiguang.common.ui.DialogAppChooser
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.library.calculator.GetUpTime
+import com.yuanshiguang.model.AppInfo
+import com.yuanshiguang.model.TimingTaskInfo
+import com.yuanshiguang.model.TriggerInfo
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.scene_mode.SceneStandbyMode
+import com.yuanshiguang.scene_mode.TimingTaskManager
+import com.yuanshiguang.scene_mode.TriggerManager
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.ui.SceneTaskItem
+import com.yuanshiguang.ui.SceneTriggerItem
+import com.yuanshiguang.ui.TabIconHelper
+import com.yuanshiguang.utils.AppListHelper
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_system_scene.*
 
 class ActivitySystemScene : ActivityBase() {

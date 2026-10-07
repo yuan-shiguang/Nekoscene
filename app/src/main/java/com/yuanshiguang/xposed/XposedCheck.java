@@ -1,4 +1,4 @@
-package com.omarea.xposed;
+package com.yuanshiguang.xposed;
 
 /**
  * Created by helloklf on 2017/6/3.

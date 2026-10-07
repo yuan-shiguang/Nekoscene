@@ -1,4 +1,4 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.content.Context
 import android.content.Intent
@@ -13,11 +13,11 @@ import android.text.style.*
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import com.omarea.common.ui.DialogHelper
-import com.omarea.krscript.R
-import com.omarea.krscript.TryOpenActivity
-import com.omarea.krscript.executor.ScriptEnvironmen
-import com.omarea.krscript.model.TextNode
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.TryOpenActivity
+import com.yuanshiguang.krscript.executor.ScriptEnvironmen
+import com.yuanshiguang.krscript.model.TextNode
 
 
 class ListItemText(private val context: Context,

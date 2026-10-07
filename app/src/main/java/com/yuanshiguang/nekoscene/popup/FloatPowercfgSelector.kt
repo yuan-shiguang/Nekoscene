@@ -1,4 +1,4 @@
-package com.omarea.vtools.popup
+package com.yuanshiguang.nekoscene.popup
 
 import android.content.Context
 import android.graphics.Color
@@ -9,16 +9,16 @@ import android.provider.Settings
 import android.view.*
 import android.view.WindowManager.LayoutParams
 import android.widget.*
-import com.omarea.Scene
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.library.permissions.NotificationListener
-import com.omarea.library.shell.LocationHelper
-import com.omarea.scene_mode.ModeSwitcher
-import com.omarea.store.SceneConfigStore
-import com.omarea.store.SpfConfig
-import com.omarea.utils.AccessibleServiceHelper
-import com.omarea.vtools.R
+import com.yuanshiguang.Scene
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.library.permissions.NotificationListener
+import com.yuanshiguang.library.shell.LocationHelper
+import com.yuanshiguang.scene_mode.ModeSwitcher
+import com.yuanshiguang.store.SceneConfigStore
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.utils.AccessibleServiceHelper
+import com.yuanshiguang.nekoscene.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch

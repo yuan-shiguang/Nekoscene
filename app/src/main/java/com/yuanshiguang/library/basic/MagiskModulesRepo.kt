@@ -1,4 +1,4 @@
-package com.omarea.library.basic
+package com.yuanshiguang.library.basic
 
 import android.util.Log
 import android.util.Xml

@@ -1,12 +1,12 @@
-package com.omarea.krscript.config
+package com.yuanshiguang.krscript.config
 
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
-import com.omarea.krscript.R
-import com.omarea.krscript.model.ClickableNode
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.model.ClickableNode
 
 
 class IconPathAnalysis {

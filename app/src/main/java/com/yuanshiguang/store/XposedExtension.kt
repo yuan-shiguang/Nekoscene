@@ -1,4 +1,4 @@
-package com.omarea.store
+package com.yuanshiguang.store
 
 import android.content.ComponentName
 import android.content.Context
@@ -6,7 +6,7 @@ import android.content.Intent
 import android.content.ServiceConnection
 import android.os.IBinder
 import android.widget.Toast
-import com.omarea.vaddin.IAppConfigAidlInterface
+import com.yuanshiguang.vaddin.IAppConfigAidlInterface
 import org.json.JSONObject
 
 public class XposedExtension(private val context: Context) {
@@ -36,7 +36,7 @@ public class XposedExtension(private val context: Context) {
 
     public fun bindService(onCompleted: Runnable):Boolean {
         try {
-            if (context.packageManager?.getPackageInfo("com.omarea.vaddin", 0) == null) {
+            if (context.packageManager?.getPackageInfo("com.yuanshiguang.vaddin", 0) == null) {
                 return false
             }
         } catch (ex: Exception) {
@@ -63,9 +63,9 @@ public class XposedExtension(private val context: Context) {
 
             val intent = Intent()
             //绑定服务端的service
-            intent.action = "com.omarea.vaddin.ConfigUpdateService"
+            intent.action = "com.yuanshiguang.vaddin.ConfigUpdateService"
             //新版本（5.0后）必须显式intent启动 绑定服务
-            intent.setComponent(ComponentName("com.omarea.vaddin", "com.omarea.vaddin.ConfigUpdateService"))
+            intent.setComponent(ComponentName("com.yuanshiguang.vaddin", "com.yuanshiguang.vaddin.ConfigUpdateService"))
             //绑定的时候服务端自动创建
             if (!context.bindService(intent, conn, Context.BIND_AUTO_CREATE)) {
                 throw Exception("")

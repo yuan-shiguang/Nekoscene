@@ -1,19 +1,19 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
 import android.widget.SimpleAdapter
-import com.omarea.common.ui.DialogHelper
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
-import com.omarea.vtools.addin.DexCompileAddin
-import com.omarea.vtools.addin.Immersive
-import com.omarea.vtools.dialogs.DialogAddinModifyDPI
-import com.omarea.vtools.dialogs.DialogAddinModifyDevice
-import com.omarea.vtools.dialogs.DialogAddinWIFI
-import com.omarea.vtools.dialogs.DialogCustomMAC
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.addin.DexCompileAddin
+import com.yuanshiguang.nekoscene.addin.Immersive
+import com.yuanshiguang.nekoscene.dialogs.DialogAddinModifyDPI
+import com.yuanshiguang.nekoscene.dialogs.DialogAddinModifyDevice
+import com.yuanshiguang.nekoscene.dialogs.DialogAddinWIFI
+import com.yuanshiguang.nekoscene.dialogs.DialogCustomMAC
 import kotlinx.android.synthetic.main.activity_addin.*
 import java.util.*
 

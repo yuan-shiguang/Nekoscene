@@ -1,4 +1,4 @@
-package com.omarea.vtools.popup
+package com.yuanshiguang.nekoscene.popup
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -12,10 +12,10 @@ import android.widget.ImageButton
 import android.widget.ListView
 import android.widget.TextView
 import android.widget.Toast
-import com.omarea.Scene
-import com.omarea.library.shell.ProcessUtilsSimple
-import com.omarea.ui.AdapterProcessMini
-import com.omarea.vtools.R
+import com.yuanshiguang.Scene
+import com.yuanshiguang.library.shell.ProcessUtilsSimple
+import com.yuanshiguang.ui.AdapterProcessMini
+import com.yuanshiguang.nekoscene.R
 import java.util.*
 
 class FloatTaskManager(private val context: Context) {

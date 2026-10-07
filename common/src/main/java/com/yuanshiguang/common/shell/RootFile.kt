@@ -1,7 +1,7 @@
-package com.omarea.common.shell
+package com.yuanshiguang.common.shell
 
 import android.util.Log
-import com.omarea.common.shared.RootFileInfo
+import com.yuanshiguang.common.shared.RootFileInfo
 
 /**
  * Created by Hello on 2018/07/06.

@@ -1,12 +1,12 @@
-package com.omarea.store;
+package com.yuanshiguang.store;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.omarea.model.ChargeSpeedHistory;
-import com.omarea.model.ChargeTimeHistory;
+import com.yuanshiguang.model.ChargeSpeedHistory;
+import com.yuanshiguang.model.ChargeTimeHistory;
 
 import java.util.ArrayList;
 

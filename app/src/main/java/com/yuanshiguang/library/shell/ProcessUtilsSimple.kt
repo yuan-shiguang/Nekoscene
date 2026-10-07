@@ -1,10 +1,10 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.content.Context
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.model.ProcessInfo
-import com.omarea.model.ThreadInfo
-import com.omarea.shell_utils.ToyboxIntaller
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.model.ProcessInfo
+import com.yuanshiguang.model.ThreadInfo
+import com.yuanshiguang.shell_utils.ToyboxIntaller
 import java.util.*
 
 /*
@@ -74,7 +74,7 @@ class ProcessUtilsSimple(private val context: Context) {
             add("toybox-outside64")
             add("ps")
             add("top")
-            add("com.omarea.vtools")
+            add("com.yuanshiguang.nekoscene")
         }
     }
 

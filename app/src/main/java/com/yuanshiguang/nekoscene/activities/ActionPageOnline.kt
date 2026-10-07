@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.Manifest
 import android.app.Activity
@@ -22,13 +22,13 @@ import android.view.WindowManager
 import android.webkit.*
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
-import com.omarea.common.shared.FilePathResolver
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ProgressBarDialog
-import com.omarea.krscript.WebViewInjector
-import com.omarea.krscript.downloader.Downloader
-import com.omarea.krscript.ui.ParamsFileChooserRender
-import com.omarea.vtools.R
+import com.yuanshiguang.common.shared.FilePathResolver
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ProgressBarDialog
+import com.yuanshiguang.krscript.WebViewInjector
+import com.yuanshiguang.krscript.downloader.Downloader
+import com.yuanshiguang.krscript.ui.ParamsFileChooserRender
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_action_page_online.*
 import java.util.*
 

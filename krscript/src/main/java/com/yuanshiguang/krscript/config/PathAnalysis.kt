@@ -1,10 +1,10 @@
-package com.omarea.krscript.config
+package com.yuanshiguang.krscript.config
 
 import android.content.Context
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile
-import com.omarea.krscript.FileOwner
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.krscript.FileOwner
 import java.io.File
 import java.io.InputStream
 

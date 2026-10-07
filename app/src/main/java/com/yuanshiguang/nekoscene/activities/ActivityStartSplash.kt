@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.Manifest
 import android.app.Activity
@@ -14,15 +14,15 @@ import android.widget.Button
 import android.widget.CompoundButton
 import androidx.core.app.ActivityCompat
 import androidx.core.content.PermissionChecker
-import com.omarea.Scene
-import com.omarea.common.ui.DialogHelper
-import com.omarea.common.ui.ThemeMode
-import com.omarea.library.permissions.GeneralPermissions
-import com.omarea.permissions.Busybox
-import com.omarea.permissions.CheckRootStatus
-import com.omarea.permissions.WriteSettings
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.common.ui.ThemeMode
+import com.yuanshiguang.library.permissions.GeneralPermissions
+import com.yuanshiguang.permissions.Busybox
+import com.yuanshiguang.permissions.CheckRootStatus
+import com.yuanshiguang.permissions.WriteSettings
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
 import kotlinx.android.synthetic.main.activity_start_splash.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

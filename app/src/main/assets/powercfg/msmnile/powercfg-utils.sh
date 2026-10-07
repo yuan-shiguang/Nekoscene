@@ -564,7 +564,7 @@ watch_app() {
   fi
 
   if [[ "$task" != "" ]]; then
-    pgrep -f com.omarea.*powercfg.sh | grep -v $current_pid | while read pid; do
+    pgrep -f com.yuanshiguang.*powercfg.sh | grep -v $current_pid | while read pid; do
       local cmdline=$(cat /proc/$pid/cmdline | grep -a task)
       if [[ "$cmdline" != '' ]] && [[ $(echo $cmdline | grep $task) == '' ]];then
         kill -9 $pid 2> /dev/null

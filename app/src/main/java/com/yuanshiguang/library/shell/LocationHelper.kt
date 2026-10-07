@@ -1,7 +1,7 @@
-package com.omarea.library.shell
+package com.yuanshiguang.library.shell
 
 import android.os.Build
-import com.omarea.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.KeepShellPublic
 
 /**
  * 定位功能开关

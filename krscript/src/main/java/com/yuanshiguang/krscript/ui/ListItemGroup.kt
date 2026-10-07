@@ -1,9 +1,9 @@
-package com.omarea.krscript.ui
+package com.yuanshiguang.krscript.ui
 
 import android.content.Context
 import android.view.ViewGroup
-import com.omarea.krscript.R
-import com.omarea.krscript.model.GroupNode
+import com.yuanshiguang.krscript.R
+import com.yuanshiguang.krscript.model.GroupNode
 
 class ListItemGroup(context: Context,
                     final var isRootGroup: Boolean,

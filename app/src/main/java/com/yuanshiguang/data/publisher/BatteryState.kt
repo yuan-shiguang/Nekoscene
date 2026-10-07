@@ -1,14 +1,14 @@
-package com.omarea.data.publisher
+package com.yuanshiguang.data.publisher
 
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.BatteryManager
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.data.customer.BatteryReceiver
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.data.customer.BatteryReceiver
 
 class BatteryState(private val applicationContext: Context) : BroadcastReceiver() {
 

@@ -1,4 +1,4 @@
-package com.omarea.krscript.model
+package com.yuanshiguang.krscript.model
 
 open class ClickableNode(currentPageConfigPath: String) : NodeInfoBase(currentPageConfigPath) {
     // 功能图标路径（列表中）

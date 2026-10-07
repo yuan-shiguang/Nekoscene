@@ -1,9 +1,9 @@
-package com.omarea.store
+package com.yuanshiguang.store
 
 import android.content.Context
-import com.omarea.Scene
-import com.omarea.library.shell.DDRUtils
-import com.omarea.library.shell.PlatformUtils
+import com.yuanshiguang.Scene
+import com.yuanshiguang.library.shell.DDRUtils
+import com.yuanshiguang.library.shell.PlatformUtils
 
 class HardwareInfo {
     private val config = Scene.context.getSharedPreferences("HardwareInfo", Context.MODE_PRIVATE)

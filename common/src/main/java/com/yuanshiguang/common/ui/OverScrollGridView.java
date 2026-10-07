@@ -1,4 +1,4 @@
-package com.omarea.common.ui;
+package com.yuanshiguang.common.ui;
 
 import android.content.Context;
 import android.util.AttributeSet;

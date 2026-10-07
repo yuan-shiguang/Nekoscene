@@ -1,4 +1,4 @@
-package com.omarea.ui;
+package com.yuanshiguang.ui;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.content.pm.ShortcutManager;
 import android.graphics.drawable.Icon;
 import android.net.Uri;
 
-import com.omarea.vtools.R;
+import com.yuanshiguang.nekoscene.R;
 
 import java.util.ArrayList;
 

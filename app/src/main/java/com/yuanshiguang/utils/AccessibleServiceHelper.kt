@@ -1,9 +1,9 @@
-package com.omarea.utils
+package com.yuanshiguang.utils
 
 import android.content.Context
-import com.omarea.library.basic.AccessibleServiceState
-import com.omarea.library.shell.AccessibilityServiceUtils
-import com.omarea.vtools.AccessibilityScenceMode
+import com.yuanshiguang.library.basic.AccessibleServiceState
+import com.yuanshiguang.library.shell.AccessibilityServiceUtils
+import com.yuanshiguang.nekoscene.AccessibilityScenceMode
 
 /**
  * Created by Hello on 2018/06/03.

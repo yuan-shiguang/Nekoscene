@@ -1,10 +1,10 @@
-package com.omarea.store
+package com.yuanshiguang.store
 
 import android.content.Context
-import com.omarea.common.shared.ObjectStorage
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.library.shell.CpuFrequencyUtils
-import com.omarea.model.CpuStatus
+import com.yuanshiguang.common.shared.ObjectStorage
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.library.shell.CpuFrequencyUtils
+import com.yuanshiguang.model.CpuStatus
 import java.io.File
 
 /**

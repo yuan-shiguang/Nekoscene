@@ -1,4 +1,4 @@
-package com.omarea.library.permissions
+package com.yuanshiguang.library.permissions
 
 import android.content.Context
 import android.content.Intent

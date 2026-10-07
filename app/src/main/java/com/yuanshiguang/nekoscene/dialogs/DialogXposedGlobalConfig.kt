@@ -1,12 +1,12 @@
-package com.omarea.vtools.dialogs
+package com.yuanshiguang.nekoscene.dialogs
 
 import android.app.Activity
 import android.view.View
 import android.widget.CompoundButton
 import android.widget.Toast
-import com.omarea.common.ui.DialogHelper
-import com.omarea.store.XposedExtension
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.store.XposedExtension
+import com.yuanshiguang.nekoscene.R
 
 class DialogXposedGlobalConfig(var context: Activity) {
 

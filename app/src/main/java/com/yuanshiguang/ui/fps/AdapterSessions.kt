@@ -1,4 +1,4 @@
-package com.omarea.ui.fps
+package com.yuanshiguang.ui.fps
 
 import android.content.Context
 import android.graphics.Color
@@ -12,8 +12,8 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.omarea.model.FpsWatchSession
-import com.omarea.vtools.R
+import com.yuanshiguang.model.FpsWatchSession
+import com.yuanshiguang.nekoscene.R
 import java.text.SimpleDateFormat
 import java.util.*
 

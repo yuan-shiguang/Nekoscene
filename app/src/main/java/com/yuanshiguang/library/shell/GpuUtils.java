@@ -1,9 +1,9 @@
-package com.omarea.library.shell;
+package com.yuanshiguang.library.shell;
 
-import com.omarea.common.shell.KeepShellPublic;
-import com.omarea.common.shell.KernelProrp;
-import com.omarea.common.shell.RootFile;
-import com.omarea.model.CpuStatus;
+import com.yuanshiguang.common.shell.KeepShellPublic;
+import com.yuanshiguang.common.shell.KernelProrp;
+import com.yuanshiguang.common.shell.RootFile;
+import com.yuanshiguang.model.CpuStatus;
 
 import java.io.File;
 import java.util.ArrayList;

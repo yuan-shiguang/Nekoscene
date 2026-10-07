@@ -1,12 +1,12 @@
-package com.omarea.data.customer
+package com.yuanshiguang.data.customer
 
 import android.content.Context
 import android.os.BatteryManager
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.data.IEventReceiver
-import com.omarea.store.ChargeSpeedStore
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.data.IEventReceiver
+import com.yuanshiguang.store.ChargeSpeedStore
+import com.yuanshiguang.store.SpfConfig
 import java.util.*
 
 class ChargeCurve(context: Context) : IEventReceiver {

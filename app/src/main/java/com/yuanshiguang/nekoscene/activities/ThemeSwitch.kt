@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.Manifest
 import android.app.Activity
@@ -20,9 +20,9 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.content.PermissionChecker
-import com.omarea.common.ui.ThemeMode
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
+import com.yuanshiguang.common.ui.ThemeMode
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
 
 object ThemeSwitch {
     private var globalSPF: SharedPreferences? = null

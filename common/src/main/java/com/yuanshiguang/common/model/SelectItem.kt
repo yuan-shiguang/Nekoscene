@@ -1,4 +1,4 @@
-package com.omarea.common.model
+package com.yuanshiguang.common.model
 
 
 /*

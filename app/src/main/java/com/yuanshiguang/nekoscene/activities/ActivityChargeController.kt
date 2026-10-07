@@ -1,4 +1,4 @@
-package com.omarea.vtools.activities
+package com.yuanshiguang.nekoscene.activities
 
 import android.annotation.SuppressLint
 import android.app.TimePickerDialog
@@ -13,18 +13,18 @@ import android.text.Spanned
 import android.text.style.AbsoluteSizeSpan
 import android.view.View
 import android.widget.*
-import com.omarea.Scene
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.ui.DialogHelper
-import com.omarea.data.EventBus
-import com.omarea.data.EventType
-import com.omarea.data.GlobalStatus
-import com.omarea.library.device.BatteryCapacity
-import com.omarea.library.shell.BatteryUtils
-import com.omarea.store.SpfConfig
-import com.omarea.vtools.R
-import com.omarea.vtools.dialogs.DialogNumberInput
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.ui.DialogHelper
+import com.yuanshiguang.data.EventBus
+import com.yuanshiguang.data.EventType
+import com.yuanshiguang.data.GlobalStatus
+import com.yuanshiguang.library.device.BatteryCapacity
+import com.yuanshiguang.library.shell.BatteryUtils
+import com.yuanshiguang.store.SpfConfig
+import com.yuanshiguang.nekoscene.R
+import com.yuanshiguang.nekoscene.dialogs.DialogNumberInput
 import kotlinx.android.synthetic.main.activity_charge_controller.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

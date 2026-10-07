@@ -1,6 +1,6 @@
-package com.omarea.library.shell;
+package com.yuanshiguang.library.shell;
 
-import com.omarea.common.shell.KeepShell;
+import com.yuanshiguang.common.shell.KeepShell;
 
 public class GAppsUtilis {
     public void enable(KeepShell keepShell) {

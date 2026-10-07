@@ -1,13 +1,13 @@
-package com.omarea.scene_mode
+package com.yuanshiguang.scene_mode
 
 import android.content.Context
-import com.omarea.Scene
-import com.omarea.common.shared.FileWrite
-import com.omarea.common.shell.KeepShellPublic
-import com.omarea.common.shell.RootFile
-import com.omarea.library.shell.PlatformUtils
-import com.omarea.store.CpuConfigStorage
-import com.omarea.store.SpfConfig
+import com.yuanshiguang.Scene
+import com.yuanshiguang.common.shared.FileWrite
+import com.yuanshiguang.common.shell.KeepShellPublic
+import com.yuanshiguang.common.shell.RootFile
+import com.yuanshiguang.library.shell.PlatformUtils
+import com.yuanshiguang.store.CpuConfigStorage
+import com.yuanshiguang.store.SpfConfig
 import java.io.File
 import java.nio.charset.Charset
 
