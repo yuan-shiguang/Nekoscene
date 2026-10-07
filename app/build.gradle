@@ -8,7 +8,7 @@ android {
     }
     signingConfigs {
         omarea_Signing {
-            keyAlias 'omarea'
+            keyAlias 'omoarea'
             keyPassword 'as1234as'
             storeFile file('./omoarea.jks')
             storePassword 'as1234as'
