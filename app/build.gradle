@@ -8,10 +8,10 @@ android {
     }
     signingConfigs {
         omarea_Signing {
-            keyAlias 'omarea.com'
-            keyPassword 'asdf1234'
-            storeFile file('./omoarea-test.jks')
-            storePassword 'asdf1234'
+            keyAlias 'omarea'
+            keyPassword 'as1234as'
+            storeFile file('./omoarea.jks')
+            storePassword 'as1234as'
         }
     }
     compileSdkVersion 30
