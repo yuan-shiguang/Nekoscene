@@ -16,12 +16,11 @@ jobs:
       with:
         ref: master
 
-    - name: Setup NDK r23b
-      uses: nttld/setup-ndk@v1
-      id: setup-ndk
-      with:
-        ndk-version: r23b
-        add-to-path: true
+    - name: Install NDK 23.1.7779620
+      run: |
+        SDKMANAGER="${ANDROID_SDK_ROOT:-$ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager"
+        yes | "$SDKMANAGER" --licenses >/dev/null 2>&1 || true
+        yes | "$SDKMANAGER" "ndk;23.1.7779620"
 
     - name: Set up JDK 11
       uses: actions/setup-java@v4
