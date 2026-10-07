@@ -1,10 +1,7 @@
 name: Android CI(Scene5)
 
 on:
-  push:
-    branches: [ scene5 ]
-  pull_request:
-    branches: [ scene5 ]
+  workflow_dispatch:
 
 jobs:
   build:
