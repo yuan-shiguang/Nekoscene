@@ -66,7 +66,7 @@ class ActivityAppXposedDetails : ActivityBase() {
     private fun installVAddin() {
         DialogHelper.warning(context, getString(R.string.scene_addin_miss), getString(R.string.scene_addin_miss_desc), {
             try {
-                val uri = Uri.parse("http://vtools.omarea.com/")
+                val uri = Uri.parse("https://yuan-shiguang.github.io/Nekoscene/")
                 val intent = Intent(Intent.ACTION_VIEW, uri)
                 startActivity(intent)
             } catch (ex: Exception) {

@@ -111,7 +111,7 @@ class FragmentHome : androidx.fragment.app.Fragment() {
         home_help.setOnClickListener {
             try {
                 startActivity(
-                    Intent(Intent.ACTION_VIEW, Uri.parse("http://vtools.omarea.com/"))
+                    Intent(Intent.ACTION_VIEW, Uri.parse("https://yuan-shiguang.github.io/Nekoscene/"))
                 )
             } catch (ex: Exception) {
                 Toast.makeText(context!!, R.string.home_browser_error, Toast.LENGTH_SHORT).show()

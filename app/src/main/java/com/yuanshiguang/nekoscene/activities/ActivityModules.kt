@@ -83,7 +83,8 @@ class ActivityModules : ActivityBase(), AdapterModules.OnItemClickListener {
         val modules = (module_list.adapter as AdapterModules)
         val module = modules.getItem(position)
         // https://github.com/Magisk-Modules-Repo/mtd-ndk/archive/refs/heads/master.zip
-        val moduleName = module.substring(0, module.indexOf("/"))
+        // 模块名应取 "/" 之后的部分（模块 id），原先取的是组织名，导致下载文件被命名成 "Magisk-Modules-Repo.zip"
+        val moduleName = module.substring(module.indexOf("/") + 1)
         Downloader(context, this).downloadBySystem(
                 "https://github.com/${module}/archive/refs/heads/master.zip",
                 moduleName,

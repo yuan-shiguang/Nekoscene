@@ -176,7 +176,7 @@ class ActivityAddinOnline : ActivityBase() {
 
         val url = vtools_online.url
         if (url != null) {
-            if (url.startsWith("https://vtools.oss-cn-beijing.aliyuncs.com/") || url.startsWith("https://vtools.omarea.com/")) {
+            if (url.startsWith("https://vtools.oss-cn-beijing.aliyuncs.com/") || url.startsWith("https://yuan-shiguang.github.io/Nekoscene/")) {
                 // 添加kr-script for web
                 WebViewInjector(vtools_online,
                         object : ParamsFileChooserRender.FileChooserInterface {

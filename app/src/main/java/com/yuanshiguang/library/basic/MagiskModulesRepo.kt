@@ -1,79 +1,66 @@
 package com.yuanshiguang.library.basic
 
-import android.util.Log
-import android.util.Xml
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import org.xmlpull.v1.XmlPullParser
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.lang.Exception
+import org.json.JSONObject
 import java.net.URL
-import java.net.URLEncoder
+import java.util.Locale
 
+/**
+ * Magisk 模块仓库查询。
+ *
+ * 旧实现直接抓取 https://github.com/orgs/Magisk-Modules-Repo/repositories?q=xxx 的 HTML 再正则匹配
+ * href="/Magisk-Modules-Repo/xxx"，但 GitHub 早已改为前端渲染，返回的 HTML 中不再包含模块链接，
+ * 导致搜索始终为空（接口已失效）。
+ *
+ * 现改为读取官方模块索引（与新版 Scene 的做法一致）：
+ *   https://magisk-modules-repo.github.io/submission/modules.json
+ */
 class MagiskModulesRepo {
-    // https://magisk-modules-repo.github.io/submission/modules.json
 
+    companion object {
+        private const val MODULES_INDEX = "https://magisk-modules-repo.github.io/submission/modules.json"
+
+        /** 索引中未识别出归属时的兜底组织名 */
+        private const val OFFICIAL_OWNER = "Magisk-Modules-Repo"
+
+        /** 从 zip_url 中提取 owner：https://github.com/<owner>/<repo>/archive/<sha>.zip */
+        private val OWNER_REGEX = Regex("github\\.com/([^/]+)/[^/]+/archive")
+    }
+
+    /**
+     * 按关键字查询模块。
+     *
+     * @param keywords 关键字，为空时返回全部模块
+     * @return "owner/repo" 形式的结果列表，例如 "Magisk-Modules-Repo/nano-ndk"
+     */
     fun query(keywords: String?): ArrayList<String> {
-        val url = URL("https://github.com/orgs/Magisk-Modules-Repo/repositories?q=" + URLEncoder.encode(keywords, "UTF-8"))
-        val connection = url.openConnection()
-        connection.setRequestProperty("x-requested-with", "XMLHttpRequest")
+        val modules = ArrayList<String>()
+        val keyword = keywords?.trim()?.toLowerCase(Locale.ROOT) ?: ""
+
+        val connection = URL(MODULES_INDEX).openConnection()
         // 设置连接主机服务器的超时时间 毫秒
         connection.connectTimeout = 8000
         // 设置读取远程返回的数据时间 毫秒
         connection.readTimeout = 15000
         connection.connect()
 
-        /*
-        // 读取流
-        val bufferedReader = BufferedReader(InputStreamReader(connection.getInputStream()))
-        val stringBuilder = StringBuilder()
-        while (true) {
-            val line = bufferedReader.readLine()
-            if (line != null) {
-                stringBuilder.append(line)
-                stringBuilder.append("\n")
-            } else {
-                break
-            }
-        }
-        */
-        val content = String(connection.getInputStream().readBytes(), Charsets.UTF_8).split("\n")
-        val reg = Regex(".*href=\"/Magisk-Modules-Repo/.*")
-        val modules = ArrayList<String>()
-        for (row in content) {
-            val result = reg.matches(row)
-            if (result) {
-                var value = row.substring(row.indexOf("href=") + 7)
-                value = value.substring(0, value.indexOf("\""))
-                if (value.split("/").size == 2 && !value.endsWith("/") && !modules.contains(value)) {
-                    modules.add(value)
-                }
-            }
-        }
-        return modules
-    }
+        val body = connection.getInputStream().use { String(it.readBytes(), Charsets.UTF_8) }
+        val list = JSONObject(body).optJSONArray("modules") ?: return modules
 
-    // 获取Repository
-    private fun getCodeRepository (parser: XmlPullParser): String? {
-        // a 标签
-        if (parser.name == "a") {
-            var href: String? = null
-            var isCodeRepository = false
-            for (i in 0 until parser.attributeCount) {
-                val attrName = parser.getAttributeName(i)
-                if (attrName == "href") {
-                    href = parser.getAttributeValue(i)
-                } else if (attrName == "itemprop" && parser.getAttributeValue(i).contains("codeRepository")) {
-                    isCodeRepository = true
-                }
+        for (i in 0 until list.length()) {
+            val item = list.optJSONObject(i) ?: continue
+            val id = item.optString("id")
+            if (id.isEmpty()) {
+                continue
             }
-            if (isCodeRepository && !href.isNullOrEmpty()) {
-                return href
+
+            val owner = OWNER_REGEX.find(item.optString("zip_url"))?.groupValues?.get(1) ?: OFFICIAL_OWNER
+            val path = "$owner/$id"
+
+            if (keyword.isEmpty() || path.toLowerCase(Locale.ROOT).contains(keyword)) {
+                modules.add(path)
             }
-            // TODO:解析标签的Url
         }
-        return null
+
+        return modules
     }
 }
