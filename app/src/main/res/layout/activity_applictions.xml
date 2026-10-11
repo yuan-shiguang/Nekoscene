@@ -7,13 +7,29 @@
         android:id="@+id/layout_app_bar"
         layout="@layout/layout_app_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/mode_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_app_bar"
+        android:layout_above="@id/apps_search_bar"
+        android:background="?attr/colorPrimary"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="#ffffff"
+        android:textSize="12sp" />
 
     <FrameLayout
-        android:layout_marginTop="?actionBarSize"
         android:id="@+id/apps_search_bar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mode_banner"
+        android:layout_above="@id/managers_panel">
         <EditText
             android:id="@+id/apps_search_box"
             android:layout_width="match_parent"
@@ -28,13 +44,31 @@
             android:textSize="16dp" />
     </FrameLayout>
 
+    <HorizontalScrollView
+        android:id="@+id/managers_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/apps_search_bar"
+        android:layout_above="@id/tab_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/managers_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp" />
+    </HorizontalScrollView>
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/tab_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/tab_list"
-        android:layout_below="@id/apps_search_bar" />
-
+        android:layout_below="@id/managers_panel"
+        android:layout_above="@id/tab_list" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab_list"

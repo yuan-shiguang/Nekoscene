@@ -204,6 +204,13 @@
             android:launchMode="singleTop"
             android:screenOrientation="behind" />
         <activity
+            android:name=".activities.ActivityAppManager"
+            android:configChanges="keyboardHidden|orientation|uiMode"
+            android:excludeFromRecents="true"
+            android:label="@string/app_mgr_autostart"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" />
+        <activity
             android:name=".activities.ActivityAddinOnline"
             android:configChanges="keyboardHidden|orientation|uiMode"
             android:excludeFromRecents="true"

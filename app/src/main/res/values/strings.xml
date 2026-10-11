@@ -552,4 +552,22 @@
     <string name="fs_pull_pick_dir">选择保存目录</string>
     <string name="fs_share_target_label">分享内容：%s</string>
     <string name="fs_save_to_label">保存到：%s</string>
+
+    <!-- 应用页面 工作模式 / 管理器（上游 mode_* / scene_working_mode 已提供，以下是 UI 粘合） -->
+    <string name="app_menu_work_mode">工作模式</string>
+    <string name="app_mode_banner">工作模式：%s</string>
+    <string name="app_managers_hint">管理器（所需权限越高，可选项越多）</string>
+    <string name="app_mgr_autostart">自启管理</string>
+    <string name="app_mgr_autostart_desc">管理应用开机与后台自启动行为，需 ROOT 模式</string>
+    <string name="app_mgr_notification">通知管理</string>
+    <string name="app_mgr_notification_desc">管理应用通知权限与重要程度，需 ROOT 模式</string>
+    <string name="app_mgr_permission">权限管理</string>
+    <string name="app_mgr_permission_desc">查看与回收应用敏感权限，需 ROOT 模式</string>
+    <string name="app_mgr_assoc">关联启动</string>
+    <string name="app_mgr_assoc_desc">管理应用间关联启动与链式唤醒，需 ROOT 模式</string>
+    <string name="app_mgr_open_settings">打开系统设置</string>
+    <string name="app_mgr_root_required">该管理器需要在 ROOT 模式下使用</string>
+    <string name="app_mgr_freeze">冻结管理</string>
+    <string name="app_mgr_appscene">应用场景</string>
+    <string name="app_mgr_retrieve">已卸载应用</string>
 </resources>
