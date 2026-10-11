@@ -18,8 +18,8 @@
         <TextView
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            style="@style/textDefault"
-            android:text="选择操作"
+        style="@style/textDefault"
+        android:text="@string/power_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -60,13 +60,13 @@
                         android:layout_marginBottom="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="关机" />
+                        android:text="@string/power_shutdown" />
 
                     <TextView
                         style="@style/textSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="正常关机" />
+                        android:text="@string/power_shutdown_desc" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -103,13 +103,13 @@
                         android:layout_marginBottom="4dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="重启" />
+                        android:text="@string/power_reboot" />
 
                     <TextView
                         style="@style/textSmall"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="正常重启" />
+                        android:text="@string/power_reboot_desc" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -146,14 +146,14 @@
                     style="@style/textTitle"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="热重启" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_hot_reboot" />
 
                 <TextView
                     style="@style/textSmall"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="只重启系界面而不重新引导系统（可能引发Bug）" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_hot_reboot_desc" />
             </LinearLayout>
 
         </LinearLayout>
@@ -189,14 +189,14 @@
                     style="@style/textTitle"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Recovery" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_recovery" />
 
                 <TextView
                     style="@style/textSmall"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="重启到Recovery模式（俗称卡刷模式）" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_recovery_desc" />
             </LinearLayout>
 
         </LinearLayout>
@@ -232,14 +232,14 @@
                     style="@style/textTitle"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Fastboot" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_fastboot" />
 
                 <TextView
                     style="@style/textSmall"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="重启到Fastboot模式（俗称USB线刷模式）" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_fastboot_desc" />
             </LinearLayout>
 
         </LinearLayout>
@@ -276,14 +276,14 @@
                     style="@style/textTitle"
                     android:layout_marginBottom="4dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="9008(EDL)" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_9008_edl" />
 
                 <TextView
                     style="@style/textSmall"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="重启到9008模式，*此模式仅限部分骁龙设备可用" />
+                        android:layout_height="wrap_content"
+                        android:text="@string/power_9008_desc" />
             </LinearLayout>
 
         </LinearLayout>
