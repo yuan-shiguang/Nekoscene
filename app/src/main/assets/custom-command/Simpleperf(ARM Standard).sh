@@ -1,0 +1,2 @@
+# ARM(Mediatek)
+simpleperf stat -e raw-stall,raw-stall-backend,raw-stall-backend-busy,raw-stall-backend-cpubound,raw-stall-backend-l1d,raw-stall-backend-mem,raw-stall-backend-membound,raw-stall-backend-rename,raw-stall-backend-st,raw-stall-backend-tlb,raw-stall-frontend,raw-stall-frontend-cpubound,raw-stall-frontend-flow,raw-stall-frontend-flush,raw-stall-frontend-l1i,raw-stall-frontend-mem,raw-stall-frontend-membound,raw-stall-frontend-tlb -a --per-core

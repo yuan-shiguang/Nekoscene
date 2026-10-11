@@ -15,7 +15,7 @@ settings put global low_power_sticky $state;
 # Whether or not to enable the User Absent, Radios Off feature on small battery devices.         * Type: int (0 for false, 1 for true)
 # user_absent_radios_off_for_small_battery_enabled
 
-function killproc()
+killproc()
 {
     stop "$1" 2> /dev/null
     killall -9 "$1" 2> /dev/null

@@ -31,8 +31,8 @@ android {
         applicationId "com.yuanshiguang.nekoscene"
         minSdkVersion 23
         targetSdkVersion 29
-        versionCode 20261008
-        versionName "Neko5.0.0 Alpha"
+        versionCode 20261013
+        versionName "Neko5.0.0 Alpha13"
         externalNativeBuild {
             cmake {
                 cppFlags ""

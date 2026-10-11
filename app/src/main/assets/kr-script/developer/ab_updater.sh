@@ -4,6 +4,8 @@
 if [[ ! -f /cache/7za ]]; then
   echo '请放置 7za 二进制文件到/cache目录下！' 1>&2
   exit
+else
+  chmod 755 /cache/7za
 fi
 
 alias 7za="/cache/7za"

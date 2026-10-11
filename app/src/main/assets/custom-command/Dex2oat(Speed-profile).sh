@@ -1,1 +1,0 @@
-am startservice -n com.yuanshiguang.nekoscene/.services.CompileService -a com.yuanshiguang.nekoscene.SpeedProfileCompile

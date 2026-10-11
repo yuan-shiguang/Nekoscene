@@ -8,6 +8,7 @@ script_path="$1"
 # 定义全局变量
 export EXECUTOR_PATH="$({EXECUTOR_PATH})"
 export START_DIR="$({START_DIR})"
+export HOME="$START_DIR"
 export TEMP_DIR="$({TEMP_DIR})"
 export ANDROID_UID="$({ANDROID_UID})"
 export ANDROID_SDK="$({ANDROID_SDK})"
@@ -28,9 +29,9 @@ export TMPDIR="$TEMP_DIR"
 # toolkit工具目录
 export TOOLKIT="$({TOOLKIT})"
 # 添加toolkit添加为应用程序目录
-if [[ ! "$TOOLKIT" = "" ]]; then
-    # export PATH="$PATH:$TOOLKIT"
-    PATH="$PATH:$TOOLKIT"
+if [[ ! "$TOOLKIT" = "" ]] && [[ $(echo $PATH) == "" ]]; then
+  # export PATH="$PATH:$TOOLKIT"
+  PATH="$PATH:$TOOLKIT"
 fi
 
 # 安装busybox完整功能

@@ -1,0 +1,11 @@
+{
+  "version": "N1 Customized",
+  "versionCode": 10000,
+  "author": "SCENE",
+  "target": "SCENE N1",
+  "projectUrl": "http://vtools.omarea.com/",
+  "features": {
+    "strict": true,
+    "pedestal": false
+  }
+}

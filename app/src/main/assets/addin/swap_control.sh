@@ -1,6 +1,6 @@
 swapfile=/data/swapfile
 action="$1"     # 操作(脚本中的函数名)
-use_loop="$2"       # 是否挂载为loop设备
+use_loop="$2"   # 是否挂载为loop设备
 priority="$3"   # 优先级
 swapsize="$4"   # SWAP大小MB
 
@@ -20,28 +20,20 @@ get_next_loop() {
     return
   fi
 
-  loop_str=$(losetup -f >/dev/null 2>&1)
-  if [[ "$loop_str" == "" ]] && [[ $(busybox losetup -f 2>/dev/null) != "" ]]; then
-    alias losetup='busybox losetup'
-  fi
-
-  nl=$(losetup -f 2>/dev/null | egrep -o '[0-9]{1,}')
-  if [[ "$nl" != "" ]]; then
-    next_loop_path="/dev/block/loop$nl"
+  losetup -f >/dev/null 2>&1
+  i=$(losetup -f | grep -e -o '[0-9]{1,}' 2>/dev/null)
+  if [[ "$i" != "" ]]; then
+    next_loop_path="/dev/block/loop$i"
     return
   fi
 
-  local loop_index=0
-  local used=`blkid | grep /dev/block/loop`
-  for loop in /dev/block/loop*
-  do
-    if [[ "$loop_index" -gt "0" ]]; then
-      if [[ `echo $used | grep /dev/block/loop$loop_index` = "" ]]; then
-        next_loop_path="/dev/block/loop$loop_index"
-        return
-      fi
+  used="$(blkid | grep /dev/block/loop)"
+  for i in $(seq 1 99); do
+    loop="/dev/block/loop$i"
+    if [[ -e $loop ]] && [[ "$(echo $used | grep $loop)" = "" ]]; then
+      next_loop_path=$loop
+      return
     fi
-    local loop_index=`expr $loop_index + 1`
   done
 
   next_loop_path=""
@@ -74,6 +66,9 @@ enable_swap() {
     if [[ "$swapsize" = "" ]]; then
       swapsize=256
     fi
+    # dd if=/dev/zero of=$swapfile bs=1048576 seek=$swapsize count=0 || dd if=/dev/zero of=$swapfile bs=1048576 count=$swapsize # 创建
+    # truncate -s ${swapsize}M $swapfile || dd if=/dev/zero of=$swapfile bs=1048576 count=$swapsize # 创建
+    # fallocate -l ${swapsize}M $swapfile || dd if=/dev/zero of=$swapfile bs=1048576 count=$swapsize # 创建
     dd if=/dev/zero of=$swapfile bs=1048576 count=$swapsize # 创建
   fi
 
@@ -88,23 +83,20 @@ enable_swap() {
 
   mkswap $swap_mount | grep -v UUID 2>&1 # 初始化
   if [[ "$priority" != "" ]]; then
-    # zram_priority=`cat /proc/swaps | grep /zram0 | sed 's/[ \t][ ]*/,/g' | cut -f5 -d ','`
-    zram_info=`cat /proc/swaps | grep /zram0`
-    if [[ $zram_info != "" ]]; then
-      zram_priority=`echo $zram_info | sed 's/[ \t][ ]*/,/g' | cut -f5 -d ','`
-    fi
+    zram_priority=`cat /proc/swaps | grep /zram0 | awk '{print $5}'`
 
     if [[ "$zram_priority" != "" ]]; then
       if [[ "$priority" == '0' ]]; then
         if [[ "$zram_priority" -lt 0 ]]; then
           if [[ -f /sys/block/zram0/backing_dev ]]; then
-            backing_dev=$(cat /sys/block/zram0/backing_dev)
+            backing_dev=$(cat /sys/block/zram0/backing_dev | tr -d '()')
           fi
+          umount /dev/block/zram0 2>/dev/null
           swapoff /dev/block/zram0
           if [[ -f /sys/block/zram0/backing_dev ]]; then
-            echo $backing_dev > /sys/block/zram0/backing_dev
+            echo -n $backing_dev > /sys/block/zram0/backing_dev
           fi
-          swapon /dev/block/zram0 -p $priority 2>&1
+          swapon -p 0 /dev/block/zram0 -p $priority 2>&1
         else
           priority="$zram_priority"
         fi

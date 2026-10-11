@@ -33,7 +33,7 @@ enable_swap_props() {
   setprop zram.disksize ${disksz}
   write /proc/sys/vm/swappiness 100
   write /proc/sys/vm/swap_ratio_enable 1
-write /proc/sys/vm/swap_ratio 70
+  write /proc/sys/vm/swap_ratio 70
 }
 
 
@@ -64,7 +64,7 @@ function enable_zram() {
   write /sys/block/${zram}/reset 1
   write /sys/block/${zram}/disksize ${disksz_mb}M
   mkswap ${zram_dev} >/dev/null 2>&1
-  swapon ${zram_dev} >/dev/null 2>&1
+  swapon -p 0 ${zram_dev} >/dev/null 2>&1
 
   # enable_swap_props
 }

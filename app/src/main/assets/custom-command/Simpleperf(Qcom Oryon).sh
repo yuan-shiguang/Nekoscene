@@ -1,0 +1,2 @@
+# ARM(Qualcomm 8E/8E5)
+simpleperf stat -e raw-stall,raw-stall-backend,raw-stall-backend-cpubound,raw-stall-backend-mem,raw-stall-backend-membound,raw-stall-frontend,raw-stall-frontend-cpubound,raw-stall-frontend-membound -a --per-core

@@ -2,7 +2,7 @@
 source ./kr-script/common/mount.sh
 
 # 从build.prop文件读取prop的值是否为1
-function cat_prop_is_1()
+cat_prop_is_1()
 {
     prop="$1"
     g="^$prop="
@@ -38,7 +38,7 @@ function cat_prop_is_1()
 }
 
 # 从build.prop文件读取prop的值是否为0
-function cat_prop_is_0()
+cat_prop_is_0()
 {
     prop="$1"
     g="^$prop="
@@ -72,19 +72,19 @@ function cat_prop_is_0()
     echo 0
 }
 
-function magisk_set_system_prop() {
+magisk_set_system_prop() {
     if [[ -d "$MAGISK_PATH" ]];
     then
         echo "你已安装Magisk，本次修改将通过操作进行"
         $BUSYBOX sed -i "/$1=/"d "$MAGISK_PATH/system.prop"
-        $BUSYBOX echo "$1=$2" >> "$MAGISK_PATH/system.prop"
-        setprop $1 $2 2> /dev/null
+        $BUSYBOX echo -e "\n$1=$2" >> "$MAGISK_PATH/system.prop"
+        setprop "$1" "$2" 2> /dev/null
         return 1
     fi;
     return 0
 }
 
-function set_system_prop() {
+set_system_prop() {
     local prop=$1
     local state=$2
 
@@ -101,7 +101,7 @@ function set_system_prop() {
     mount_all
 
     $BUSYBOX sed "/$prop=/"d $path > /cache/build.prop
-    $BUSYBOX echo "$prop=$state" >> /cache/build.prop
+    $BUSYBOX echo  -e "\n$prop=$state" >> /cache/build.prop
     echo "Step2.修改$prop=$state"
 
     echo 'Step3.写入文件'
