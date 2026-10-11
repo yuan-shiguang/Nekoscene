@@ -13,14 +13,14 @@ import com.yuanshiguang.library.shell.*
 import com.yuanshiguang.model.SceneConfigInfo
 import com.yuanshiguang.store.SceneConfigStore
 import com.yuanshiguang.store.SpfConfig
-import com.yuanshiguang.nekoscene.AccessibilityScenceMode
+import com.yuanshiguang.nekoscene.AccessibilitySceneMode
 import com.yuanshiguang.nekoscene.popup.FloatMonitorMini
 import com.yuanshiguang.nekoscene.popup.FloatScreenRotation
 import java.nio.charset.Charset
 import java.util.*
 import kotlin.collections.ArrayList
 
-class SceneMode private constructor(private val context: AccessibilityScenceMode, private var store: SceneConfigStore) {
+class SceneMode private constructor(private val context: AccessibilitySceneMode, private var store: SceneConfigStore) {
     private var lastAppPackageName = "com.android.systemui"
     private var contentResolver: ContentResolver = context.contentResolver
     private var freezList = ArrayList<FreezeAppHistory>()
@@ -93,7 +93,7 @@ class SceneMode private constructor(private val context: AccessibilityScenceMode
         }
 
         // 创建一个新实例
-        fun getNewInstance(context: AccessibilityScenceMode, store: SceneConfigStore): SceneMode? {
+        fun getNewInstance(context: AccessibilitySceneMode, store: SceneConfigStore): SceneMode? {
             if (instance != null) {
                 instance?.clearState()
             }

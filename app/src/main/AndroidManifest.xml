@@ -33,6 +33,14 @@
     <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
     <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
 
+    <!-- 同步自上游 N1 Alpha13：新增权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
     <!--
         <queries>
 
@@ -62,6 +70,30 @@
             android:enabled="true"
             android:exported="true"
             android:authorities="com.yuanshiguang.nekoscene.SceneFreezeProvider" />
+
+        <!-- FileProvider：文件分享（同步自上游 N1 Alpha13） -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:exported="false"
+            android:authorities="${applicationId}.fileprovider"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 桌面小组件（同步自上游 N1 Alpha13 SceneAppWidgetProvider） -->
+        <receiver
+            android:name=".SceneAppWidgetProvider"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info" />
+        </receiver>
 
         <activity
             android:name=".activities.ActivityPowerModeTile"
@@ -331,7 +363,7 @@
         </receiver>
 
         <service
-            android:name=".AccessibilityScenceMode"
+            android:name=".AccessibilitySceneMode"
             android:label="Nekoscene - 场景模式"
             android:configChanges="orientation|screenLayout|fontScale|smallestScreenSize|density|screenSize"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">

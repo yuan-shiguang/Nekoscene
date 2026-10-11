@@ -3,7 +3,7 @@
   "versionCode": 10000,
   "author": "SCENE",
   "target": "SCENE N1",
-  "projectUrl": "http://vtools.omarea.com/",
+  "projectUrl": "https://yuan-shiguang.github.io/Nekoscene/",
   "features": {
     "strict": true,
     "pedestal": false,

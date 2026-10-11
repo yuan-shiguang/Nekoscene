@@ -18,7 +18,7 @@ import com.yuanshiguang.library.basic.ScreenState
 import com.yuanshiguang.store.SceneConfigStore
 import com.yuanshiguang.store.SpfConfig
 import com.yuanshiguang.utils.CommonCmds
-import com.yuanshiguang.nekoscene.AccessibilityScenceMode
+import com.yuanshiguang.nekoscene.AccessibilitySceneMode
 import com.yuanshiguang.nekoscene.R
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -30,7 +30,7 @@ import kotlin.collections.ArrayList
  *
  * Created by helloklf on 2016/10/1.
  */
-class AppSwitchHandler(private var context: AccessibilityScenceMode, override val isAsync: Boolean = false) : ModeSwitcher(), IEventReceiver {
+class AppSwitchHandler(private var context: AccessibilitySceneMode, override val isAsync: Boolean = false) : ModeSwitcher(), IEventReceiver {
     private var lastPackage: String? = null
     private var lastModePackage: String? = "com.system.ui"
     private var lastMode = ""
@@ -57,6 +57,9 @@ class AppSwitchHandler(private var context: AccessibilityScenceMode, override va
     private var timer: Timer? = null
     private var sceneAppChanged: BroadcastReceiver? = null
     private var screenState = ScreenState(context)
+
+    // 刷新率控制器（同步自上游 N1 Alpha13 rr_* 功能）
+    private val refreshRateController = RefreshRateController(context)
 
     /**
      * 更新设置
@@ -115,6 +118,9 @@ class AppSwitchHandler(private var context: AccessibilityScenceMode, override va
         screenOn = false
         lastScreenOnOff = System.currentTimeMillis()
         sceneMode.onScreenOff()
+
+        // 息屏时切换到锁屏刷新率
+        refreshRateController.onScreenOff()
 
         handler.postDelayed({
             onScreenOffCloseNetwork()
@@ -290,6 +296,8 @@ class AppSwitchHandler(private var context: AccessibilityScenceMode, override va
 
         autoToggleMode(packageName)
         sceneMode.onAppEnter(packageName)
+        // 应用切换时调整刷新率（同步自上游 N1 Alpha13 rr_* 功能）
+        refreshRateController.onAppSwitched(packageName)
         lastPackage = packageName
     }
 

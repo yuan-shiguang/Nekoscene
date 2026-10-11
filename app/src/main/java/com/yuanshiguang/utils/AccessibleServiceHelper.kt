@@ -3,7 +3,7 @@ package com.yuanshiguang.utils
 import android.content.Context
 import com.yuanshiguang.library.basic.AccessibleServiceState
 import com.yuanshiguang.library.shell.AccessibilityServiceUtils
-import com.yuanshiguang.nekoscene.AccessibilityScenceMode
+import com.yuanshiguang.nekoscene.AccessibilitySceneMode
 
 /**
  * Created by Hello on 2018/06/03.
@@ -12,12 +12,12 @@ import com.yuanshiguang.nekoscene.AccessibilityScenceMode
 class AccessibleServiceHelper {
     // 场景模式服务是否正在运行
     fun serviceRunning(context: Context): Boolean {
-        return AccessibleServiceState().serviceRunning(context, "AccessibilityScenceMode")
+        return AccessibleServiceState().serviceRunning(context, "AccessibilitySceneMode")
     }
 
     // 停止场景模式服务
     fun stopSceneModeService(context: Context): Boolean {
-        return AccessibilityServiceUtils().stopService("${context.packageName}/${AccessibilityScenceMode::class.java.name}")
+        return AccessibilityServiceUtils().stopService("${context.packageName}/${AccessibilitySceneMode::class.java.name}")
     }
 
     fun serviceRunning(context: Context, serviceName: String): Boolean {

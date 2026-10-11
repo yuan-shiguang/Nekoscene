@@ -12,7 +12,7 @@ class AccessibilityServiceUtils {
 
     settings put secure accessibility_enabled 0
     services=`settings get secure enabled_accessibility_services`
-    service='com.yuanshiguang.nekoscene/com.yuanshiguang.nekoscene.AccessibilityScenceMode'
+    service='com.yuanshiguang.nekoscene/com.yuanshiguang.nekoscene.AccessibilitySceneMode'
     include=`echo "$services" | grep "$service"`
     if [ ! -n "$services" ]; then
       settings put secure enabled_accessibility_services "$service"

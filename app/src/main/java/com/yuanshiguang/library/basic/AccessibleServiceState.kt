@@ -6,7 +6,7 @@ import android.view.accessibility.AccessibilityManager
 
 class AccessibleServiceState {
     companion object {
-        // 记录无障碍服务的“真实连接态”，由 AccessibilityScenceMode 在 onServiceConnected/onUnbind 中维护。
+        // 记录无障碍服务的“真实连接态”，由 AccessibilitySceneMode 在 onServiceConnected/onUnbind 中维护。
         // 仅用 getEnabledAccessibilityServiceList 只能判断“是否已启用”，在 MIUI/HyperOS 等 ROM 上服务被系统杀掉后仍会误报为已启用。
         @Volatile
         var isServiceConnected = false
