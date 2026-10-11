@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_new_folder"
+        android:title="@string/fs_new_folder"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_new_file"
+        android:title="@string/fs_new_file"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_sort"
+        android:title="@string/fs_menu_sort"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:title="@string/fs_menu_favorite"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_stat"
+        android:title="@string/fs_stat_size"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_rename"
+        android:title="@string/fs_rename"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_unzip"
+        android:title="@string/fs_unzip_file"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_multi_select"
+        android:title="@string/fs_multi_select"
+        app:showAsAction="never" />
+
+</menu>

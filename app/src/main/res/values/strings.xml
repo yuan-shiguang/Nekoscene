@@ -532,4 +532,16 @@
 
     <string name="miui_thermal_desc">点击右上角的菜单，选择并编辑温控文件，编辑完成后点击保存~\n\n注意：随着安卓系统不断更新，要修改系统分区变得越来越困难，可能修改无法成功保存，或重启后即被自动还原，建议使用magisk模块来完成温控修改！\n\n温控文件一般是在/system/etc或/vendor/etc目录下，名称以“thermal”开头，后缀为“.conf”</string>
     <string name="monitor_process_unsupported">进程管理器暂未兼容你的手机！</string>
+    <!-- fs_ 文件管理器 UI 粘合字符串（上游 strings_upstream.xml 未提供的菜单/标签） -->
+    <string name="fs_manager_title">文件管理器</string>
+    <string name="fs_menu_sort">排序</string>
+    <string name="fs_menu_favorite">收藏目录</string>
+    <string name="fs_menu_select_all">全选</string>
+    <string name="fs_sort_by">排序方式</string>
+    <string name="fs_fav_title">收藏目录</string>
+    <string name="fs_type_file">文件</string>
+    <string name="fs_type_folder">文件夹</string>
+    <string name="fs_empty_dir">（空目录）</string>
+    <string name="fs_select_count">已选择 %d 项</string>
+    <string name="fs_read_permission">无法读取该目录，请检查存储权限</string>
 </resources>
