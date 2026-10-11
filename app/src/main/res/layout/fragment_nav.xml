@@ -149,6 +149,13 @@
                 android:tag="root"
                 app:drawable="@drawable/folder"
                 app:text="@string/fs_manager_title" />
+
+            <com.yuanshiguang.ui.NavItem
+                android:id="@+id/nav_fast_share"
+                style="@style/nav_item_wrap"
+                android:tag="root"
+                app:drawable="@drawable/ic_menu_vboot"
+                app:text="@string/fs_title" />
         </GridLayout>
 
 

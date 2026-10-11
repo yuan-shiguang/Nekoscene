@@ -544,4 +544,12 @@
     <string name="fs_empty_dir">（空目录）</string>
     <string name="fs_select_count">已选择 %d 项</string>
     <string name="fs_read_permission">无法读取该目录，请检查存储权限</string>
+    <string name="fs_pick_file">选择文件</string>
+    <string name="fs_share_start">开始分享</string>
+    <string name="fs_peer_ip">对方IP地址</string>
+    <string name="fs_port">端口</string>
+    <string name="fs_pull_start">开始接收</string>
+    <string name="fs_pull_pick_dir">选择保存目录</string>
+    <string name="fs_share_target_label">分享内容：%s</string>
+    <string name="fs_save_to_label">保存到：%s</string>
 </resources>
