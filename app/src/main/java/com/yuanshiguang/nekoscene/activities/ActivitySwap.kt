@@ -72,11 +72,11 @@ class ActivitySwap : ActivityBase() {
                 val currentUsed = swapUtils.swapUsedSize
                 val avgSpeed = (totalUsed - currentUsed).toFloat() / (System.currentTimeMillis() - startTime) * 1000
                 val tipStr = StringBuilder()
-                tipStr.append(String.format("回收Swapfile ${currentUsed}/${totalUsed}MB (%.1fMB/s)\n", avgSpeed))
+                tipStr.append(String.format("%s %d/%dMB (%.1fMB/s)\n", getString(R.string.swap_recycling_swapfile), currentUsed, totalUsed, avgSpeed))
                 if (avgSpeed > 0) {
-                    tipStr.append("大约还需 " + (currentUsed / avgSpeed).toInt() + "秒")
+                    tipStr.append(getString(R.string.swap_recycling_estimate) + " " + (currentUsed / avgSpeed).toInt() + "秒")
                 } else {
-                    tipStr.append("请耐心等待~")
+                    tipStr.append(getString(R.string.swap_recycling_waiting))
                 }
                 myHandler.post {
                     processBarDialog.showDialog(tipStr.toString())
@@ -95,11 +95,11 @@ class ActivitySwap : ActivityBase() {
                 val currentUsed = swapUtils.zramUsedSize
                 val avgSpeed = (totalUsed - currentUsed).toFloat() / (System.currentTimeMillis() - startTime) * 1000
                 val tipStr = StringBuilder()
-                tipStr.append(String.format("回收ZRAM ${currentUsed}/${totalUsed}MB (%.1fMB/s)\n", avgSpeed))
+                tipStr.append(String.format("%s %d/%dMB (%.1fMB/s)\n", getString(R.string.swap_recycling_zram), currentUsed, totalUsed, avgSpeed))
                 if (avgSpeed > 0) {
-                    tipStr.append("大约还需 " + (currentUsed / avgSpeed).toInt() + "秒")
+                    tipStr.append(getString(R.string.swap_recycling_estimate) + " " + (currentUsed / avgSpeed).toInt() + "秒")
                 } else {
-                    tipStr.append("请耐心等待~")
+                    tipStr.append(getString(R.string.swap_recycling_waiting))
                 }
                 myHandler.post {
                     processBarDialog.showDialog(tipStr.toString())
@@ -138,8 +138,8 @@ class ActivitySwap : ActivityBase() {
             val usedSize = swapUtils.swapUsedSize
             if (usedSize > 500) {
                 DialogHelper.confirm(this,
-                        "确认重启手机？",
-                        "Swap被大量使用(${usedSize}MB)，短时间内很难完成回收。\n因此需要重启手机来完成此操作，请确保你的重要数据都已保存！！！", {
+                        getString(R.string.swap_reboot),
+                        "Swap被大量使用(${usedSize}MB)，短时间内很难完成回收。\n" + getString(R.string.swap_off_slow_warn), {
                     swapConfig.edit().putBoolean(SpfConfig.SWAP_SPF_SWAP, false).apply()
                     swapModuleUtils.saveModuleConfig(swapConfig)
                     KeepShellPublic.doCmdSync("sync\nsleep 2\nsvc power reboot || reboot")
@@ -161,7 +161,7 @@ class ActivitySwap : ActivityBase() {
                 utils.autoSetLMK(info.totalMem)
                 swap_lmk_current.text = utils.getCurrent()
             } else {
-                Toast.makeText(context, "需要重启手机才会恢复默认的LMK参数！", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, getString(R.string.swap_lmk_restart), Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -481,7 +481,7 @@ class ActivitySwap : ActivityBase() {
 
             val size = swapSize.progress * 128
             if (size < 1) {
-                Scene.toast("请先设定SWAP大小！")
+                Scene.toast(getString(R.string.swap_size_require))
                 return@setOnClickListener
             } else if (size == swapUtils.swapFileSize) {
                 // 如果大小和已经创建的文件一致，跳过创建
@@ -508,7 +508,7 @@ class ActivitySwap : ActivityBase() {
                         val speed = (size * 1000.0 / time).toInt()
                         Toast.makeText(
                                 context,
-                                "Swapfile创建完毕，耗时${time / 1000}s，平均写入速度：${speed}MB/s",
+                                String.format(getString(R.string.swap_swapfile_speed), time / 1000, speed),
                                 Toast.LENGTH_LONG
                         ).show()
                         swapActiveDialog()

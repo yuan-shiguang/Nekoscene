@@ -100,13 +100,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="在/data下创建" />
+                        android:text="@string/swap_create_in_data" />
                     <TextView
                         style="@style/textSecondary"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="默认位置为/data/swapfile，不可更改" />
+                        android:text="@string/swap_create_in_data_desc" />
                 </LinearLayout>
 
                 <Switch

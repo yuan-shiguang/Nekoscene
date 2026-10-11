@@ -78,13 +78,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="删除文件" />
+                        android:text="@string/swap_off_delete" />
                     <TextView
                         style="@style/textSecondary"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="关闭Swapfile后，删除/data/swapfile文件" />
+                        android:text="@string/swap_off_delete_desc" />
                 </LinearLayout>
 
                 <Switch

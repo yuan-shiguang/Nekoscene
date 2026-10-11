@@ -42,7 +42,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="已激活"
+                        android:text="@string/swap_module_activated"
                         android:textColor="?android:colorAccent" />
                     <TextView
                         android:id="@+id/swap_module_uninstalled"
@@ -51,7 +51,7 @@
                         android:layout_height="wrap_content"
                         android:layout_width="0dp"
                         android:layout_weight="1"
-                        android:text="未激活"
+                        android:text="@string/swap_module_inactive"
                         android:textColor="@android:color/darker_gray" />
                     <TextView
                         android:id="@+id/swap_module_downloadable"
@@ -273,7 +273,7 @@
 
                 <TextView
                     style="@style/textTitle"
-                    android:text="VM Parameters" />
+                    android:text="@string/swap_vm" />
 
                 <LinearLayout
                     android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
@@ -419,7 +419,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/activity_vertical_margin"
                     style="@style/textTitle"
-                    android:text="已开启的SWAP" />
+                    android:text="@string/swap_enabled_swaps" />
 
                 <ListView
                     android:id="@+id/list_swaps"
