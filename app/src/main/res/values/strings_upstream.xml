@@ -1665,7 +1665,7 @@
     <string name="schedule_fas_enable_desc">利用FAS降低游戏功耗</string>
     <string name="schedule_fas_engine">FAS引擎</string>
     <string name="schedule_fas_engine_desc">选择优先使用的FAS实现，默认优先系统自带的FAS，如果效果不佳可以尝试切换为Scene FAS</string>
-    <string name="schedule_fas_rs">shadow3'fas-rs</string>
+    <string name="schedule_fas_rs">shadow3\'fas-rs</string>
     <string name="schedule_fas_rs_desc">用户空间FAS(Frame Aware Scheduling)实现</string>
     <string name="schedule_fas_rs_summary">访问fas-rs(由shadow3设计)项目的Git，下载Release版本并通过Magisk刷入，重启手机后即可在Scene里体验调度切换功能</string>
     <string name="schedule_fast_desc">打开此应用时，切换到极速模式</string>
@@ -1694,9 +1694,9 @@
     <string name="schedule_source_others">其它</string>
     <string name="schedule_source_scene">来自SCENE</string>
     <string name="schedule_title">选择性能调节策略</string>
-    <string name="schedule_uperf">yc9559'Uperf</string>
+    <string name="schedule_uperf">yc9559\'Uperf</string>
     <string name="schedule_uperf_desc">Yc9559设计的Uperf，适用于骁龙888和更旧的soc</string>
-    <string name="schedule_uperf_gt">yinwanxi'UperfGT</string>
+    <string name="schedule_uperf_gt">yinwanxi\'UperfGT</string>
     <string name="schedule_uperf_gt_desc">Uperf衍生版本，更加强调游戏性能</string>
     <string name="schedule_uperf_gt_summary">访问Uperf(由吟惋兮为提升游戏性能改造)项目的Git，下载Release版本并通过Magisk刷入，重启手机后即可在Scene里体验调度切换功能~</string>
     <string name="schedule_uperf_summary">访问Uperf(由yc9559设计)项目的Git，下载Release版本并通过Magisk刷入，重启手机后即可在Scene里体验调度切换功能~</string>
@@ -1862,7 +1862,7 @@
     <string name="tip">提示</string>
 
     <!-- uperf_ -->
-    <string name="uperf_auto">Uperf'Auto</string>
+    <string name="uperf_auto">Uperf\'Auto</string>
 
     <!-- (无下划线) -->
     <string name="upload">上传</string>
