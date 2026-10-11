@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,15 +10,68 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/krscript_item_ripple_inactive"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            style="@style/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_device" />
+
+        <TextView
+            android:id="@+id/img_info_kernel"
+            style="@style/textSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_kernel" />
+
+        <TextView
+            android:id="@+id/img_info_os"
+            style="@style/textSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_os" />
+
+        <TextView
+            android:id="@+id/img_info_slot"
+            style="@style/textSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_slot" />
+
+        <TextView
+            android:id="@+id/img_info_space"
+            style="@style/textSecondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/img_space" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="4dp"
+        android:text="@string/img_backup_warn"
+        android:textColor="?android:attr/colorError"
+        android:textSize="12sp" />
+
     <com.yuanshiguang.common.ui.OverScrollListView
         android:id="@+id/img_action_listview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layout_app_bar"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_margin="@dimen/activity_horizontal_margin"
         android:background="@drawable/krscript_item_ripple_inactive"
         android:divider="@null"
         android:dividerHeight="0dp"
         android:listSelector="@android:color/transparent"
         android:scrollbars="none" />
-</RelativeLayout>
+</LinearLayout>

@@ -80,14 +80,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="取消偏见" />
+                android:text="@string/freezer_remove" />
 
             <TextView
                 style="@style/textSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="从偏见列表移除此应用并将其解冻" />
+                android:text="@string/freezer_remove_desc" />
         </LinearLayout>
     </LinearLayout>
 
@@ -122,14 +122,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="卸载应用" />
+                android:text="@string/freezer_uninstall" />
 
             <TextView
                 style="@style/textSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="卸载此应用(如果可以卸载的话)" />
+                android:text="@string/freezer_uninstall_desc" />
         </LinearLayout>
     </LinearLayout>
 
@@ -164,14 +164,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="冻结/解冻" />
+                android:text="@string/freezer_freeze_thaw" />
 
             <TextView
                 style="@style/textSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="切换此应用的冻结状态" />
+                android:text="@string/freezer_freeze_thaw_desc" />
         </LinearLayout>
     </LinearLayout>
 
@@ -207,14 +207,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="添加快捷方式" />
+                android:text="@string/freezer_shortcut_create" />
 
             <TextView
                 style="@style/textSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="添加此应用的快捷方式到桌面" />
+                android:text="@string/freezer_shortcut_create_desc" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

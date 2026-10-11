@@ -40,14 +40,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="冻结全部" />
+                    android:text="@string/freezer_freeze_all" />
 
                 <TextView
                     style="@style/textSecondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="将偏见列表中的所有应用设为冻结状态" />
+                    android:text="@string/freezer_freeze_all_desc" />
             </LinearLayout>
         </LinearLayout>
 
@@ -82,14 +82,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="解冻全部" />
+                    android:text="@string/freezer_unfreeze_all" />
 
                 <TextView
                     style="@style/textSecondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="将偏见列表中的所有应用解冻，置于可启动状态" />
+                    android:text="@string/freezer_unfreeze_all_desc" />
             </LinearLayout>
         </LinearLayout>
 
@@ -125,14 +125,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="添加快捷方式" />
+                    android:text="@string/freezer_shortcuts_create" />
 
                 <TextView
                     style="@style/textSecondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="向桌面批量添加快捷方式" />
+                    android:text="@string/freezer_shortcuts_create_desc" />
             </LinearLayout>
         </LinearLayout>
 
@@ -167,14 +167,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="清空列表" />
+                    android:text="@string/freezer_clear" />
 
                 <TextView
                     style="@style/textSecondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="解冻所有应用，并清空应用偏见列表" />
+                    android:text="@string/freezer_clear_desc" />
             </LinearLayout>
         </LinearLayout>
 
@@ -209,14 +209,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="自动添加" />
+                    android:text="@string/freezer_auto_import" />
 
                 <TextView
                     style="@style/textSecondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="添加已冻结的普通应用，到应用偏见列表" />
+                    android:text="@string/freezer_auto_import_desc" />
             </LinearLayout>
         </LinearLayout>
 
@@ -239,14 +239,14 @@
                     <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:text="冻结应用时不隐藏桌面图标，而仅仅将其置灰（与应用管理中的[暂停使用]效果相同），从而避免冻结应用时破坏桌面布局，此功能需要Android P+" />
+                        app:text="@string/freezer_keep_icon_desc" />
 
                     <Switch
                         android:id="@+id/freeze_suspend_mode"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="保留应用图标" />
+                        android:text="@string/freezer_keep_icon" />
 
                 </LinearLayout>
 
@@ -281,13 +281,13 @@
                     <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:text="离开应用界面超过此时间后冻结，0表示不限制。锁屏1分钟后自动冻结所有偏见应用，不受此设置影响！" />
+                        app:text="@string/freezer_timeout_desc" />
                     <TextView
                         style="@style/textTitle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="活动时间限制（分钟）" />
+                        android:text="@string/freezer_timeout" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -327,14 +327,14 @@
                     <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:text="有未添加快捷方式到桌面的偏见应用时，弹出添加快捷方式提示" />
+                        app:text="@string/freezer_shortcut_suggest_desc" />
 
                     <Switch
                         android:id="@+id/freeze_shortcut_suggest"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="提示创建快捷方式" />
+                        android:text="@string/freezer_shortcut_suggest" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -347,14 +347,14 @@
                     <com.yuanshiguang.ui.HelpIcon
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:text="在桌面显示“应用偏见”管理界面快捷入口" />
+                        app:text="@string/freezer_icon_desc" />
 
                     <Switch
                         android:id="@+id/freeze_quick_entry"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="桌面快捷入口" />
+                        android:text="@string/freezer_icon" />
                 </LinearLayout>
             </LinearLayout>
         </com.yuanshiguang.ui.UMExpandLayout>

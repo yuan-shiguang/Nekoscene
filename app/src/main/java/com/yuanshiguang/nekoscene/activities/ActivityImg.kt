@@ -1,16 +1,20 @@
 package com.yuanshiguang.nekoscene.activities
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Environment
+import android.os.Handler
+import android.os.Looper
 import android.os.StatFs
 import android.widget.AdapterView
 import android.widget.SimpleAdapter
 import android.widget.Toast
 import com.yuanshiguang.Scene
 import com.yuanshiguang.common.shared.FilePathResolver
+import com.yuanshiguang.common.shell.KeepShellPublic
 import com.yuanshiguang.common.ui.DialogHelper
 import com.yuanshiguang.shell_utils.BackupRestoreUtils
 import com.yuanshiguang.utils.CommonCmds
@@ -19,8 +23,9 @@ import kotlinx.android.synthetic.main.activity_img.*
 import java.io.File
 import java.util.*
 
-
 class ActivityImg : ActivityBase() {
+    private val handler = Handler(Looper.getMainLooper())
+
     private fun createItem(title: String, desc: String, key: String): HashMap<String, Any> {
         val item = HashMap<String, Any>()
         item.put("Title", title)
@@ -29,19 +34,17 @@ class ActivityImg : ActivityBase() {
         return item
     }
 
-    //获取SD卡可用空间
     fun getSDFreeSizeMB(): Long {
         val stat = StatFs(Environment.getDataDirectory().path)
-        return stat.availableBytes / 1024 / 1024 //剩余空间
+        return stat.availableBytes / 1024 / 1024
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_img)
-
         setBackArrow()
-
         onViewCreated()
+        loadDeviceInfo()
     }
 
     override fun onResume() {
@@ -49,20 +52,36 @@ class ActivityImg : ActivityBase() {
         title = getString(R.string.menu_img)
     }
 
+    // 读取并展示设备信息（内核/系统/插槽/剩余空间）
+    private fun loadDeviceInfo() {
+        Thread {
+            val kernel = KeepShellPublic.doCmdSync("cat /proc/version 2>/dev/null | head -1")
+            val slot = KeepShellPublic.doCmdSync("getprop ro.boot.slot_suffix 2>/dev/null")
+            val space = getSDFreeSizeMB()
+            handler.post {
+                img_info_kernel.text = getString(R.string.img_kernel) + "：" + (if (kernel.isNotBlank()) kernel else Build.VERSION.RELEASE)
+                img_info_os.text = getString(R.string.img_os) + "：" + Build.DISPLAY
+                img_info_slot.text = getString(R.string.img_slot) + "：" + (if (slot.isNullOrBlank()) "—" else slot)
+                img_info_space.text = getString(R.string.img_space) + "：" + space + " MB"
+            }
+        }.start()
+    }
+
     fun onViewCreated() {
-        val listItem = ArrayList<HashMap<String, Any>>()/*在数组中存放数据*/
+        val listItem = ArrayList<HashMap<String, Any>>()
 
         listItem.add(createItem(getString(R.string.backup_action_title_boot), getString(R.string.backup_action_desc_boot), "dump-boot"))
         listItem.add(createItem(getString(R.string.restore_action_title_boot), getString(R.string.restore_action_desc_boot), "flash-boot"))
-
         listItem.add(createItem(getString(R.string.backup_action_title_rec), getString(R.string.backup_action_desc_rec), "dump-rec"))
         listItem.add(createItem(getString(R.string.restore_action_title_rec), getString(R.string.restore_action_desc_rec), "flash-rec"))
-
         listItem.add(createItem(getString(R.string.backup_action_title_dtbo), getString(R.string.backup_action_desc_dtbo), "dump-dtbo"))
         listItem.add(createItem(getString(R.string.restore_action_title_dtbo), getString(R.string.restore_action_desc_dtbo), "flash-dtbo"))
-
         listItem.add(createItem(getString(R.string.backup_action_title_persist), getString(R.string.backup_action_desc_persist), "dump-persist"))
         listItem.add(createItem(getString(R.string.restore_action_title_persist), getString(R.string.restore_action_desc_persist), "flash-persist"))
+
+        listItem.add(createItem(getString(R.string.img_backup), getString(R.string.img_choose_partition), "dump-generic"))
+        listItem.add(createItem(getString(R.string.img_flash_in), getString(R.string.img_flash_desc), "flash-generic"))
+        listItem.add(createItem(getString(R.string.img_twrp_inject), getString(R.string.img_twrp_inject_desc), "twrp-inject"))
 
         val mSimpleAdapter = SimpleAdapter(
                 this,
@@ -73,21 +92,20 @@ class ActivityImg : ActivityBase() {
         )
         img_action_listview.adapter = mSimpleAdapter
 
-
         img_action_listview.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
             val key = listItem.get(position).get("Key")
             when (key) {
                 "dump-boot" -> backupImg(BOOT_IMG)
                 "flash-boot" -> chooseImgToFlash(BOOT_IMG)
-
                 "dump-rec" -> backupImg(RECOVERY_IMG)
                 "flash-rec" -> chooseImgToFlash(RECOVERY_IMG)
-
                 "dump-dtbo" -> backupImg(DTBO_IMG)
                 "flash-dtbo" -> chooseImgToFlash(DTBO_IMG)
-
                 "dump-persist" -> backupImg(PERSIST_IMG)
                 "flash-persist" -> chooseImgToFlash(PERSIST_IMG)
+                "dump-generic" -> choosePartitionToDump()
+                "flash-generic" -> chooseImgToFlash(GENERIC_IMG)
+                "twrp-inject" -> twrpInject()
             }
         }
     }
@@ -129,6 +147,7 @@ class ActivityImg : ActivityBase() {
     private val RECOVERY_IMG = 1
     private val DTBO_IMG = 2
     private val PERSIST_IMG = 3
+    private val GENERIC_IMG = 4
 
     private fun chooseImgToFlash(type: Int) {
         if (Build.VERSION.SDK_INT >= 30) {
@@ -144,7 +163,6 @@ class ActivityImg : ActivityBase() {
     }
 
     private fun flash(imgPath: String, requestCode: Int) {
-        //刷入recovery
         if (File(imgPath).exists()) {
             var partition = ""
             when (requestCode) {
@@ -154,8 +172,8 @@ class ActivityImg : ActivityBase() {
                 PERSIST_IMG -> partition = "Persist"
             }
             DialogHelper.confirm(this,
-                    getString(R.string.flash_confirm),
-                    "此操作将刷入${imgPath}到系统${partition}分区，如果你选择了错误的文件，刷入后可能导致手机无法开机！",
+                    getString(R.string.img_flash_confirm),
+                    String.format(getString(R.string.img_flash_warn), imgPath, partition),
                     {
                         when (requestCode) {
                             BOOT_IMG -> BackupRestoreUtils(this).flashBoot(imgPath)
@@ -167,6 +185,60 @@ class ActivityImg : ActivityBase() {
         }
     }
 
+    // 选择分区并导出镜像
+    private fun choosePartitionToDump() {
+        val partitions = BackupRestoreUtils(this).listPartitions()
+        if (partitions.isEmpty()) {
+            Toast.makeText(this, getString(R.string.img_fail), Toast.LENGTH_SHORT).show()
+            return
+        }
+        AlertDialog.Builder(this)
+                .setTitle(R.string.img_choose_partition)
+                .setItems(partitions.toTypedArray()) { _, which ->
+                    val name = partitions[which]
+                    if (getSDFreeSizeMB() < 200) {
+                        Scene.toast(getString(R.string.backup_space_small), Toast.LENGTH_LONG)
+                        return@setItems
+                    }
+                    DialogHelper.confirm(this,
+                            getString(R.string.img_export_confirm),
+                            String.format(getString(R.string.img_export_warn), name, name),
+                            { BackupRestoreUtils(this).saveImg(name) })
+                }
+                .show()
+    }
+
+    // 选择 img 文件与目标分区后刷入
+    private fun choosePartitionToFlash(imgPath: String) {
+        if (!File(imgPath).exists()) {
+            Toast.makeText(this, getString(R.string.img_file_not_found), Toast.LENGTH_SHORT).show()
+            return
+        }
+        val partitions = BackupRestoreUtils(this).listPartitions()
+        if (partitions.isEmpty()) {
+            Toast.makeText(this, getString(R.string.img_fail), Toast.LENGTH_SHORT).show()
+            return
+        }
+        AlertDialog.Builder(this)
+                .setTitle(R.string.img_choose_partition)
+                .setItems(partitions.toTypedArray()) { _, which ->
+                    val name = partitions[which]
+                    DialogHelper.confirm(this,
+                            getString(R.string.img_flash_confirm),
+                            String.format(getString(R.string.img_flash_warn), imgPath, name),
+                            { BackupRestoreUtils(this).flashImg(name, imgPath) })
+                }
+                .show()
+    }
+
+    // TWRP 注入：需要 magiskboot 工具链解包/重打包 boot，当前版本仅保留入口
+    private fun twrpInject() {
+        DialogHelper.helpInfo(this,
+                getString(R.string.img_twrp_inject),
+                getString(R.string.img_twrp_inject_desc) + "\n\n" +
+                "该操作需要 magiskboot 工具链对 boot 镜像进行解包与重打包，当前版本尚未集成此工具，故仅作入口保留。如确需使用，请先通过第三方工具完成合并后再行刷入。")
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK && data != null) {
@@ -174,19 +246,19 @@ class ActivityImg : ActivityBase() {
                 val absPath = FilePathResolver().getPath(this, data.data)
                 if (absPath != null) {
                     if (absPath.endsWith(".img")) {
-                        flash(absPath, requestCode)
+                        if (requestCode == GENERIC_IMG) choosePartitionToFlash(absPath) else flash(absPath, requestCode)
                     } else {
-                        Toast.makeText(this, "选择的文件无效（应当是.img文件）！", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, getString(R.string.img_file_invalid), Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    Toast.makeText(this, "所选的文件没找到！", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.img_file_not_found), Toast.LENGTH_SHORT).show()
                 }
             } else {
                 if (data.extras?.containsKey("file") == true) {
                     val path = data.extras!!.getString("file")!!
-                    flash(path, requestCode)
+                    if (requestCode == GENERIC_IMG) choosePartitionToFlash(path) else flash(path, requestCode)
                 } else {
-                    Toast.makeText(this, "所选的文件没找到！", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.img_file_not_found), Toast.LENGTH_SHORT).show()
                 }
             }
         }

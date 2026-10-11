@@ -91,9 +91,9 @@ class BackupRestoreUtils(var context: Activity) {
         FlashImgThread(path, persistPartPath).start()
     }
 
-    internal inner class FlashImgThread(var inputPath: String, var outputPath: String) : Thread() {
+    internal inner class FlashImgThread(var inputPath: String, var outputPath: String, var checkSupport: Boolean = true) : Thread() {
         override fun run() {
-            if (!isSupport() || !RootFile.itemExists(outputPath)) {
+            if ((checkSupport && !isSupport()) || !RootFile.itemExists(outputPath)) {
                 showMsg("暂不支持您的设备！", true)
                 return
             }
@@ -125,11 +125,11 @@ class BackupRestoreUtils(var context: Activity) {
         SaveImgThread(persistPartPath, "persist").start()
     }
 
-    internal inner class SaveImgThread(var inputPath: String, var outputName: String) : Thread() {
+    internal inner class SaveImgThread(var inputPath: String, var outputName: String, var checkSupport: Boolean = true) : Thread() {
         override fun run() {
             val outPath = "${CommonCmds.SDCardDir}/$outputName.img"
 
-            if (!isSupport() || !RootFile.itemExists(inputPath)) {
+            if ((checkSupport && !isSupport()) || !RootFile.itemExists(inputPath)) {
                 showMsg("暂不支持您的设备！", true)
                 return
             }
@@ -141,5 +141,29 @@ class BackupRestoreUtils(var context: Activity) {
             }
             hideProgressBar()
         }
+    }
+
+    // ---- 通用分区镜像导出/刷入（不依赖 boot 支持检测）----
+    fun listPartitions(): List<String> {
+        val raw = KeepShellPublic.doCmdSync("ls /dev/block/by-name/ 2>/dev/null")
+        return raw.split("\n").map { it.trim() }.filter { it.isNotEmpty() }
+    }
+
+    fun saveImg(partitionName: String) {
+        val partPath = "/dev/block/by-name/$partitionName"
+        if (!RootFile.itemExists(partPath)) {
+            showMsg("分区不存在：$partitionName", true)
+            return
+        }
+        SaveImgThread(partPath, partitionName, false).start()
+    }
+
+    fun flashImg(partitionName: String, path: String) {
+        val partPath = "/dev/block/by-name/$partitionName"
+        if (!RootFile.itemExists(partPath)) {
+            showMsg("分区不存在：$partitionName", true)
+            return
+        }
+        FlashImgThread(path, partPath, false).start()
     }
 }
