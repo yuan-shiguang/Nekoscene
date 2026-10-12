@@ -473,7 +473,7 @@ class ActivityFiles : ActivityBase() {
             .setTitle(getString(R.string.fs_sort_by))
             .setSingleChoiceItems(options, current) { d, which ->
                 getSharedPreferences("fs_cfg", MODE_PRIVATE).edit().putInt("sort", which).apply()
-                adapter.setSortMode(which)
+                adapter.sortMode = which
                 d.dismiss()
             }
             .setNegativeButton(android.R.string.cancel, null)

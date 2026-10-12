@@ -29,6 +29,11 @@ class AdapterFileList(
     private var parentFile: File? = null
     private val selected = HashSet<File>()
     var sortMode = SORT_NAME
+        set(value) {
+            field = value
+            sortItems()
+            notifyDataSetChanged()
+        }
 
     private val dateFmt = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.ROOT)
 
@@ -36,12 +41,6 @@ class AdapterFileList(
         parentFile = dir.parentFile
         hasParent = parentAvailable && parentFile != null && parentFile!!.canRead()
         items = ArrayList((files ?: emptyArray()).toList())
-        sortItems()
-        notifyDataSetChanged()
-    }
-
-    fun setSortMode(mode: Int) {
-        sortMode = mode
         sortItems()
         notifyDataSetChanged()
     }
