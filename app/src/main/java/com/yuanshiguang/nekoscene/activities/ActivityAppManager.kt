@@ -64,7 +64,7 @@ class ActivityAppManager : ActivityBase() {
         "notification" -> MgrSpec(
             R.string.app_mgr_notification,
             R.string.app_mgr_notification_desc
-        ) { Intent(Settings.ACTION_NOTIFICATION_SETTINGS) }
+        ) { Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).apply { putExtra(Settings.EXTRA_APP_PACKAGE, packageName) } }
         "permission" -> MgrSpec(
             R.string.app_mgr_permission,
             R.string.app_mgr_permission_desc

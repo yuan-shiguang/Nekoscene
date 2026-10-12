@@ -133,8 +133,11 @@ object FileOpUtils {
     private fun commonParent(files: List<File>): File {
         if (files.size == 1) return files[0].parentFile ?: files[0]
         var p: File? = files[0].parentFile
-        while (p != null && files.any { !it.absolutePath.startsWith(p.absolutePath) }) {
-            p = p.parentFile
+        while (p != null) {
+            val cur = p
+            if (files.any { !it.absolutePath.startsWith(cur.absolutePath) }) {
+                p = cur.parentFile
+            } else break
         }
         return p ?: File("/")
     }

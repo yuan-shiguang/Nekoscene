@@ -132,7 +132,7 @@ class ActivityFiles : ActivityBase() {
     }
 
     private fun contenttype(file: File): String {
-        val name = file.name.lowercase(Locale.ROOT)
+        val name = file.name.toLowerCase()
         return when {
             name.endsWith(".zip") -> "application/zip"
             name.endsWith(".apk") -> "application/vnd.android.package-archive"
@@ -235,7 +235,7 @@ class ActivityFiles : ActivityBase() {
             getString(R.string.fs_delete),
             names,
             Runnable {
-                runOp({ for (f in sel) FileOpUtils.delete(f) }, getString(R.string.fs_delete)) {
+                runOp({ sel.all { FileOpUtils.delete(it) } }, getString(R.string.fs_delete)) {
                     loadDir(currentDir)
                 }
             })
@@ -268,7 +268,7 @@ class ActivityFiles : ActivityBase() {
             return
         }
         val zip = sel[0]
-        if (!zip.name.lowercase(Locale.ROOT).endsWith(".zip")) {
+        if (!zip.name.toLowerCase().endsWith(".zip")) {
             SceneToast(getString(R.string.fs_unzip_file))
             return
         }

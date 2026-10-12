@@ -53,8 +53,8 @@ class AdapterFileList(
             when (sortMode) {
                 SORT_SIZE -> b.length().compareTo(a.length())
                 SORT_TIME -> b.lastModified().compareTo(a.lastModified())
-                SORT_TYPE -> a.extension.lowercase(Locale.ROOT).compareTo(b.extension.lowercase(Locale.ROOT))
-                else -> a.name.lowercase(Locale.ROOT).compareTo(b.name.lowercase(Locale.ROOT))
+                SORT_TYPE -> a.extension.toLowerCase().compareTo(b.extension.toLowerCase())
+                else -> a.name.toLowerCase().compareTo(b.name.toLowerCase())
             }
         }
         items.sortWith(comparator)

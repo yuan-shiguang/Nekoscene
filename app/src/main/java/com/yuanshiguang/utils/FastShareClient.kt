@@ -121,7 +121,7 @@ class FastShareClient(
 
     private fun formatDuration(sec: Long): String {
         return when {
-            sec < 60 -> "$sec秒"
+            sec < 60 -> "${sec}秒"
             sec < 3600 -> "${sec / 60}分${sec % 60}秒"
             else -> "${sec / 3600}小时${(sec % 3600) / 60}分"
         }

@@ -36,8 +36,11 @@ class FastShareServer(
     private fun commonParent(items: List<File>): File {
         if (items.size == 1) return items[0].parentFile ?: items[0]
         var p: File? = items[0].parentFile
-        while (p != null && items.any { !it.absolutePath.startsWith(p.absolutePath) }) {
-            p = p.parentFile
+        while (p != null) {
+            val cur = p
+            if (items.any { !it.absolutePath.startsWith(cur.absolutePath) }) {
+                p = cur.parentFile
+            } else break
         }
         return p ?: File("/")
     }
